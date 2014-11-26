@@ -1,33 +1,5 @@
-# Always ignore
-*.diff
-*.err
-*.log
-*.orig
-*.rej
-*.swo
-*.swp
-*.vi
-*.zip
-*~
-
-# OS
-._*
-.DS_Store
-.DS_Store?
-.Spotlight-V100
-.Trashes
-*.Trashes
-ehthumbs.db
-*[Tt]humbs.db
-
-# IDE
-*.project
-*.settings
-*.sublime-project
-*.sublime-workspace
-sftp-config.json
-.komodotools
-*.komodoproject
+# Files
+npm-debug.log
 
 # Folders
 bower_components/
