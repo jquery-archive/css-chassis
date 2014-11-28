@@ -1,0 +1,6 @@
+Authors ordered by first contribution
+
+Scott González <scott.gonzalez@gmail.com>
+Sarah Frisk <sarah@sarahfrisk.com>
+Chris Bracco <chris@cbracco.me>
+Alexander Schmitz <arschmitz@gmail.com>
