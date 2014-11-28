@@ -2,6 +2,7 @@ module.exports = function( grunt ) {
 
 grunt.loadNpmTasks( "grunt-contrib-jshint" );
 grunt.loadNpmTasks( "grunt-html" );
+grunt.loadNpmTasks( "grunt-jscs" );
 
 grunt.initConfig({
 	jshint: {
@@ -10,8 +11,8 @@ grunt.initConfig({
 			jshintrc: ".jshintrc"
 		}
 	},
-	htmllint: {
-		all: [ "*.html", "demos/*.html" ]
+	jscs: {
+		all: [ "*.js" ]
 	}
 });
 
@@ -32,6 +33,6 @@ grunt.registerTask( "update-authors", function() {
 	});
 });
 
-grunt.registerTask( "default", "jshint", "htmllint" );
+grunt.registerTask( "default", [ "jshint", "jscs" ] );
 
 };
