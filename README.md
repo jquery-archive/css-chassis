@@ -1,4 +1,4 @@
-CSS Framework is an attempt at creating open standards designed for CSS libraries, JavaScript UI libraries, and web developers in general. This project will define standards for markup and class names for common widgets and patterns, as well as an implementation of those standards. Just like DOM libraries can build upon [Sizzle](https://github.com/jquery/sizzle), we hope UI libraries will build upon this.
+Chassis is an attempt at creating open standards designed for CSS libraries, JavaScript UI libraries, and web developers in general. This project will define standards for markup and class names for common widgets and patterns, as well as an implementation of those standards. Just like DOM libraries can build upon [Sizzle](https://github.com/jquery/sizzle), we hope UI libraries will build upon this.
 
 ## Goals
 
@@ -10,4 +10,4 @@ CSS Framework is an attempt at creating open standards designed for CSS librarie
 
 ## Project Collaboration and Interoperability
 
-If you maintain a JavaScript library that has UI components, we'd love for you to join our efforts. We'd be happy to hear your feedback and work through updates of your project(s) to support CSS Framework. If you have the time and interest to help define the standards and improve on our implementation, that's even better! Check out the [contribution guidelines](https://github.com/jquery/css-framework/blob/master/CONTRIBUTING.md) for more information.
+If you maintain a JavaScript library that has UI components, we'd love for you to join our efforts. We'd be happy to hear your feedback and work through updates of your project(s) to support CSS Framework. If you have the time and interest to help define the standards and improve on our implementation, that's even better! Check out the [contribution guidelines](https://github.com/jquery/css-chassis/blob/master/CONTRIBUTING.md) for more information.
