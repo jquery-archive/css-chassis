@@ -3,6 +3,9 @@ module.exports = function( grunt ) {
 grunt.loadNpmTasks( "grunt-contrib-jshint" );
 grunt.loadNpmTasks( "grunt-html" );
 grunt.loadNpmTasks( "grunt-jscs" );
+grunt.loadNpmTasks( "grunt-contrib-sass" );
+grunt.loadNpmTasks( "grunt-autoprefixer" );
+grunt.loadNpmTasks( "grunt-contrib-watch" );
 
 grunt.initConfig({
 	jshint: {
@@ -13,6 +16,52 @@ grunt.initConfig({
 	},
 	jscs: {
 		all: [ "*.js" ]
+	},
+	sass: {
+		dist: {
+			options: {
+				style: "compressed"
+			},
+			files: [ {
+				expand: true,
+				cwd: "scss",
+				src: [ "*.scss" ],
+				dest: "",
+				ext: ".css"
+			} ]
+		}
+	},
+
+	autoprefixer: {
+		dist: {
+			options: {
+				map: true,
+
+				// Target-specific options go here.
+				// browser-specific info: https://github.com/ai/autoprefixer#browsers
+				// DEFAULT: browsers: [ "> 1%", "last 2 versions", "ff 17", "opera 12.1" ]
+				browsers: [
+				"> 1%",
+				"last 2 versions",
+				"ff 17",
+				"opera 12.1",
+				"ie 8",
+				"ie 9"
+				]
+			},
+			src: [
+			"*.css"
+			]
+		}
+	},
+	watch: {
+		sass: {
+			files: [ "scss/**/*.scss" ],
+			tasks: [ "sass", "autoprefixer" ],
+			options: {
+				spawn: false
+			}
+		}
 	}
 });
 

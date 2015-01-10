@@ -1,6 +1,8 @@
 # Files
 npm-debug.log
+*.css.map
 
 # Folders
 bower_components/
 node_modules/
+.sass-cache/
