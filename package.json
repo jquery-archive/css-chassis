@@ -44,7 +44,8 @@
     "grunt-contrib-sass": "^0.8.1",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-git-authors": "2.0.0",
-    "grunt-jscs": "0.6.2"
+    "grunt-jscs": "0.6.2",
+    "grunt-sass": "^0.17.0"
   },
   "keywords": []
 }

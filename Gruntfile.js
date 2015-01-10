@@ -3,7 +3,7 @@ module.exports = function( grunt ) {
 grunt.loadNpmTasks( "grunt-contrib-jshint" );
 grunt.loadNpmTasks( "grunt-html" );
 grunt.loadNpmTasks( "grunt-jscs" );
-grunt.loadNpmTasks( "grunt-contrib-sass" );
+grunt.loadNpmTasks( "grunt-sass" );
 grunt.loadNpmTasks( "grunt-autoprefixer" );
 grunt.loadNpmTasks( "grunt-contrib-watch" );
 
@@ -20,6 +20,7 @@ grunt.initConfig({
 	sass: {
 		dist: {
 			options: {
+				sourceMap: true,
 				style: "compressed"
 			},
 			files: [ {
