@@ -32,9 +32,9 @@ grunt.initConfig({
 		dist: {
 			files: [ {
 				expand: true,
-				cwd: "svg-source",
+				cwd: "icons/svg-source",
 				src: [ "*.svg" ],
-				dest: "svg-min/",
+				dest: "icons/svg-min/",
 				ext: ".svg"
 			} ]
 		}
@@ -44,15 +44,19 @@ grunt.initConfig({
 	svgstore: {
 		defaults: {
 			options: {
-				prefix: "icon-", // This will prefix each ID
-				svg: { // will be added as attributes to the resulting SVG
+
+				// This will prefix each ID
+				prefix: "icon-",
+
+				// Adds attributes to the resulting SVG
+				svg: {
 					viewBox: "0 0 24 24",
 					xmlns: "http://www.w3.org/2000/svg"
 				},
 				cleanup: [ "style", "fill", "id" ]
 			},
 			files: {
-				"svg-set/icons.svg": [ "svg-min/*.svg" ]
+				"icons/icons.svg": [ "icons/svg-min/*.svg" ]
 			}
 		}
 	},
@@ -85,7 +89,6 @@ grunt.registerTask( "update-authors", function() {
 	});
 });
 
-grunt.registerTask( "default", [ "watch" ] );
-grunt.registerTask( "lint", [ "jshint", "jscs" ] );
+grunt.registerTask( "default", [ "jshint", "jscs" ] );
 
 };
