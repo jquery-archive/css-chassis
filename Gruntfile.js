@@ -40,7 +40,6 @@ grunt.initConfig({
 
 				// Target-specific options go here.
 				// browser-specific info: https://github.com/ai/autoprefixer#browsers
-				// DEFAULT: browsers: [ "> 1%", "last 2 versions", "ff 17", "opera 12.1" ]
 				browsers: [
 				"> 1%",
 				"last 2 versions",
