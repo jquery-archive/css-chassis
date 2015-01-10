@@ -1,6 +1,2 @@
-.clearfix:before, .clearfix:after {
-  content: "";
-  display: table; }
-.clearfix:after {
-  clear: both; }
+.clearfix:before,.clearfix:after{content:"";display:table}.clearfix:after{clear:both}
 /*# sourceMappingURL=style.css.map */

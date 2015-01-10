@@ -21,7 +21,7 @@ grunt.initConfig({
 		dist: {
 			options: {
 				sourceMap: true,
-				style: "compressed"
+				outputStyle: "compressed"
 			},
 			files: [ {
 				expand: true,
