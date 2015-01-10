@@ -43,10 +43,11 @@ grunt.initConfig({
 				browsers: [
 				"> 1%",
 				"last 2 versions",
-				"ff 17",
-				"opera 12.1",
-				"ie 8",
-				"ie 9"
+				"safari >= 5.1",
+				"ios >= 6.1",
+				"android 2.3",
+				"android >= 4",
+				"ie >= 8"
 				]
 			},
 			src: [
