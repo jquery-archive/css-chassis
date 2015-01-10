@@ -41,7 +41,6 @@
     "grunt": "0.4.2",
     "grunt-autoprefixer": "^2.1.0",
     "grunt-contrib-jshint": "0.10.0",
-    "grunt-contrib-sass": "^0.8.1",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-git-authors": "2.0.0",
     "grunt-jscs": "0.6.2",
