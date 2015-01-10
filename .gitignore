@@ -1,6 +1,8 @@
 # Files
 npm-debug.log
+icons/icons.svg
 
 # Folders
 bower_components/
 node_modules/
+icons/svg-min/
