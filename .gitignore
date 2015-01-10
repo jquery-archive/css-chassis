@@ -1,8 +1,10 @@
 # Files
 npm-debug.log
 icons/icons.svg
-
+*.css.map
+style.css
 # Folders
 bower_components/
 node_modules/
 icons/svg-min/
+.sass-cache/

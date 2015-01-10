@@ -11,3 +11,19 @@ Chassis is an attempt at creating open standards designed for CSS libraries, Jav
 ## Project Collaboration and Interoperability
 
 If you maintain a JavaScript library that has UI components, we'd love for you to join our efforts. We'd be happy to hear your feedback and work through updates of your project(s) to support CSS Framework. If you have the time and interest to help define the standards and improve on our implementation, that's even better! Check out the [contribution guidelines](https://github.com/jquery/css-chassis/blob/master/CONTRIBUTING.md) for more information.
+
+
+## Getting started
+
+### Prerequisites
+
+Node.js and npm should be installed. [[installer]](http://nodejs.org/download/)
+
+### Building
+
+Once you've cloned Chassis to your machine, run `npm install` and `grunt build` from the root Chassis directory.
+
+```
+$ npm install
+$ grunt build
+```
