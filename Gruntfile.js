@@ -50,9 +50,7 @@ grunt.initConfig({
 				"ie >= 8"
 				]
 			},
-			src: [
-			"*.css"
-			]
+			src: "*.css"
 		}
 	},
 	watch: {
@@ -84,5 +82,6 @@ grunt.registerTask( "update-authors", function() {
 });
 
 grunt.registerTask( "default", [ "jshint", "jscs" ] );
+grunt.registerTask( "build", [ "sass", "autoprefixer" ] );
 
 };
