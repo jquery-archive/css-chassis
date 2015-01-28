@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><%= title %></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<%
+		var stylesheets = "";
+		css.forEach(function( value ){
+			stylesheets += "<link rel='stylesheet' href='" + value + "'>";
+		});
+	%>
+	<%- stylesheets %>
+</head>
+<body>
+	<h1><%= title %></h1>
+	<h2>Component Count: <%= count %></h2>
+	<%- html %>
+</body>
+</html>
