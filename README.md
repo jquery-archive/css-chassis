@@ -11,3 +11,29 @@ Chassis is an attempt at creating open standards designed for CSS libraries, Jav
 ## Project Collaboration and Interoperability
 
 If you maintain a JavaScript library that has UI components, we'd love for you to join our efforts. We'd be happy to hear your feedback and work through updates of your project(s) to support CSS Framework. If you have the time and interest to help define the standards and improve on our implementation, that's even better! Check out the [contribution guidelines](https://github.com/jquery/css-chassis/blob/master/CONTRIBUTING.md) for more information.
+
+
+## Getting started
+
+### Prerequisites
+
+Node.js and npm should be installed. [[installer]](http://nodejs.org/download/)
+
+You also need to have `git` installed. Try the `git` command from your terminal. If it's not found then use this [installer](http://git-scm.com/download/).
+
+### Cloning and building
+
+Clone this git repo to your machine via the terminal using the `git clone` command and then run `grunt build` from the root css-chassis directory.
+
+```
+$ git clone git@github.com:jquery/css-chassis.git
+$ cd css-chassis
+$ npm install
+$ grunt build
+```
+
+### Other grunt commands
+
+* `grunt` - JS lint and style check
+* `grunt build` - Compiles the Sass into CSS
+* `grunt watch` - Watches Sass files for changes. Upon change, compiles the Sass.
