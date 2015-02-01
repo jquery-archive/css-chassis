@@ -32,22 +32,18 @@ grunt.initConfig({
 			} ]
 		}
 	},
-
 	autoprefixer: {
 		dist: {
 			options: {
 				map: true,
-
-				// Target-specific options go here.
-				// browser-specific info: https://github.com/ai/autoprefixer#browsers
 				browsers: [
-				"> 1%",
-				"last 2 versions",
-				"safari >= 5.1",
-				"ios >= 6.1",
-				"android 2.3",
-				"android >= 4",
-				"ie >= 8"
+					"> 1%",
+					"last 2 versions",
+					"safari >= 5.1",
+					"ios >= 6.1",
+					"android 2.3",
+					"android >= 4",
+					"ie >= 8"
 				]
 			},
 			src: "*.css"
