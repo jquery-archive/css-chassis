@@ -19,15 +19,11 @@ If you maintain a JavaScript library that has UI components, we'd love for you t
 
 Node.js and npm should be installed. [[installer]](http://nodejs.org/download/)
 
-You also need to have `git` installed. Try the `git` command from your terminal. If it's not found then use this [installer](http://git-scm.com/download/).
+### Building
 
-### Cloning and building
-
-Clone this git repo to your machine via the terminal using the `git clone` command and then run `grunt build` from the root css-chassis directory.
+Once you've cloned Chassis to your machine, run `npm instal` and `grunt build` from the root Chassis directory.
 
 ```
-$ git clone git@github.com:jquery/css-chassis.git
-$ cd css-chassis
 $ npm install
 $ grunt build
 ```
