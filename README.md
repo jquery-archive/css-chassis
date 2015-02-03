@@ -21,7 +21,7 @@ Node.js and npm should be installed. [[installer]](http://nodejs.org/download/)
 
 ### Building
 
-Once you've cloned Chassis to your machine, run `npm instal` and `grunt build` from the root Chassis directory.
+Once you've cloned Chassis to your machine, run `npm install` and `grunt build` from the root Chassis directory.
 
 ```
 $ npm install
