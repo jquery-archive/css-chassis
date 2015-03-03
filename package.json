@@ -46,9 +46,11 @@
 		"grunt-git-authors": "2.0.0",
 		"grunt-html": "1.6.0",
 		"grunt-jscs": "0.6.2",
+		"glob": "4.4.1",
 		"chromedriver": "2.13.0",
 		"grunt-selenium-server": "0.1.2",
-		"perfjankie": "1.1.1"
+		"perfjankie": "1.1.1",
+		"load-grunt-tasks": "3.1.0"
 
 	},
 	"keywords": []

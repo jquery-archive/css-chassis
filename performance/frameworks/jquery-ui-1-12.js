@@ -1,5 +1,6 @@
 module.exports = {
-	css: [ "https://cdn.rawgit.com/arschmitz/5a0c0b61d0240c096db5/raw/0d1d52e3c0e732e0f22cecda2f56def937152db2/jquery-ui-1-12.min.css" ],
+	css: [ "https://cdn.rawgit.com/arschmitz/5a0c0b61d0240c096db5/raw/" +
+		"0d1d52e3c0e732e0f22cecda2f56def937152db2/jquery-ui-1-12.min.css" ],
 	button: {
 		generator: function( options ) {
 			var icon,
