@@ -52,7 +52,7 @@ grunt.initConfig({
 	watch: {
 		sass: {
 			files: [ "scss/**/*.scss" ],
-			tasks: [ "sass", "autoprefixer" ],
+			tasks: [ "build" ],
 			options: {
 				spawn: false
 			}
