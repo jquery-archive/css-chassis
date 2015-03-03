@@ -27,9 +27,3 @@ Once you've cloned Chassis to your machine, run `npm install` and `grunt build` 
 $ npm install
 $ grunt build
 ```
-
-### Other grunt commands
-
-* `grunt` - JS lint and style check
-* `grunt build` - Compiles the Sass into CSS
-* `grunt watch` - Watches Sass files for changes. Upon change, compiles the Sass.
