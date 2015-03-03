@@ -35,6 +35,11 @@
       "url": "https://github.com/jquery/css-chassis/blob/master/LICENSE.txt"
     }
   ],
+  "scripts": {
+    "build": "npm install && grunt build",
+    "start": "grunt watch",
+    "test": "grunt"
+  },
   "dependencies": {},
   "devDependencies": {
     "commitplease": "2.0.0",
