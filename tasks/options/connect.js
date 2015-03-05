@@ -4,7 +4,7 @@ var template = require( "ejs-template" ),
 
 module.exports = {
 	options: {
-		port: 4300,
+		port: 4200,
 		base: ".",
 		middleware: [
 			template.middleware({ basedir: __dirname }),

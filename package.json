@@ -41,8 +41,9 @@
     "test": "grunt"
   },
   "dependencies": {},
-  "devDependencies": {
-    "commitplease": "2.0.0",
+
+	"devDependencies": {
+    "browser-perf": "1.2.3",
     "chromedriver": "2.13.0",
 		"commitplease": "2.0.0",
     "ejs-template": "0.1.0",
@@ -60,7 +61,7 @@
     "grunt-svgmin": "^2.0.0",
     "grunt-svgstore": "^0.5.0",
     "load-grunt-tasks": "3.1.0",
-    "perfjankie": "1.1.1"
+    "perfjankie": "1.2.2"
 	},
 	"keywords": []
 }

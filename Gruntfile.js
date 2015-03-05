@@ -100,9 +100,14 @@ var config = {
 					spawn: false
 				}
 			}
+		},
+		"stop-selenium-server": {
+			dev: {}
 		}
 	};
 
+// This loads files in the options folder as task options
+// and builds an object based on their file names
 function loadConfig(path) {
 	var glob = require( "glob" ),
 		object = {},
@@ -116,11 +121,18 @@ function loadConfig(path) {
 	return object;
 }
 
+// We no combine the loaded task options with the ones defined in config above
 grunt.util._.extend( config, loadConfig( "./tasks/options/" ) );
 
 grunt.initConfig( config );
+grunt.loadTasks( "tasks" );
 grunt.loadNpmTasks( "perfjankie" );
 grunt.registerTask( "default", [ "jshint", "jscs" ] );
 grunt.registerTask( "build", [ "sass", "autoprefixer" ] );
-grunt.registerTask( "perf", [ "start-selenium-server", "connect:perf", "perfjankie" ] );
+grunt.registerTask( "perf", [
+	"start-selenium-server",
+	"connect:perf",
+	"perfjankie",
+	"stop-selenium-server"
+]);
 };

@@ -5,8 +5,14 @@ module.exports = {
 	"comparison": {
 		options: {
 			repeat: 2,
-			selenium: "ondemand.saucelabs.com",
-			browsers: "chrome",
+			selenium: {
+				hostname: "localhost",
+				port: "4444"
+			},
+			browsers: [
+				"chrome",
+				"firefox"
+			],
 			couch: {
 				server: "http://localhost:5984",
 				database: "css-performance",
