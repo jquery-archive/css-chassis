@@ -33,6 +33,7 @@ $ grunt build
 ## Setup
 
 * Follow the steps for building above
+* Create directories for saving external files (`mkdir -p external/selenium`)
 * Ensure you have both firefox and chrome browsers installed
 * Download CouchDB from [http://couchdb.apache.org/#download](http://couchdb.apache.org/#download)
 * Start CouchDB
