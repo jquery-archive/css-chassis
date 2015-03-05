@@ -27,3 +27,28 @@ Once you've cloned Chassis to your machine, run `npm install` and `grunt build` 
 $ npm install
 $ grunt build
 ```
+
+### Performance testing
+
+## Setup
+
+* Follow the steps for building above
+* Ensure you have both firefox and chrome browsers installed
+* Download CouchDB from [http://couchdb.apache.org/#download](http://couchdb.apache.org/#download)
+* Start CouchDB
+
+## Running the tests
+
+Once you have completed the setup run `grunt perf` from the root of the Chassis directory.
+```
+$ grunt perf
+```
+
+####DO NOT USE YOUR COMPUTER WHILE TESTS ARE RUNNING
+
+When the tests complete go to [http://localhost:5984/css-performance/_design/site/index.html#/page-select](http://localhost:5984/css-performance/_design/site/index.html#/page-select) to view results
+
+## Viewing the test pages
+
+Follow the steps above to build. Once that is complete run `grunt connect:dev` from the root of the Chassis directory. This will start a connect server that will run until you stop it. Then go to http://localhost:4200/framework/{framework name}/component/{component name}/count/{ # of components to render}/ and you can see the generated test page.
+
