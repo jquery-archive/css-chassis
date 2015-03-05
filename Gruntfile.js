@@ -95,7 +95,7 @@ var config = {
 			},
 			svg: {
 				files: [ "svg-source/**/*.svg" ],
-				tasks: [ "svgmin", "svgstore" ],
+				tasks: [ "svg" ],
 				options: {
 					spawn: false
 				}
@@ -128,11 +128,12 @@ grunt.initConfig( config );
 grunt.loadTasks( "tasks" );
 grunt.loadNpmTasks( "perfjankie" );
 grunt.registerTask( "default", [ "jshint", "jscs" ] );
-grunt.registerTask( "build", [ "sass", "autoprefixer" ] );
+grunt.registerTask( "build", [ "svg", "sass", "autoprefixer" ] );
 grunt.registerTask( "perf", [
 	"start-selenium-server",
 	"connect:perf",
 	"perfjankie",
 	"stop-selenium-server"
 ]);
+grunt.registerTask( "svg", [ "svgmin", "svgstore" ] );
 };
