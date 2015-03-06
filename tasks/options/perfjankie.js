@@ -28,7 +28,11 @@ module.exports = {
 				"http://localhost:4200/framework/jquery-ui-1-12/component/button/count/1000/" +
 					"jquery-ui-1-12:button",
 				"http://localhost:4200/framework/bootstrap/component/button/count/1000/" +
-					"bootstrap:button"
+					"bootstrap:button",
+				"http://localhost:4200/framework/topcoat/component/button/count/1000/" +
+					"topcoat:button",
+				"http://localhost:4200/framework/topcoat-mobile/component/button/count/1000/" +
+					"topcoat-mobile:button"
 			]
 		}
 	}
