@@ -5,55 +5,48 @@ module.exports = {
     ],
     button: {
         generator: function( options ) {
-            // We need to check whether its a normal button or icon button, as markup and type differs
-            if ( options.type=="text" ) {
+            var button = "<button class='";
+            var icon = "";
+            var buttonText = " Button";
+            var buttonClass = 'topcoat' + options.type + '-button'+ options.size;
 
-                var button = "<button class='topcoat-button"+ options.size + options.state+ "' >";
-                if ( options.icon ) {
-                    button = button + "<span class='topcoat-icon icomatic'>" + options.icon
-                        + "</span>";
-                }
-                return button + " Button </button>";
+            //Icon Buttons donot support the cta button type
+            if( options.type !== '-icon' || options.state !== '--cta' ) {
+                buttonClass = buttonClass + options.state;
             }
-            else {
-                //If it is a Icon button we need to always add icon
-                if ( !options.icon ) {
-                    options.icon = ""
+            button = button + buttonClass + "'>";
+
+            //Add icon only if it is a icon-button or there is an icon set
+            if( options.icon !== "" || options.type === "-icon" ) {
+                icon = "<span class='";
+                iconClass="topcoat-icon";
+
+                //If it is an icon button, add size to class and reset buttonText
+                if( options.type === "-icon" ) {
+                    buttonText = "";
+                    iconClass = iconClass+options.size;
                 }
-
-                //Icon Buttons donot support the cta button type, hence check and remove it
-                if( options.state === '--cta' ) {
-                    options.state=''
-                }
-
-                var button = "<button class='topcoat-icon-button"+ options.size +
-                    options.state+ "' >" + "<span class='topcoat-icon" + options.size +
-                    options.state + " icomatic'>" + options.icon + "</span></button>";
-
-                return button ;
-
+                icon = icon + iconClass +" icomatic'>" + options.icon + "</span>";
             }
+            return button + icon + buttonText + "</button>";
         },
         variations: {
             type: [
-                "text",
-                "icon",
+                "",
+                "-icon",
             ],
-
             size: [
                 "",
                 "--large",
             ],
-
             state: [
                 "",
                 "--cta",
                 "--quiet",
 
             ],
-
             icon: [
-                false,
+                "",
                 "location",
                 "home",
                 "alert"
@@ -61,5 +54,4 @@ module.exports = {
 
         }
     },
-
 };
