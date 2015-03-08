@@ -28,7 +28,9 @@ module.exports = {
 				"http://localhost:4200/framework/jquery-ui-1-12/component/button/count/1000/" +
 					"jquery-ui-1-12:button",
 				"http://localhost:4200/framework/bootstrap/component/button/count/1000/" +
-					"bootstrap:button"
+					"bootstrap:button",
+				"http://localhost:4200/framework/semantic-ui/component/button/count/1000/" +
+					"semantic-ui:button"
 			]
 		}
 	}
