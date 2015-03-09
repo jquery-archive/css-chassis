@@ -2,32 +2,26 @@ module.exports = {
 	css: [ "//cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.1/semantic.min.css" ],
 	button: {
 		generator: function( options ) {
-			var button = "<div class='ui button " + options.size + " " + options.colors + "' >";
+			var button = "<button class='ui button " + options.state + " " + options.type +
+				" " + options.size + " " + options.color + " " + options.misc + "' >";
 			if ( options.icon ) {
 				button = button + "<i class='icon " + options.icon + "'></i>";
 			}
-			return button + " Button </div>";
+			return button + " Button </button>";
 		},
 		variations: {
 			state: [
-				//"loading",
+				"active",
 				"disabled",
-				"active"
+				"loading"
 			],
-			types: [
+			type: [
+				"",
 				"basic",
 				"inverted"
 			],
-			social: [
-				"facebook",
-				"twitter",
-				"google plus",
-				"vk",
-				"linkedin",
-				"instagram",
-				"youtube"
-			],
 			icon: [
+				false,
 				"cloud",
 				"left",
 				"center",
@@ -39,6 +33,7 @@ module.exports = {
 				"user"
 			],
 			size: [
+				"",
 				"mini",
 				"tiny",
 				"small",
@@ -48,7 +43,8 @@ module.exports = {
 				"huge",
 				"massive"
 			],
-			colors: [
+			color: [
+				"",
 				"black",
 				"yellow",
 				"green",
@@ -59,34 +55,12 @@ module.exports = {
 				"pink",
 				"teal"
 			],
-			compact: [
+			misc: [
 				"",
-				"compact"
-			],
-			toggle: [
-				"",
+				"compact",
+				"circular",
+				"fluid",
 				"toggle"
-			],
-			feedback:[
-				"",
-				"positive",
-				"negative"
-				],
-			fluid:[
-				"",
-				"fluid"
-			],
-			circular:[
-				"",
-				"circular"
-			],
-			attached:[
-				"",
-				"attached",
-				"top attached",
-				"bottom attached",
-				"left attached",
-				"right attached"
 			]
 		}
 	}
