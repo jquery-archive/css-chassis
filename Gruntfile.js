@@ -16,7 +16,20 @@ var config = {
 						"ie >= 8"
 					]
 				},
-				src: "css/*.css"
+				src: "dist/css/*.css"
+			}
+		},
+		csscomb: {
+			dist: {
+				files: {
+					"dist/css/chassis.css": "dist/css/style.css"
+				}
+			},
+			scss: {
+				files: [ {
+					expand: true,
+					src: [ "scss/*.scss", "scss/**/*.scss" ]
+				} ]
 			}
 		},
 		cssmin: {
@@ -26,7 +39,7 @@ var config = {
 			},
 			target: {
 				files: {
-					"css/chassis.min.css": "css/style.min.css"
+					"dist/css/chassis.css": [ "dist/css/style.min.css" ]
 				}
 			}
 		},
@@ -34,10 +47,10 @@ var config = {
 			src: [ "css/*.css" ]
 		},
 		jscs: {
-			all: [ "*.js", "performance/*.js", "performance/frameworks/*.js" ]
+			all: [ "*.js", "performance/*.js", "performance/**/*.js" ]
 		},
 		jshint: {
-			files: [ "*.js", "performance/*.js", "performance/frameworks/*.js" ],
+			files: [ "*.js", "performance/*.js", "performance/**/*.js" ],
 			options: {
 				jshintrc: ".jshintrc"
 			}
