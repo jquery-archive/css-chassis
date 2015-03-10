@@ -24,7 +24,7 @@ module.exports = {
 				button += " dijitDisplayNone";
 			}
 
-			button += " '>cut</span></span></span>" +
+			button += " '>button</span></span></span>" +
 				"<input type='button' value='' class='dijitOffScreen' " +
 				"aria-hidden='true'></span></span>";
 			return button;
