@@ -16,14 +16,41 @@ var config = {
 						"ie >= 8"
 					]
 				},
-				src: "*.css"
+				src: "dist/css/*.css"
 			}
 		},
+		csscomb: {
+			dist: {
+				files: {
+					"dist/css/chassis.css": "dist/css/chassis.css"
+				}
+			},
+			scss: {
+				files: [ {
+					expand: true,
+					src: [ "scss/**/*.scss" ]
+				} ]
+			}
+		},
+		cssmin: {
+			options: {
+				report: "gzip",
+				sourceMap: true
+			},
+			target: {
+				files: {
+					"dist/css/chassis.min.css": "dist/css/chassis.css"
+				}
+			}
+		},
+		csslint: {
+			src: [ "dist/css/*.css" ]
+		},
 		jscs: {
-			all: [ "*.js", "performance/*.js", "performance/frameworks/*.js" ]
+			all: [ "*.js", "performance/**/*.js" ]
 		},
 		jshint: {
-			files: [ "*.js", "performance/*.js", "performance/frameworks/*.js" ],
+			files: [ "*.js", "performance/**/*.js" ],
 			options: {
 				jshintrc: ".jshintrc"
 			}
@@ -32,24 +59,24 @@ var config = {
 			dist: {
 				options: {
 					sourceMap: true,
-					outputStyle: "compressed"
+
+					// This actually does nested until libsass updates to support expanded
+					outputStyle: "expanded"
 				},
-				files: [ {
-					expand: true,
-					cwd: "scss",
-					src: [ "*.scss" ],
-					dest: "",
-					ext: ".css"
-				} ]
+				files: {
+					"dist/css/chassis.css": "scss/style.scss"
+				}
 			}
 		},
+
 		// Minifies SVGs
 		svgmin: {
 			options: {
 				plugins: [
 					{
 						removeViewBox: false
-					}, {
+					},
+					{
 						removeUselessStrokeAndFill: false
 					}
 				]
@@ -127,8 +154,9 @@ grunt.util._.extend( config, loadConfig( "./tasks/options/" ) );
 grunt.initConfig( config );
 grunt.loadTasks( "tasks" );
 grunt.loadNpmTasks( "perfjankie" );
-grunt.registerTask( "default", [ "jshint", "jscs" ] );
-grunt.registerTask( "build", [ "svg", "sass", "autoprefixer" ] );
+grunt.registerTask( "default", [ "test" ] );
+grunt.registerTask( "test", [ "build", "jshint", "jscs", "csslint" ] );
+grunt.registerTask( "build", [ "svg", "sass", "csscomb", "cssmin" ] );
 grunt.registerTask( "perf", [
 	"start-selenium-server",
 	"connect:perf",
