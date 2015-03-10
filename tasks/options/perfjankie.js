@@ -34,7 +34,9 @@ module.exports = {
 				"http://localhost:4200/framework/topcoat-mobile/component/button/count/1000/" +
 					"topcoat-mobile:button",
 				"http://localhost:4200/framework/semantic-ui/component/button/count/1000/" +
-					"semantic-ui:button"
+					"semantic-ui:button",
+				"http://localhost:4200/framework/dojo/component/button/count/1000/" +
+					"dojo:button"
 			]
 		}
 	}
