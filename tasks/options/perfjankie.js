@@ -32,7 +32,9 @@ module.exports = {
 				"http://localhost:4200/framework/topcoat/component/button/count/1000/" +
 					"topcoat:button",
 				"http://localhost:4200/framework/topcoat-mobile/component/button/count/1000/" +
-					"topcoat-mobile:button"
+					"topcoat-mobile:button",
+				"http://localhost:4200/framework/dojo/component/button/count/1000/" +
+					"dojo:button"
 			]
 		}
 	}
