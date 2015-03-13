@@ -16,8 +16,22 @@ var config = {
 						"ie >= 8"
 					]
 				},
-				src: "*.css"
+				src: "css/*.css"
 			}
+		},
+		cssmin: {
+			options: {
+				report: "gzip",
+				sourceMap: true
+			},
+			target: {
+				files: {
+					"css/chassis.min.css": "css/style.min.css"
+				}
+			}
+		},
+		csslint: {
+			src: [ "css/*.css" ]
 		},
 		jscs: {
 			all: [ "*.js", "performance/*.js", "performance/frameworks/*.js" ]
@@ -29,16 +43,33 @@ var config = {
 			}
 		},
 		sass: {
-			dist: {
+			min: {
 				options: {
 					sourceMap: true,
+					outFile: "/css/chassis.css",
 					outputStyle: "compressed"
 				},
 				files: [ {
 					expand: true,
 					cwd: "scss",
 					src: [ "*.scss" ],
-					dest: "",
+					dest: "dist/css/",
+					ext: ".min.css"
+				} ]
+			},
+			dist: {
+				options: {
+					sourceMap: false,
+					outFile: "/css/chassis.css",
+
+					// This actually does nested until libsass updates to support expanded
+					outputStyle: "expanded"
+				},
+				files: [ {
+					expand: true,
+					cwd: "scss",
+					src: [ "*.scss" ],
+					dest: "dist/css/",
 					ext: ".css"
 				} ]
 			}
@@ -127,8 +158,9 @@ grunt.util._.extend( config, loadConfig( "./tasks/options/" ) );
 grunt.initConfig( config );
 grunt.loadTasks( "tasks" );
 grunt.loadNpmTasks( "perfjankie" );
-grunt.registerTask( "default", [ "jshint", "jscs" ] );
-grunt.registerTask( "build", [ "svg", "sass", "autoprefixer" ] );
+grunt.registerTask( "default", [ "build", "test" ] );
+grunt.registerTask( "test", [ "build", "jshint", "jscs", "csslint" ] );
+grunt.registerTask( "build", [ "svg", "sass", "autoprefixer", "cssmin" ] );
 grunt.registerTask( "perf", [
 	"start-selenium-server",
 	"connect:perf",
