@@ -2,6 +2,12 @@ module.exports = function( grunt ) {
 require( "load-grunt-tasks" )( grunt );
 
 var config = {
+		htmllint: {
+			dist: {
+				options: {},
+				src: [ "demos/*.html" ]
+			}
+		},
 		autoprefixer: {
 			dist: {
 				options: {
@@ -44,7 +50,7 @@ var config = {
 			}
 		},
 		csslint: {
-			src: [ "dist/css/chassis.lint.css", "dist/css/chassis.lint.css" ]
+			src: [ "dist/css/chassis.lint.css", "dist/css/chassis.lint.css", "demos/demos.css" ]
 		},
 		jscs: {
 			all: [ "*.js", "performance/**/*.js" ]
@@ -181,7 +187,7 @@ grunt.initConfig( config );
 grunt.loadTasks( "tasks" );
 grunt.loadNpmTasks( "perfjankie" );
 grunt.registerTask( "default", [ "test" ] );
-grunt.registerTask( "test", [ "build", "jshint", "jscs", "csslint" ] );
+grunt.registerTask( "test", [ "build", "jshint", "jscs", "csslint", "htmllint" ] );
 grunt.registerTask( "build", [ "svg", "sass", "csscomb", "cssmin" ] );
 grunt.registerTask( "perf", [
 	"start-selenium-server",
