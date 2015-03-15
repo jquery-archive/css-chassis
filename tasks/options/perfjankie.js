@@ -39,8 +39,8 @@ module.exports = {
 					"dojo:button",
 				"http://localhost:4200/framework/kendo-ui/component/button/count/1000/" +
 					"kendo-ui:button",
-				"http://localhost:4200/framework/kendo-ui/component/button/count/1000/" +
-					"kendo-ui:button"
+				"http://localhost:4200/framework/kendo-ui-mobile/component/button/count/1000/" +
+					"kendo-ui-mobile:button"
 			]
 		}
 	}
