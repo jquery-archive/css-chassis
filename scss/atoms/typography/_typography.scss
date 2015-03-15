@@ -5,3 +5,120 @@
 @import
 	"variables",
 	"functions";
+
+// TODO probably should do the import in the `head` in case character sets need to change dynamically
+@import url( http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,400italic,700italic );
+
+body {
+	font: $normal #{ map-get( $root-font, font-size ) }/1.5 $sans-serif;
+
+	@media ( max-width: 800px ) {
+		font-size: 16px;
+	}
+	@media ( max-width: 500px ) {
+		font-size: 14px;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 600;
+	line-height: 1;
+}
+
+h1 {
+	font-size: em( 67px ); // 54px works nicely, as well
+	font-weight: 700;
+}
+
+h2 {
+	font-size: em( 36px );
+}
+
+h3 {
+	font-size: em( 30px );
+}
+
+h4 {
+	font-size: em( 24px );
+}
+
+h5 {
+	font-size: em( 20px );
+}
+
+h6 {
+	font-size: em( 16px );
+	text-transform: uppercase;
+}
+
+// ==========================================================================
+// Block elements
+// ==========================================================================
+
+hr {
+	border: 0;
+	border-bottom: 1px solid #999;
+}
+
+blockquote {
+	margin: 0;
+	padding-left: 1em;
+	position: relative;
+	border-left: 4px solid #eee;
+	font-style: italic;
+}
+
+pre {
+	padding: 16px 20px;
+	background: #f7f7f7;
+	font: normal 12px/1.4 $monospace;
+}
+
+// ==========================================================================
+// Lists
+// ==========================================================================
+
+dt {
+	font-weight: 600;
+}
+
+dd {
+	margin: 0;
+}
+
+// ==========================================================================
+// Inline elements
+// ==========================================================================
+
+a {
+	color: inherit;
+	text-decoration: none;
+	background-image: linear-gradient( to bottom, rgba( 0, 0, 0, 0 ) 75%, #000 50% );
+	background-repeat: repeat-x;
+	background-size: 2px 2px;
+	background-position: 0 em( 22px );
+	outline: 0;
+
+	&:hover,
+	&:active,
+	&:focus {
+		background-size: 2px 6px;
+		background-position: 0 em( 18px );
+	}
+	@media not all,
+	only screen and ( min-resolution: 2dppx ),
+	only screen and ( -webkit-min-device-pixel-ratio: 2 ) {
+		background-image: linear-gradient( to bottom, rgba( 0, 0, 0, 0 ) 75%, #000 75% );
+		background-repeat: repeat-x;
+	}
+}
+
+b,
+strong {
+	font-weight: $bold;
+}
