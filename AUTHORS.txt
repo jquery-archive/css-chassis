@@ -6,3 +6,5 @@ Chris Bracco <chris@cbracco.me>
 Alexander Schmitz <arschmitz@gmail.com>
 Anne-Gaelle Colom <coloma@westminster.ac.uk>
 Michael Arestad <marestad@gmail.com>
+Rohit Mulange <rohit@rohit.codes>
+Prasun Anand <prasunanand.bitsp@gmail.com>
