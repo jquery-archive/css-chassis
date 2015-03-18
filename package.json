@@ -59,7 +59,7 @@
 		"grunt-git-authors": "2.0.0",
 		"grunt-html": "1.6.0",
 		"grunt-jscs": "0.6.2",
-		"grunt-sass": "0.17.0",
+		"grunt-sass": "0.18.1",
 		"grunt-selenium-server": "0.1.2",
 		"grunt-svgmin": "2.0.0",
 		"grunt-svgstore": "0.5.0",
