@@ -1,5 +1,5 @@
 module.exports = {
-	css: [ "//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" ],
+	css: [ "//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" ],
 	button: {
 		generator: function( options ) {
 			var button = "<button class='btn " + options.state + " " + options.size + "' >";
