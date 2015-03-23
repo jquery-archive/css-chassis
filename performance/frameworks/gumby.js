@@ -5,9 +5,9 @@ module.exports = {
 	],
 	button: {
 		generator: function( options ) {
-			var button = "<div class='btn " + options.state + options.size + options.style + 
-			options.design;
-			if (options.iconPosition && options.icon) {
+			var button = "<div class='btn " + options.state + options.size + options.style;
+			button += options.design;
+			if ( options.iconPosition && options.icon ) {
 				button += " entypo" + options.iconPosition + options.icon;
 			}
 			return button + "'><a href='#'>Button</a></div>";
