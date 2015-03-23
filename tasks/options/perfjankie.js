@@ -36,7 +36,11 @@ module.exports = {
 				"http://localhost:4200/framework/semantic-ui/component/button/count/1000/" +
 					"semantic-ui:button",
 				"http://localhost:4200/framework/dojo/component/button/count/1000/" +
-					"dojo:button"
+					"dojo:button",
+				"http://localhost:4200/framework/gumby/component/button/count/1000/" +
+					"gumby:button",
+				"http://localhost:4200/framework/skeleton/component/button/count/1000/" +
+					"skeleton:button"
 			]
 		}
 	}
