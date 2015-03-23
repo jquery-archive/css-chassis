@@ -39,8 +39,8 @@ module.exports = {
 					"dojo:button",
 				"http://localhost:4200/framework/gumby/component/button/count/1000/" +
 					"gumby:button",
-        "http://localhost:4200/framework/skeleton/component/button/count/1000/" +
-          "skeleton:button"
+				"http://localhost:4200/framework/skeleton/component/button/count/1000/" +
+					"skeleton:button"
 			]
 		}
 	}
