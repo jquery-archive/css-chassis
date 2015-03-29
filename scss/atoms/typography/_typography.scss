@@ -6,9 +6,6 @@
 	"variables",
 	"functions";
 
-// TODO probably should do the import in the `head` in case character sets need to change dynamically
-@import url( http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,400italic,700italic );
-
 body {
 	font: $normal #{ map-get( $root-font, font-size ) }/1.5 $sans-serif;
 
@@ -20,39 +17,40 @@ body {
 	}
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-weight: 600;
-	line-height: 1;
-}
-
 h1 {
 	font-size: em( 67px ); // 54px works nicely, as well
 	font-weight: 700;
+	line-height: 1;
 }
 
 h2 {
 	font-size: em( 36px );
+	font-weight: 600;
+	line-height: 1;
 }
 
 h3 {
 	font-size: em( 30px );
+	font-weight: 600;
+	line-height: 1;
 }
 
 h4 {
 	font-size: em( 24px );
+	font-weight: 600;
+	line-height: 1;
 }
 
 h5 {
 	font-size: em( 20px );
+	font-weight: 600;
+	line-height: 1;
 }
 
 h6 {
 	font-size: em( 16px );
+	font-weight: 600;
+	line-height: 1;
 	text-transform: uppercase;
 }
 
@@ -69,7 +67,7 @@ blockquote {
 	margin: 0;
 	padding-left: 1em;
 	position: relative;
-	border-left: 4px solid #eee;
+	border-left: 4px solid #eee; // TODO replace with color variable
 	font-style: italic;
 }
 
@@ -121,4 +119,11 @@ a {
 b,
 strong {
 	font-weight: $bold;
+}
+
+code {
+	background: #f2f2f2; // TODO replace with color variable
+	font-size: em( 16px );
+	padding: em( 4px, 16px ) em( 8px, 16px );
+	border-radius: 3px;
 }
