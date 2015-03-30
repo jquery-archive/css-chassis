@@ -44,7 +44,7 @@ var config = {
 			}
 		},
 		csslint: {
-			src: [ "dist/css/*.css" ]
+			src: [ "dist/css/chassis.lint.css", "dist/css/chassis.lint.css" ]
 		},
 		jscs: {
 			all: [ "*.js", "performance/**/*.js" ]
@@ -55,7 +55,20 @@ var config = {
 				jshintrc: ".jshintrc"
 			}
 		},
+		npmcopy: {
+			options: {
+				destPrefix: "external"
+			},
+			normalize: {
+				files: {
+					"normalize.css/LICENSE.md": "normalize.css/LICENSE.md",
+					"normalize.css/normalize.scss": "normalize.css/normalize.css"
+				}
+			}
+		},
 		sass: {
+
+			// This is the same as lint below except including normalize.css
 			dist: {
 				options: {
 					sourceMap: true,
@@ -65,6 +78,19 @@ var config = {
 				},
 				files: {
 					"dist/css/chassis.css": "scss/style.scss"
+				}
+			},
+
+			// This is everything except normalize.css which won't pass our lint settings
+			lint: {
+				options: {
+					sourceMap: true,
+
+					// This actually does nested until libsass updates to support expanded
+					outputStyle: "expanded"
+				},
+				files: {
+					"dist/css/chassis.lint.css": "scss/lint.scss"
 				}
 			}
 		},
