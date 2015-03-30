@@ -1,0 +1,18 @@
+// ==========================================================================
+// CSS Chassis
+//
+// This contains all the chassis scss execpt normalize.css which will not pass our linter
+// we use this file to create a distriubable for linting style.scss contains this file plus
+// normalize.css
+// ==========================================================================
+
+@import
+	"_utilities/clearfix",
+	"_utilities/colors";
+
+@import
+	"atoms/icons/icons",
+	"atoms/typography/typography";
+
+@import
+	"views/main";
