@@ -1,8 +1,14 @@
 // ==========================================================================
 // CSS Chassis
 // ==========================================================================
-// This just add normalize to the build see lint.scss for expaination.
 
 @import
-	"external/normalize.css/normalize.scss",
-	"lint.scss";
+	"_utilities/clearfix",
+	"_utilities/colors";
+
+@import
+	"atoms/icons/icons",
+	"atoms/typography/typography";
+
+@import
+	"views/main";
