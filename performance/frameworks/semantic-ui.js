@@ -57,16 +57,16 @@ module.exports = {
 	},
 	checkbox: {
 		generator: function( options ) {
-			var checkbox = "<div class='ui checkbox '",
+			var checkbox = "<div class='ui checkbox",
 				input = "<input type='checkbox'";
 			if ( options.checked ) {
-				checkbox += "checked";
+				checkbox += " checked";
 				input += " checked='checked'";
 			}
 			if ( options.disabled ) {
 				input += " disabled='disabled'";
 			}
-			return checkbox + ">" + input + " />" + "<label>checkbox</label></div>";
+			return checkbox + "'>" + input + " />" + "<label>checkbox</label></div>";
 
 		},
 		variations: {
