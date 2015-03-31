@@ -42,7 +42,9 @@ module.exports = {
 				"http://localhost:4200/framework/topcoat-mobile/component/checkbox/count/1000/" +
 					"topcoat-mobile:checkbox-widget",
 				"http://localhost:4200/framework/semantic-ui/component/checkbox/count/1000/" +
-					"semantic-ui:checkbox-widget"
+					"semantic-ui:checkbox-widget",
+				"http://localhost:4200/framework/dojo/component/checkbox/count/1000/" +
+					"dojo:checkbox-widget"
 			]
 		}
 	}
