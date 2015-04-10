@@ -4,7 +4,8 @@
 
 @import
 	"variables",
-	"functions";
+	"functions",
+	"mixins";
 
 body {
 	font: $normal #{ map-get( $root-font, font-size ) }/1.5 $sans-serif;
@@ -95,25 +96,10 @@ dd {
 
 a {
 	color: inherit;
-	text-decoration: none;
-	background-image: linear-gradient( to bottom, rgba( 0, 0, 0, 0 ) 75%, #000 50% );
-	background-repeat: repeat-x;
-	background-size: 2px 2px;
-	background-position: 0 em( 22px );
-	outline: 0;
+}
 
-	&:hover,
-	&:active,
-	&:focus {
-		background-size: 2px 6px;
-		background-position: 0 em( 18px );
-	}
-	@media not all,
-	only screen and ( min-resolution: 2dppx ),
-	only screen and ( -webkit-min-device-pixel-ratio: 2 ) {
-		background-image: linear-gradient( to bottom, rgba( 0, 0, 0, 0 ) 75%, #000 75% );
-		background-repeat: repeat-x;
-	}
+p > a {
+	@include slim-underline;
 }
 
 b,
