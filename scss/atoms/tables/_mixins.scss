@@ -1,0 +1,11 @@
+/*
+* ==========================================================================
+* Table mixins
+* ==========================================================================
+*/
+@mixin table($margin, $font-size) {
+	display: table;
+	margin: $margin;
+	font-size: $font-size;
+	text-align: left;
+}

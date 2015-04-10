@@ -34,7 +34,7 @@ chassis.typography = {
 		name: "Line Height",
 		value: lineHeight
 	},
-	"font-default": {
+	"default": {
 		name: "Type Style - Default",
 		value: {
 			"color": color,
