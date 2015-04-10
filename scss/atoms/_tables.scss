@@ -1,0 +1,68 @@
+// ==========================================================================
+// Typography
+// ==========================================================================
+
+table {
+	width: 100%;
+	margin-bottom: em( 20px, 16px );
+	font-size: em( 16px );
+	text-align: left;
+}
+
+thead {
+	border-bottom: 1px solid #eee;
+
+	> tr > th {
+		border-top: 0;
+	}
+}
+
+td {
+	border-top: 1px solid #eee;
+	padding: em( 12px, 16px );
+}
+
+th {
+	border-top: 1px solid #eee;
+	padding: em( 12px, 12px );
+	color: #666;
+	font-weight: 400;
+	font-size: em( 12px, 16px );
+	white-space: nowrap;
+}
+
+.table--responsive {
+	position: relative;
+	z-index: 1;
+	margin-bottom: em( 20px );
+	border: 0;
+	background: #fff no-repeat;
+	background-image: radial-gradient( farthest-side at 0 50%,rgba( 0, 0, 0, .2 ), transparent ), radial-gradient( farthest-side at 100% 50%, rgba( 0, 0, 0, .2 ), transparent );
+	background-position: 0 0, 100% 0;
+	background-size: 10px 100%;
+	overflow: auto;
+
+	table {
+		position: relative;
+		margin-bottom: 0;
+
+		&:before,
+		&:after {
+			content: "";
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			z-index: -1;
+			margin: 0 -30px 0 0;
+			width: 30px;
+			background: linear-gradient( to right, #fff, #fff 30%, rgba( 255, 255, 255, 0 ) );
+		}
+		&:after {
+			left: auto;
+			right: 0;
+			margin: 0 0 0 -30px;
+			background: linear-gradient( to right, rgba( 255, 255, 255, 0 ), #fff 70%, #fff );
+		}
+	}
+}

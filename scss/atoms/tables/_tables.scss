@@ -1,0 +1,36 @@
+/*
+* ==========================================================================
+* Tables
+* ==========================================================================
+*/
+
+@import
+	"dist/chassis",
+	"mixins";
+
+table {
+	margin: map-get($table-base, margin);
+	font-size: map-get($table-base, font-size);
+	text-align: left;
+}
+
+thead {
+	border-bottom: map-get($table-base, border);
+	> tr > th {
+		border-top: 0;
+	}
+}
+
+td {
+	border-top: map-get($table-base, border);
+	padding: map-get($table-base, padding);
+}
+
+th {
+	border-top: map-get($table-base, border);
+	padding: map-get($table-base, padding);
+	color: map-get($text, light);
+	font-weight: 400;
+	font-size: map-get($table-base, thead-font-size);
+	white-space: nowrap;
+}
