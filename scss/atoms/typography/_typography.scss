@@ -95,10 +95,21 @@ dd {
 // ==========================================================================
 
 a {
-	color: inherit;
+	//TODO add colors
+
+	&:hover,
+	&:active,
+	&:focus {
+		//TODO add colors
+	}
+	&:visited {
+		// TODO add colors
+	}
 }
 
 p > a {
+	// Good example of slim underline. We'll want to use this on body copy/quotes
+	color: inherit;
 	@include slim-underline;
 }
 
