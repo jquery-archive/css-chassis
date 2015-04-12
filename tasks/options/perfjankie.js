@@ -44,7 +44,9 @@ module.exports = {
 				"http://localhost:4200/framework/semantic-ui/component/checkbox/count/1000/" +
 					"semantic-ui:checkbox-widget",
 				"http://localhost:4200/framework/dojo/component/checkbox/count/1000/" +
-					"dojo:checkbox-widget"
+					"dojo:checkbox-widget",
+				"http://localhost:4200/framework/jquery-ui-1-12/component/checkbox/count/1000/" +
+					"jquery-ui-1-12:checkbox-widget"
 			]
 		}
 	}
