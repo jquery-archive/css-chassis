@@ -50,7 +50,7 @@ var config = {
 			}
 		},
 		csslint: {
-			src: [ "dist/css/chassis.lint.css", "dist/css/chassis.lint.css" ]
+			src: [ "dist/css/chassis.lint.css", "dist/css/chassis.lint.css", "demos/demos.css" ]
 		},
 		jscs: {
 			all: [ "*.js", "performance/**/*.js" ]
