@@ -5,7 +5,7 @@ var config = {
 		htmllint: {
 			dist: {
 				options: {},
-				src: [ 'demos/*.html' ]
+				src: [ "demos/*.html" ]
 			}
 		},
 		autoprefixer: {
