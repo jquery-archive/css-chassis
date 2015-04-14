@@ -59,6 +59,7 @@
     "grunt-csscomb": "3.0.0",
     "grunt-git-authors": "2.0.0",
     "grunt-html": "1.6.0",
+    "grunt-htmllint": "^0.2.7",
     "grunt-jscs": "0.6.2",
     "grunt-npmcopy": "0.1.0",
     "grunt-sass": "0.18.1",
