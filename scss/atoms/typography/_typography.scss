@@ -5,3 +5,20 @@
 @import
 	"variables",
 	"functions";
+
+meter {
+	-webkit-appearance: none;
+	width: 550px;
+	height: 25px;
+}
+
+meter::-webkit-meter-bar {
+	width: 550px;
+	height: 25px;
+	box-shadow: inset 0px 0px 7px -2px rgba(0,0,0,0.35);
+	background:#f1f1f1;
+}
+
+meter::-webkit-meter-optimum-value {
+	background: #37BFC9;
+}
