@@ -12,9 +12,9 @@ meter {
 	height: 25px;
 }
 
-.meter::-webkit-meter-bar,.MultiColor::-webkit-meter-bar {
+.meter::-webkit-meter-bar, .MultiColor::-webkit-meter-bar {
 	box-shadow: inset 0px 0px 7px -2px   rgba(0,0,0,0.35);
-	background:#f1f1f1;
+	background: #f1f1f1;
 }
 
 .meter::-webkit-meter-optimum-value {
@@ -24,27 +24,26 @@ meter {
 
 .MultiColor::-webkit-meter-optimum-value {
 	background-image: linear-gradient(
-		90deg, 
-		#3ee3ef 10%, 
-		#3ad5e0 10%,
-		#3ad5e0 20%,
-		#34cdd8 20%,
-		#34cdd8 30%,
-		#36c6d1 30%,
-		#36c6d1 40%,
-		#30bfc9 40%,
-		#30bfc9 50%,
-		#2ebac1 50%, 
-		#2ebac1 60%,
-		#2fb8bf 60%,
-		#2fb8bf 70%,
-		#2eb3ba 70%,
-		#2eb3ba 80%,
-		#30abb2 80%,
-		#30abb2 90%,
-		#2ea7ad 90%,    
-		#2ea7ad 100%
-  );
-
+	90deg, 
+	#3ee3ef 10%, 
+	#3ad5e0 10%,
+	#3ad5e0 20%,
+	#34cdd8 20%,
+	#34cdd8 30%,
+	#36c6d1 30%,
+	#36c6d1 40%,
+	#30bfc9 40%,
+	#30bfc9 50%,
+	#2ebac1 50%, 
+	#2ebac1 60%,
+	#2fb8bf 60%,
+	#2fb8bf 70%,
+	#2eb3ba 70%,
+	#2eb3ba 80%,
+	#30abb2 80%,
+	#30abb2 90%,
+	#2ea7ad 90%,    
+	#2ea7ad 100%
+	);
 	background-size: 100% 100%;
 }
