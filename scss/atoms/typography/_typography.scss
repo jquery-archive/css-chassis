@@ -6,23 +6,23 @@
 	"variables",
 	"functions";
 
-meter {  
+meter {
 	-webkit-appearance: none;
 	width: 550px;
 	height: 25px;
 }
 
-.meter::-webkit-meter-bar, .MultiColor::-webkit-meter-bar {
+.meter::-webkit-meter-bar, .multiColor::-webkit-meter-bar, .stripMeter::-webkit-meter-bar {
 	box-shadow: inset 0px 0px 7px -2px   rgba(0,0,0,0.35);
 	background: #f1f1f1;
 }
 
 .meter::-webkit-meter-optimum-value {
-	background: #37BFC9;
+	background: #37bfc9;
 }
 
 
-.MultiColor::-webkit-meter-optimum-value {
+.multiColor::-webkit-meter-optimum-value {
 	background-image: linear-gradient(
 		90deg, 
 		#3ee3ef 10%, 
@@ -45,5 +45,19 @@ meter {
 		#2ea7ad 90%,    
 		#2ea7ad 100%
 	);
+
 	background-size: 100% 100%;
 }
+
+.stripMeter::-webkit-meter-optimum-value{
+	background-image: linear-gradient(
+		135deg,
+		transparent,
+		transparent 33%,
+		#37bfc9 33%,
+		#37bfc9 66%,
+		transparent 66%
+	);
+	background-size: 50px 25px;
+}
+
