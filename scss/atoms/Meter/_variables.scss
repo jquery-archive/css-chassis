@@ -1,0 +1,20 @@
+/*
+* ========================================================================== 
+* meter variables																	  	
+* ==========================================================================
+*/
+$chassis-blue: #37bfc9;
+$meterbar-backgroundcolor: #f1f1f1;
+
+
+/* 
+* For multi color Meter bar
+* Scales $color's saturation value by $amount. $amount can be negative.
+* scale-saturation($color, $amount)
+*/
+
+/* This is the staring color. */
+$color: #3ee3ef ; 
+
+/* The starting percentage */ 
+$percentage: 0;
