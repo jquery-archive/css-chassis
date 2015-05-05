@@ -1,0 +1,114 @@
+/*
+* ========================================================================== 
+* meter																	  	
+* ==========================================================================
+*/
+
+@import
+	"variables";
+
+meter {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	width: 550px;
+	height: 25px;  
+	margin:10px;
+	display:block;  
+	box-shadow: inset 0 0 7px -2px rgba(0,0,0,0.35);
+	background: $meterbar-background-color;
+}
+
+.meter-simple::-webkit-meter-bar,
+.meter-multicolor::-webkit-meter-bar,
+.meter-strip::-webkit-meter-bar {
+	box-shadow: inset 0 0 7px -2px rgba(0,0,0,0.35);
+	background: $meterbar-background-color;
+}
+
+.meter-simple::-webkit-meter-optimum-value {
+	background: $chassis-blue;
+}
+
+
+.meter-multicolor::-webkit-meter-optimum-value {
+	background-image: linear-gradient(
+		90deg, 
+		adjust-saturation($color , $percentage)  10%, 
+		adjust-saturation($color , $percentage - 5%)  10%,
+		adjust-saturation($color , $percentage - 5%)  20%,
+		adjust-saturation($color , $percentage - 10%) 20%,
+		adjust-saturation($color , $percentage - 10%) 30%,
+		adjust-saturation($color , $percentage - 15%) 30%,
+		adjust-saturation($color , $percentage - 15%) 40%,
+		adjust-saturation($color , $percentage - 20%) 40%,
+		adjust-saturation($color , $percentage - 20%) 50%,
+		adjust-saturation($color , $percentage - 25%) 50%, 
+		adjust-saturation($color , $percentage - 25%) 60%,
+		adjust-saturation($color , $percentage - 30%) 60%,
+		adjust-saturation($color , $percentage - 30%) 70%,
+		adjust-saturation($color , $percentage - 35%) 70%,
+		adjust-saturation($color , $percentage - 35%) 80%,
+		adjust-saturation($color , $percentage - 40%) 80%,
+		adjust-saturation($color , $percentage - 40%) 90%,
+		adjust-saturation($color , $percentage - 45%) 90%,    
+		adjust-saturation($color , $percentage - 45%) 100%
+	);
+	background-size: 100% 100%;
+}
+
+.meter-strip::-webkit-meter-optimum-value {
+	background-image: linear-gradient(
+		135deg,
+		transparent,
+		transparent 33%,
+		$chassis-blue 33%,
+		$chassis-blue 66%,
+		transparent 66%
+	);
+	background-size: 50px 25px;
+}
+
+
+
+.meter-simple:-moz-meter-optimum::-moz-meter-bar {
+	background: $chassis-blue;
+}
+
+
+.meter-multicolor:-moz-meter-optimum::-moz-meter-bar {
+	background-image: linear-gradient(
+		90deg, 
+		adjust-saturation($color , $percentage)  10%, 
+		adjust-saturation($color , $percentage - 5%)  10%,
+		adjust-saturation($color , $percentage - 5%)  20%,
+		adjust-saturation($color , $percentage - 10%) 20%,
+		adjust-saturation($color , $percentage - 10%) 30%,
+		adjust-saturation($color , $percentage - 15%) 30%,
+		adjust-saturation($color , $percentage - 15%) 40%,
+		adjust-saturation($color , $percentage - 20%) 40%,
+		adjust-saturation($color , $percentage - 20%) 50%,
+		adjust-saturation($color , $percentage - 25%) 50%, 
+		adjust-saturation($color , $percentage - 25%) 60%,
+		adjust-saturation($color , $percentage - 30%) 60%,
+		adjust-saturation($color , $percentage - 30%) 70%,
+		adjust-saturation($color , $percentage - 35%) 70%,
+		adjust-saturation($color , $percentage - 35%) 80%,
+		adjust-saturation($color , $percentage - 40%) 80%,
+		adjust-saturation($color , $percentage - 40%) 90%,
+		adjust-saturation($color , $percentage - 45%) 90%,    
+		adjust-saturation($color , $percentage - 45%) 100%
+	);
+	background-size: 100% 100%;
+}
+
+.meter-strip:-moz-meter-optimum::-moz-meter-bar {
+	background-image: linear-gradient(
+		135deg,
+		transparent,
+		transparent 33%,
+		$chassis-blue 33%,
+		$chassis-blue 66%,
+		transparent 66%
+	);
+	background-size: 50px 25px;
+}
