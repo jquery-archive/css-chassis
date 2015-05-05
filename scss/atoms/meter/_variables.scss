@@ -4,7 +4,7 @@
 * ==========================================================================
 */
 $chassis-blue: #37bfc9;
-$meterbar-backgroundcolor: #f1f1f1;
+$meterbar-background-color: #f1f1f1;
 
 
 /* 
@@ -13,8 +13,8 @@ $meterbar-backgroundcolor: #f1f1f1;
 * scale-saturation($color, $amount)
 */
 
-/* This is the staring color. */
-$color: #3ee3ef ; 
+/* This is the staring color, whose the saturation increse with percentage. */
+$color: #3ee3ef; 
 
-/* The starting percentage */ 
+/* The starting percentage, which increse the saturation of the color. */ 
 $percentage: 0;
