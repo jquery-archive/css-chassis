@@ -3,7 +3,7 @@
 // ==========================================================================
 
 // Adds a single pixel underline (so nice) on retina
-// Usage: `@include slime-underline;`
+// Usage: `@include slim-underline;`
 @mixin slim-underline() {
 	text-decoration: none;
 	background-image: linear-gradient( to bottom, rgba( 0, 0, 0, 0 ) 75%, #000 50% );
