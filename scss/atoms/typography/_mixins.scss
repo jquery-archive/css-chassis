@@ -3,24 +3,3 @@
 // ==========================================================================
 
 // Adds a single pixel underline (so nice) on retina
-// Usage: `@include slime-underline;`
-@mixin slim-underline() {
-	text-decoration: none;
-	background-image: linear-gradient( to bottom, rgba( 0, 0, 0, 0 ) 75%, #000 50% );
-	background-repeat: repeat-x;
-	background-size: 2px 2px;
-	background-position: 0 em( 22px );
-
-	&:hover,
-	&:active,
-	&:focus {
-		background-size: 2px 6px;
-		background-position: 0 em( 18px );
-	}
-	@media not all,
-	only screen and ( min-resolution: 2dppx ),
-	only screen and ( -webkit-min-device-pixel-ratio: 2 ) {
-		background-image: linear-gradient( to bottom, rgba( 0, 0, 0, 0 ) 75%, #000 75% );
-		background-repeat: repeat-x;
-	}
-}
