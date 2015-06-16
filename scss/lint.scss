@@ -1,10 +1,13 @@
-// ==========================================================================
-// CSS Chassis
-//
-// This contains all the chassis scss execpt normalize.css which will not pass our linter
-// we use this file to create a distributable for linting style.scss which contains this
-// file plus normalize.css
-// ==========================================================================
+/*
+* ==========================================================================
+* CSS Chassis
+*
+* This contains all the chassis scss execpt normalize.css which will not pass our linter
+* we use this file to create a distriubable for linting style.scss contains this file plus
+* normalize.css
+* ==========================================================================
+*/
+
 
 @import
 	"_utilities/clearfix",
