@@ -1,8 +1,13 @@
 // ==========================================================================
 // CSS Chassis
 // ==========================================================================
-// This just adds normalize to the build see lint.scss for explanation.
 
 @import
-	"external/normalize.css/normalize.scss",
-	"lint.scss";
+	"_utilities/clearfix";
+
+@import
+	"atoms/icons/icons",
+	"atoms/typography/typography";
+
+@import
+	"views/main";
