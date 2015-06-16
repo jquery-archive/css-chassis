@@ -1,6 +1,8 @@
-// ==========================================================================
-// Typography
-// ==========================================================================
+/*
+* ==========================================================================
+* Typography
+* ==========================================================================
+*/
 
 @import
 	"variables",
@@ -8,7 +10,9 @@
 	"mixins";
 
 body {
+	background: $color-background;
 	font: $normal #{ map-get( $root-font, font-size ) }/1.5 $sans-serif;
+	color: $color-font;
 
 	@media ( max-width: 800px ) {
 		font-size: 16px;
@@ -55,9 +59,11 @@ h6 {
 	text-transform: uppercase;
 }
 
-// ==========================================================================
-// Block elements
-// ==========================================================================
+/*
+* ==========================================================================
+* Block elements
+* ==========================================================================
+*/
 
 hr {
 	border: 0;
@@ -68,19 +74,21 @@ blockquote {
 	margin: 0;
 	padding-left: 1em;
 	position: relative;
-	border-left: 4px solid #eee; // TODO replace with color variable
+	border-left: 4px solid $color-blockquote-border;
 	font-style: italic;
 }
 
 pre {
 	padding: 16px 20px;
-	background: #f7f7f7;
+	background: $color-pre-background;
 	font: normal 12px/1.4 $monospace;
 }
 
-// ==========================================================================
-// Lists
-// ==========================================================================
+/*
+* ==========================================================================
+* Lists
+* ==========================================================================
+*/
 
 dt {
 	font-weight: 600;
@@ -90,17 +98,19 @@ dd {
 	margin: 0;
 }
 
-// ==========================================================================
-// Inline elements
-// ==========================================================================
+/*
+* ==========================================================================
+* Inline elements
+* ==========================================================================
+*/
 
 a {
-	//TODO add colors
+	color: $color-link;
 
 	&:hover,
 	&:active,
 	&:focus {
-		//TODO add colors
+		color: $color-link-active;
 	}
 	&:visited {
 		// TODO add colors
@@ -119,8 +129,13 @@ strong {
 }
 
 code {
-	background: #f2f2f2; // TODO replace with color variable
+	background: $color-code-background; // TODO replace with color variable
 	font-size: em( 16px );
 	padding: em( 4px, 16px ) em( 8px, 16px );
 	border-radius: 3px;
+}
+
+mark {
+	background: $color-mark-background;
+	color: $color-font;
 }
