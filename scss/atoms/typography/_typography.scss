@@ -10,9 +10,7 @@
 	"mixins";
 
 body {
-	background: $color-background;
 	font: $normal #{ map-get( $root-font, font-size ) }/1.5 $sans-serif;
-	color: $color-font;
 
 	@media ( max-width: 800px ) {
 		font-size: 16px;
@@ -74,13 +72,13 @@ blockquote {
 	margin: 0;
 	padding-left: 1em;
 	position: relative;
-	border-left: 4px solid $color-blockquote-border;
+	border-left: 4px solid #eee; // TODO replace with color variable
 	font-style: italic;
 }
 
 pre {
 	padding: 16px 20px;
-	background: $color-pre-background;
+	background: #f7f7f7;
 	font: normal 12px/1.4 $monospace;
 }
 
@@ -105,12 +103,12 @@ dd {
 */
 
 a {
-	color: $color-link;
+	//TODO add colors
 
 	&:hover,
 	&:active,
 	&:focus {
-		color: $color-link-active;
+		//TODO add colors
 	}
 	&:visited {
 		// TODO add colors
@@ -129,13 +127,8 @@ strong {
 }
 
 code {
-	background: $color-code-background; // TODO replace with color variable
+	background: #f2f2f2; // TODO replace with color variable
 	font-size: em( 16px );
 	padding: em( 4px, 16px ) em( 8px, 16px );
 	border-radius: 3px;
-}
-
-mark {
-	background: $color-mark-background;
-	color: $color-font;
 }
