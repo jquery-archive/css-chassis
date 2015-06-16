@@ -27,7 +27,7 @@ module.exports = {
 			],
 			icon: [
 				false,
-				"asterisk",
+				"astrisk",
 				"plus",
 				"minus",
 				"euro",
