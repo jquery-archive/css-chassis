@@ -7,7 +7,7 @@ var components = {
 				html = "";
 
 			function render( i ) {
-				framework[ component ].variations[ keys[ i ] ].forEach(function( value ) {
+				framework[ component ].variations[ keys[ i ] ].forEach( function( value ) {
 					current[ keys[ i ] ] = value;
 					if ( i < keys.length - 1 ) {
 						render( i + 1 );
@@ -17,7 +17,7 @@ var components = {
 							html = html + framework[ component ].generator.call( this, current );
 						}
 					}
-				});
+				} );
 			}
 			while ( currentCount < count ) {
 				render( 0 );

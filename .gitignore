@@ -6,6 +6,7 @@ style.css
 # Folders
 bower_components/
 node_modules/
+external/
 icons/svg-min/
 .sass-cache/
 dist/

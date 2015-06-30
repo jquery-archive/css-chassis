@@ -2,7 +2,7 @@
   "name": "css-chassis",
   "title": "Chassis",
   "description": "An attempt at creating open standards designed for CSS libraries, JavaScript UI libraries, and web developers in general",
-  "version": "0.0.1-pre",
+  "version": "0.0.1",
   "author": {
     "name": "jQuery Foundation and other contributors",
     "url": "https://github.com/jquery/css-chassis/blob/master/AUTHORS.txt"
@@ -48,7 +48,6 @@
     "chromedriver": "2.13.0",
     "commitplease": "2.0.0",
     "ejs-template": "0.1.0",
-    "glob": "4.4.2",
     "grunt": "0.4.5",
     "grunt-autoprefixer": "2.1.0",
     "grunt-contrib-cssmin": "0.10.0",
@@ -59,14 +58,13 @@
     "grunt-csscomb": "3.0.0",
     "grunt-git-authors": "2.0.0",
     "grunt-html": "1.6.0",
-    "grunt-htmllint": "0.2.7",
-    "grunt-jscs": "0.6.2",
-    "grunt-npmcopy": "0.1.0",
-    "grunt-sass": "0.18.1",
+    "grunt-jscs": "1.8.0",
+    "grunt-sass": "0.17.0",
     "grunt-selenium-server": "0.1.2",
     "grunt-svgmin": "2.0.0",
     "grunt-svgstore": "0.5.0",
-    "load-grunt-tasks": "3.1.0",
+    "jsass-vars": "0.0.3",
+    "load-grunt-config": "0.16.0",
     "perfjankie": "1.2.2"
   },
   "keywords": []
