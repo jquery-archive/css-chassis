@@ -1,0 +1,43 @@
+/* 
+* Media Query Mixin  
+* Containes logic to easily remove media queries for
+* desktop only or mobile only projects
+* Examples:
+* 1. @include mq( 300px ) { } (min-width)
+* 2. @include mq( $max: 300px ) { } (max-width)
+* 3. @include mq( 400px, 800px ) { } (both min + max-width)
+*/
+$media-queries: true;
+$desktop-styles: true;
+
+@mixin mq($min: null, $max: null) {
+	@if $min == null and $max == null {
+		@error 'Please provide a value for $min and/or $max';
+	}
+
+	@if $media-queries {
+		@if $min != null and $max != null {
+			@media (min-width: $min) and (max-width: $max) {
+				@content;
+			}
+		}
+		@else if $min != null {
+			@media (min-width: $min) {
+				@content;
+			}
+		}
+		@else {
+			@media (max-width: $max) {
+				@content;
+			}
+		}
+	}
+	@else if $desktop-styles and $max == null {
+		/* Content printed with no media query for desktop project */
+		@content;
+	}
+	@else if $desktop-styles == false and $min == null {
+		/* Content printed with no media query for mobile project */
+		@content;
+	}
+}

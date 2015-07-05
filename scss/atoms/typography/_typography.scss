@@ -10,10 +10,10 @@
 body {
 	font: $normal #{ map-get( $root-font, font-size ) }/1.5 $sans-serif;
 
-	@media ( max-width: 800px ) {
+	@include mq( $max: 800px ) {
 		font-size: 16px;
 	}
-	@media ( max-width: 500px ) {
+	@include mq( $max: 500px ) {
 		font-size: 14px;
 	}
 }
