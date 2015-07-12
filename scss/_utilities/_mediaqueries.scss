@@ -12,7 +12,7 @@ $desktop-styles: true;
 
 @mixin mq($min: null, $max: null) {
 	@if $min == null and $max == null {
-		@error 'Please provide a value for $min and/or $max';
+		@error "Please provide a value for $min and/or $max";
 	}
 
 	@if $media-queries {
