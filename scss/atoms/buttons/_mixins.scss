@@ -7,7 +7,6 @@
 @mixin ui-button($color, $bgcolor, $disabled: false) {
 	background: $bgcolor;
 	border: 0;
-	box-sizing: border-box;
 	color: $color;
 	display: inline-block;
 	font-weight: 500;
