@@ -21,7 +21,7 @@
 		&--focus {
 			@include ui-button($ui-button-default-color, $ui-button-default-background);
 			@include ui-button-sizes($ui-button-default);
-			@include ui-button-state-disabled($ui-button-default-background);
+			@include ui-button-state-focus($ui-button-default-background);
 		}
 
 		&--active {

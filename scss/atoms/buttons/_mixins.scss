@@ -4,7 +4,7 @@
 * ==========================================================================
 */
 
-@mixin ui-button($color, $bgcolor,) {
+@mixin ui-button($color, $bgcolor) {
 	background: $bgcolor;
 	border: 0;
 	color: $color;
