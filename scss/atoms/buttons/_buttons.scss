@@ -3,142 +3,99 @@
 * Buttons
 * ==========================================================================
 */
+@import "mixins";
 
-@import "extends";
+/* These colors won't remain here, will be removed with jsass  */
+$background: #fff;
+$chassis-blue: #4fc0c8;
+$chassis-gray-light: #f2f2f2;
+$chassis-gray-dark: #383838;
 
 .ui-button {
 	&--default {
-		@extend %ui-button;
-		@extend %ui-button--default;
-		@extend %ui-button--default--hover;
-		@extend %ui-button--default--focus;
-		@extend %ui-button--default--active;
-		@extend %ui-button--default--disabled;
-		@extend %ui-button--default-size;
+		@include ui-button($chassis-gray-dark, $background);
+		@include ui-button-sizes(default);
+		@include ui-button-states($chassis-gray-dark, $background);
 
 		&--disabled {
-			@extend %ui-button;
-			@extend %ui-button--default;
-			@extend %ui-button--disabled;
-			@extend %ui-button--default-size;
+			@include ui-button-sizes(default);
+			@include ui-button($chassis-gray-dark, $background, true);
 		}
 
 		&--large {
-			@extend %ui-button;
-			@extend %ui-button--default;
-			@extend %ui-button--default--hover;
-			@extend %ui-button--default--focus;
-			@extend %ui-button--default--active;
-			@extend %ui-button--default--disabled;
-			@extend %ui-button--large;
+			@include ui-button($chassis-gray-dark, $background);
+			@include ui-button-sizes(large);
+			@include ui-button-states($chassis-gray-dark, $background);
 
 			&--disabled {
-				@extend %ui-button;
-				@extend %ui-button--default;
-				@extend %ui-button--disabled;
-				@extend %ui-button--large;
+				@include ui-button($chassis-gray-dark, $background, true);
+				@include ui-button-sizes(large);
 			}
 		}
 
 		&--small {
-			@extend %ui-button;
-			@extend %ui-button--default;
-			@extend %ui-button--default--hover;
-			@extend %ui-button--default--focus;
-			@extend %ui-button--default--active;
-			@extend %ui-button--default--disabled;
-			@extend %ui-button--small;
+			@include ui-button($chassis-gray-dark, $background);
+			@include ui-button-sizes(small);
+			@include ui-button-states($chassis-gray-dark, $background);
 
 			&--disabled {
-				@extend %ui-button;
-				@extend %ui-button--default;
-				@extend %ui-button--disabled;
-				@extend %ui-button--small;
+				@include ui-button($chassis-gray-dark, $background, true);
+				@include ui-button-sizes(small);
 			}
 		}
 
 		&--extra-small {
-			@extend %ui-button;
-			@extend %ui-button--default;
-			@extend %ui-button--default--hover;
-			@extend %ui-button--default--focus;
-			@extend %ui-button--default--active;
-			@extend %ui-button--default--disabled;
 			@extend %ui-button--extra-small;
+			@include ui-button($chassis-gray-dark, $background);
+			@include ui-button-states($chassis-gray-dark, $background);
 
 			&--disabled {
-				@extend %ui-button;
-				@extend %ui-button--default;
-				@extend %ui-button--disabled;
-				@extend %ui-button--extra-small;
+				@include ui-button($chassis-gray-dark, $background, true);
+				@include ui-button-sizes(extra-small);
 			}
 		}
 	}
 
 	&--primary {
-		@extend %ui-button;
-		@extend %ui-button--primary;
-		@extend %ui-button--primary--hover;
-		@extend %ui-button--primary--focus;
-		@extend %ui-button--primary--active;
-		@extend %ui-button--primary--disabled;
-		@extend %ui-button--default-size;
+		@include ui-button($chassis-gray-light, $chassis-blue);
+		@include ui-button-sizes(default);
+		@include ui-button-states($chassis-gray-light, $chassis-blue);
 
 		&--disabled {
-			@extend %ui-button;
-			@extend %ui-button--primary;
-			@extend %ui-button--disabled;
-			@extend %ui-button--default-size;
+			@include ui-button($chassis-gray-light, $chassis-blue, true);
+			@include ui-button-sizes(default);
 		}
 
 		&--large {
-			@extend %ui-button;
-			@extend %ui-button--primary;
-			@extend %ui-button--primary--hover;
-			@extend %ui-button--primary--focus;
-			@extend %ui-button--primary--active;
-			@extend %ui-button--primary--disabled;
-			@extend %ui-button--large;
+			@include ui-button($chassis-gray-light, $chassis-blue);
+			@include ui-button-sizes(large);
+			@include ui-button-states($chassis-gray-light, $chassis-blue);
 
 			&--disabled {
-				@extend %ui-button;
-				@extend %ui-button--primary;
-				@extend %ui-button--disabled;
-				@extend %ui-button--large;
+				@include ui-button($chassis-gray-light, $chassis-blue, true);
+				@include ui-button-sizes(large);
 			}
 		}
 
 		&--small {
-			@extend %ui-button;
-			@extend %ui-button--primary;
-			@extend %ui-button--primary--hover;
-			@extend %ui-button--primary--focus;
-			@extend %ui-button--primary--active;
-			@extend %ui-button--primary--disabled;
-			@extend %ui-button--small;
+			@include ui-button($chassis-gray-light, $chassis-blue);
+			@include ui-button-sizes(small);
+			@include ui-button-states($chassis-gray-light, $chassis-blue);
 
 			&--disabled {
-				@extend %ui-button;
-				@extend %ui-button--primary;
-				@extend %ui-button--disabled;
-				@extend %ui-button--small;
+				@include ui-button($chassis-gray-light, $chassis-blue, true);
+				@include ui-button-sizes(small);
 			}
 		}
 
 		&--extra-small {
-			@extend %ui-button;
-			@extend %ui-button--primary;
-			@extend %ui-button--primary--hover;
-			@extend %ui-button--primary--focus;
-			@extend %ui-button--primary--active;
-			@extend %ui-button--primary--disabled;
-			@extend %ui-button--extra-small;
+			@include ui-button($chassis-gray-light, $chassis-blue);
+			@include ui-button-sizes(extra-small);
+			@include ui-button-states($chassis-gray-light, $chassis-blue);
 
 			&--disabled {
-				@extend %ui-button;
-				@extend %ui-button--primary;
-				@extend %ui-button--disabled;
-				@extend %ui-button--extra-small;
+				@include ui-button($chassis-gray-light, $chassis-blue, true);
+				@include ui-button-sizes(extra-small);
 			}
 		}
 	}

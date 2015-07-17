@@ -1,0 +1,65 @@
+/*
+* ==========================================================================
+* Buttons (Mixins)
+* ==========================================================================
+*/
+
+@mixin ui-button($color, $bgcolor, $disabled: false) {
+	background: $bgcolor;
+	border: 0;
+	box-sizing: border-box;
+	color: $color;
+	display: inline-block;
+	font-weight: 500;
+	margin: .25em;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+
+	@if($disabled) {
+		cursor: default;
+		opacity: .6;
+	}
+}
+
+@mixin ui-button-sizes($size: default) {
+	@if($size == large) {
+		font-size: 20px;
+		line-height: 20px;
+		padding: .75em;
+	}
+
+	@if($size == default) {
+		font-size: 16px;
+		line-height: 16px;
+		padding: .5em;
+	}
+
+	@if($size == small) {
+		font-size: 14px;
+		line-height: 14px;
+		padding: .2em .5em;
+	}
+
+	@if($size == extra-small) {
+		font-size: 12px;
+		line-height: 12px;
+		padding: .2em .5em;
+	}
+}
+
+@mixin ui-button-states($color, $bgcolor) {
+	&:active {
+		background: darken($bgcolor, 20%);
+	}
+	&:focus {
+		background: darken($bgcolor, 15%);
+	}
+	&:hover {
+		background: darken($bgcolor, 10%);
+	}
+	&:disabled {
+		background: $bgcolor;
+		opacity: .6;
+	}
+}
