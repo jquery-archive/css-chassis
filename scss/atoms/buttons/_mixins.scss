@@ -4,61 +4,62 @@
 * ==========================================================================
 */
 
-@mixin ui-button($color, $bgcolor, $disabled: false) {
+@mixin ui-button($color, $bgcolor,) {
 	background: $bgcolor;
 	border: 0;
 	color: $color;
 	display: inline-block;
-	font-weight: 500;
-	margin: .25em;
+	font-weight: $ui-button-font-weight;
+	margin: $ui-button-margin;
 	text-align: center;
 	text-decoration: none;
-	text-transform: uppercase;
-
-	@if($disabled) {
-		cursor: default;
-		opacity: .6;
-	}
+	text-transform: $ui-button-text-transform;
+	touch-action: manipulation;
+	vertical-align: middle;
 }
 
-@mixin ui-button-sizes($size: default) {
-	@if($size == large) {
-		font-size: 20px;
-		line-height: 20px;
-		padding: .75em;
-	}
-
-	@if($size == default) {
-		font-size: 16px;
-		line-height: 16px;
-		padding: .5em;
-	}
-
-	@if($size == small) {
-		font-size: 14px;
-		line-height: 14px;
-		padding: .2em .5em;
-	}
-
-	@if($size == extra-small) {
-		font-size: 12px;
-		line-height: 12px;
-		padding: .2em .5em;
-	}
+@mixin ui-button-sizes($size) {
+	font-size: map-get( $size, font-size);
+	line-height: map-get( $size, line-height);
+	padding: map-get( $size, padding);
 }
 
 @mixin ui-button-states($color, $bgcolor) {
 	&:active {
-		background: darken($bgcolor, 20%);
+		@include ui-button-state-active($bgcolor);
 	}
 	&:focus {
-		background: darken($bgcolor, 15%);
+		@include ui-button-state-focus($bgcolor);
 	}
 	&:hover {
-		background: darken($bgcolor, 10%);
+		@include ui-button-state-active($bgcolor);
 	}
 	&:disabled {
-		background: $bgcolor;
-		opacity: .6;
+		@include ui-button-state-disabled($bgcolor);
 	}
+	&[aria-disabled="true"] {
+		@include ui-button-state-disabled($bgcolor);
+	}
+}
+
+@mixin ui-button-state-active($bgcolor) {
+	background: darken($bgcolor, 20%);
+}
+
+@mixin ui-button-state-focus($bgcolor) {
+	background: darken($bgcolor, 15%);
+}
+
+@mixin ui-button-state-hover($bgcolor) {
+	background: darken($bgcolor, 10%);
+}
+
+@mixin ui-button-state-disabled($bgcolor) {
+	background: $bgcolor;
+	cursor: default;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+$ui-button-disabled-opacity+")";
+	filter: alpha(opacity=$ui-button-disabled-opacity);
+	-moz-opacity: $ui-button-disabled-opacity;
+	-khtml-opacity: $ui-button-disabled-opacity;
+	opacity: $ui-button-disabled-opacity;
 }

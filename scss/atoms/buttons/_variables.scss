@@ -1,0 +1,34 @@
+/*
+* ==========================================================================
+* Buttons (Variables)
+* ==========================================================================
+*/
+/* These variables won't remain here, will be removed with jsass.	 */
+$ui-button-default-color: #383838;
+$ui-button-default-background: #fff;
+$ui-button-primary-color: #f2f2f2;
+$ui-button-primary-background: #4fc0c8;
+$ui-button-disabled-opacity: .6;
+$ui-button-font-weight: 500;
+$ui-button-margin: .25em;
+$ui-button-text-transform: uppercase;
+$ui-button-large: (
+	font-size: 20px,
+	line-height: 20px,
+	padding: .75em
+);
+$ui-button-default: (
+	font-size: 16px,
+	line-height: 16px,
+	padding: .5em
+);
+$ui-button-small: (
+	font-size: 14px,
+	line-height: 14px,
+	padding: .2em .5em
+);
+$ui-button-extra-small: (
+	font-size: 12px,
+	line-height: 12px,
+	padding: .2em .5em
+);

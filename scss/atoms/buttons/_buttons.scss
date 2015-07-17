@@ -3,99 +3,246 @@
 * Buttons
 * ==========================================================================
 */
+@import "variables";
 @import "mixins";
-
-/* These colors won't remain here, will be removed with jsass  */
-$background: #fff;
-$chassis-blue: #4fc0c8;
-$chassis-gray-light: #f2f2f2;
-$chassis-gray-dark: #383838;
 
 .ui-button {
 	&--default {
-		@include ui-button($chassis-gray-dark, $background);
-		@include ui-button-sizes(default);
-		@include ui-button-states($chassis-gray-dark, $background);
+		@include ui-button($ui-button-default-color, $ui-button-default-background);
+		@include ui-button-sizes($ui-button-default);
+		@include ui-button-states($ui-button-default-color, $ui-button-default-background);
 
 		&--disabled {
-			@include ui-button-sizes(default);
-			@include ui-button($chassis-gray-dark, $background, true);
+			@include ui-button($ui-button-default-color, $ui-button-default-background);
+			@include ui-button-sizes($ui-button-default);
+			@include ui-button-state-disabled($ui-button-default-background);
+		}
+
+		&--focus {
+			@include ui-button($ui-button-default-color, $ui-button-default-background);
+			@include ui-button-sizes($ui-button-default);
+			@include ui-button-state-disabled($ui-button-default-background);
+		}
+
+		&--active {
+			@include ui-button($ui-button-default-color, $ui-button-default-background);
+			@include ui-button-sizes($ui-button-default);
+			@include ui-button-state-active($ui-button-default-background);
+		}
+
+		&--hover {
+			@include ui-button($ui-button-default-color, $ui-button-default-background);
+			@include ui-button-sizes($ui-button-default);
+			@include ui-button-state-hover($ui-button-default-background);
 		}
 
 		&--large {
-			@include ui-button($chassis-gray-dark, $background);
-			@include ui-button-sizes(large);
-			@include ui-button-states($chassis-gray-dark, $background);
+			@include ui-button($ui-button-default-color, $ui-button-default-background);
+			@include ui-button-sizes($ui-button-large);
+			@include ui-button-states($ui-button-default-color, $ui-button-default-background);
 
 			&--disabled {
-				@include ui-button($chassis-gray-dark, $background, true);
-				@include ui-button-sizes(large);
+				@include ui-button($ui-button-default-color, $ui-button-default-background);
+				@include ui-button-sizes($ui-button-large);
+				@include ui-button-state-disabled($ui-button-default-background);
+			}
+
+			&--focus {
+				@include ui-button($ui-button-default-color, $ui-button-default-background);
+				@include ui-button-sizes($ui-button-large);
+				@include ui-button-state-focus($ui-button-default-background);
+			}
+
+			&--active {
+				@include ui-button($ui-button-default-color, $ui-button-default-background);
+				@include ui-button-sizes($ui-button-large);
+				@include ui-button-state-active($ui-button-default-background);
+			}
+
+			&--hover {
+				@include ui-button($ui-button-default-color, $ui-button-default-background);
+				@include ui-button-sizes($ui-button-large);
+				@include ui-button-state-hover($ui-button-default-background);
 			}
 		}
 
 		&--small {
-			@include ui-button($chassis-gray-dark, $background);
-			@include ui-button-sizes(small);
-			@include ui-button-states($chassis-gray-dark, $background);
+			@include ui-button($ui-button-default-color, $ui-button-default-background);
+			@include ui-button-sizes($ui-button-small);
+			@include ui-button-states($ui-button-default-color, $ui-button-default-background);
 
 			&--disabled {
-				@include ui-button($chassis-gray-dark, $background, true);
-				@include ui-button-sizes(small);
+				@include ui-button($ui-button-default-color, $ui-button-default-background);
+				@include ui-button-sizes($ui-button-small);
+				@include ui-button-state-disabled($ui-button-default-background);
+			}
+
+			&--focus {
+				@include ui-button($ui-button-default-color, $ui-button-default-background);
+				@include ui-button-sizes($ui-button-small);
+				@include ui-button-state-focus($ui-button-default-background);
+			}
+
+			&--active {
+				@include ui-button($ui-button-default-color, $ui-button-default-background);
+				@include ui-button-sizes($ui-button-small);
+				@include ui-button-state-active($ui-button-default-background);
+			}
+
+			&--hover {
+				@include ui-button($ui-button-default-color, $ui-button-default-background);
+				@include ui-button-sizes($ui-button-small);
+				@include ui-button-state-hover($ui-button-default-background);
 			}
 		}
 
 		&--extra-small {
 			@extend %ui-button--extra-small;
-			@include ui-button($chassis-gray-dark, $background);
-			@include ui-button-states($chassis-gray-dark, $background);
+			@include ui-button($ui-button-default-color, $ui-button-default-background);
+			@include ui-button-states($ui-button-default-color, $ui-button-default-background);
 
 			&--disabled {
-				@include ui-button($chassis-gray-dark, $background, true);
-				@include ui-button-sizes(extra-small);
+				@include ui-button($ui-button-default-color, $ui-button-default-background);
+				@include ui-button-sizes($ui-button-extra-small);
+				@include ui-button-state-disabled($ui-button-default-background);
+			}
+
+			&--focus {
+				@include ui-button($ui-button-default-color, $ui-button-default-background);
+				@include ui-button-sizes($ui-button-extra-small);
+				@include ui-button-state-hover($ui-button-default-background);
+			}
+
+			&--active {
+				@include ui-button($ui-button-default-color, $ui-button-default-background);
+				@include ui-button-sizes($ui-button-extra-small);
+				@include ui-button-state-active($ui-button-default-background);
+			}
+
+			&--hover {
+				@include ui-button($ui-button-default-color, $ui-button-default-background);
+				@include ui-button-sizes($ui-button-extra-small);
+				@include ui-button-state-hover($ui-button-default-background);
 			}
 		}
 	}
 
 	&--primary {
-		@include ui-button($chassis-gray-light, $chassis-blue);
-		@include ui-button-sizes(default);
-		@include ui-button-states($chassis-gray-light, $chassis-blue);
+		@include ui-button($ui-button-primary-color, $ui-button-primary-background);
+		@include ui-button-sizes($ui-button-default);
+		@include ui-button-states($ui-button-primary-color, $ui-button-primary-background);
 
 		&--disabled {
-			@include ui-button($chassis-gray-light, $chassis-blue, true);
-			@include ui-button-sizes(default);
+			@include ui-button($ui-button-primary-color, $ui-button-primary-background);
+			@include ui-button-sizes($ui-button-default);
+			@include ui-button-state-disabled($ui-button-primary-background);
+		}
+
+		&--focus {
+			@include ui-button($ui-button-primary-color, $ui-button-primary-background);
+			@include ui-button-sizes($ui-button-default);
+			@include ui-button-state-focus($ui-button-primary-background);
+		}
+
+		&--active {
+			@include ui-button($ui-button-primary-color, $ui-button-primary-background);
+			@include ui-button-sizes($ui-button-default);
+			@include ui-button-state-active($ui-button-primary-background);
+		}
+
+		&--hover {
+			@include ui-button($ui-button-primary-color, $ui-button-primary-background);
+			@include ui-button-sizes($ui-button-default);
+			@include ui-button-state-hover($ui-button-primary-background);
 		}
 
 		&--large {
-			@include ui-button($chassis-gray-light, $chassis-blue);
-			@include ui-button-sizes(large);
-			@include ui-button-states($chassis-gray-light, $chassis-blue);
+			@include ui-button($ui-button-primary-color, $ui-button-primary-background);
+			@include ui-button-sizes($ui-button-large);
+			@include ui-button-states($ui-button-primary-color, $ui-button-primary-background);
 
 			&--disabled {
-				@include ui-button($chassis-gray-light, $chassis-blue, true);
-				@include ui-button-sizes(large);
+				@include ui-button($ui-button-primary-color, $ui-button-primary-background);
+				@include ui-button-sizes($ui-button-large);
+				@include ui-button-state-disabled($ui-button-primary-background);
+			}
+
+			&--focus {
+				@include ui-button($ui-button-primary-color, $ui-button-primary-background);
+				@include ui-button-sizes($ui-button-large);
+				@include ui-button-state-focus($ui-button-primary-background);
+			}
+
+			&--active {
+				@include ui-button($ui-button-primary-color, $ui-button-primary-background);
+				@include ui-button-sizes($ui-button-large);
+				@include ui-button-state-active($ui-button-primary-background);
+			}
+
+			&--hover {
+				@include ui-button($ui-button-primary-color, $ui-button-primary-background);
+				@include ui-button-sizes($ui-button-large);
+				@include ui-button-state-hover($ui-button-primary-background);
 			}
 		}
 
 		&--small {
-			@include ui-button($chassis-gray-light, $chassis-blue);
-			@include ui-button-sizes(small);
-			@include ui-button-states($chassis-gray-light, $chassis-blue);
+			@include ui-button($ui-button-primary-color, $ui-button-primary-background);
+			@include ui-button-sizes($ui-button-small);
+			@include ui-button-states($ui-button-primary-color, $ui-button-primary-background);
 
 			&--disabled {
-				@include ui-button($chassis-gray-light, $chassis-blue, true);
-				@include ui-button-sizes(small);
+				@include ui-button($ui-button-primary-color, $ui-button-primary-background);
+				@include ui-button-sizes($ui-button-small);
+				@include ui-button-state-disabled($ui-button-primary-background);
+			}
+
+			&--focus {
+				@include ui-button($ui-button-primary-color, $ui-button-primary-background);
+				@include ui-button-sizes($ui-button-small);
+				@include ui-button-state-focus($ui-button-primary-background);
+			}
+
+			&--active {
+				@include ui-button($ui-button-primary-color, $ui-button-primary-background);
+				@include ui-button-sizes($ui-button-small);
+				@include ui-button-state-active($ui-button-primary-background);
+			}
+
+			&--hover {
+				@include ui-button($ui-button-primary-color, $ui-button-primary-background);
+				@include ui-button-sizes($ui-button-small);
+				@include ui-button-state-hover($ui-button-primary-background);
 			}
 		}
 
 		&--extra-small {
-			@include ui-button($chassis-gray-light, $chassis-blue);
-			@include ui-button-sizes(extra-small);
-			@include ui-button-states($chassis-gray-light, $chassis-blue);
+			@include ui-button($ui-button-primary-color, $ui-button-primary-background);
+			@include ui-button-sizes($ui-button-extra-small);
+			@include ui-button-states($ui-button-primary-color, $ui-button-primary-background);
 
 			&--disabled {
-				@include ui-button($chassis-gray-light, $chassis-blue, true);
-				@include ui-button-sizes(extra-small);
+				@include ui-button($ui-button-primary-color, $ui-button-primary-background);
+				@include ui-button-sizes($ui-button-extra-small);
+				@include ui-button-state-disabled($ui-button-primary-background);
+			}
+
+			&--focus {
+				@include ui-button($ui-button-primary-color, $ui-button-primary-background);
+				@include ui-button-sizes($ui-button-extra-small);
+				@include ui-button-state-focus($ui-button-primary-background);
+			}
+
+			&--active {
+				@include ui-button($ui-button-primary-color, $ui-button-primary-background);
+				@include ui-button-sizes($ui-button-extra-small);
+				@include ui-button-state-active($ui-button-primary-background);
+			}
+
+			&--hover {
+				@include ui-button($ui-button-primary-color, $ui-button-primary-background);
+				@include ui-button-sizes($ui-button-extra-small);
+				@include ui-button-state-hover($ui-button-primary-background);
 			}
 		}
 	}
