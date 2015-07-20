@@ -97,8 +97,8 @@
 		}
 
 		&--extra-small {
-			@extend %ui-button--extra-small;
 			@include ui-button($ui-button-default-color, $ui-button-default-background);
+			@include ui-button-sizes($ui-button-extra-small);
 			@include ui-button-states($ui-button-default-color, $ui-button-default-background);
 
 			&--disabled {
