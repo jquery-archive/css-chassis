@@ -4,17 +4,14 @@
 * ==========================================================================
 */
 
-@mixin ui-button($color, $bgcolor) {
-	background: $bgcolor;
+@mixin ui-button() {
 	border: 0;
-	color: $color;
 	display: inline-block;
 	font-weight: $ui-button-font-weight;
 	margin: $ui-button-margin;
 	text-align: center;
 	text-decoration: none;
 	text-transform: $ui-button-text-transform;
-	touch-action: manipulation;
 	vertical-align: middle;
 }
 
@@ -25,37 +22,48 @@
 }
 
 @mixin ui-button-states($color, $bgcolor) {
+	background: $bgcolor;
+	color: $color;
 	&:active {
-		@include ui-button-state-active($bgcolor);
+		@include ui-button-state-active($color, $bgcolor);
 	}
 	&:focus {
-		@include ui-button-state-focus($bgcolor);
+		@include ui-button-state-focus($color, $bgcolor);
 	}
 	&:hover {
-		@include ui-button-state-active($bgcolor);
+		@include ui-button-state-active($color, $bgcolor);
 	}
 	&:disabled {
-		@include ui-button-state-disabled($bgcolor);
+		@include ui-button-state-disabled($color, $bgcolor);
 	}
 	&[aria-disabled="true"] {
-		@include ui-button-state-disabled($bgcolor);
+		@include ui-button-state-disabled($color, $bgcolor);
 	}
 }
 
-@mixin ui-button-state-active($bgcolor) {
-	background: darken($bgcolor, 20%);
-}
-
-@mixin ui-button-state-focus($bgcolor) {
-	background: darken($bgcolor, 15%);
-}
-
-@mixin ui-button-state-hover($bgcolor) {
-	background: darken($bgcolor, 10%);
-}
-
-@mixin ui-button-state-disabled($bgcolor) {
+@mixin ui-button-state-default($color, $bgcolor) {
 	background: $bgcolor;
+	color: $color;
+}
+
+@mixin ui-button-state-active($color, $bgcolor) {
+	background: darken($bgcolor, 20%);
+	color: $color;
+}
+
+@mixin ui-button-state-focus($color, $bgcolor) {
+	background: darken($bgcolor, 15%);
+	color: $color;
+}
+
+@mixin ui-button-state-hover($color, $bgcolor) {
+	background: darken($bgcolor, 10%);
+	color: $color;
+}
+
+@mixin ui-button-state-disabled($color, $bgcolor) {
+	background: $bgcolor;
+	color: $color;
 	cursor: default;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+$ui-button-disabled-opacity+")";
 	filter: alpha(opacity=$ui-button-disabled-opacity);

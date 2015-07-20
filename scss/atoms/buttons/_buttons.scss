@@ -8,241 +8,241 @@
 
 .ui-button {
 	&--default {
-		@include ui-button($ui-button-default-color, $ui-button-default-background);
+		@include ui-button();
 		@include ui-button-sizes($ui-button-default);
 		@include ui-button-states($ui-button-default-color, $ui-button-default-background);
 
 		&--disabled {
-			@include ui-button($ui-button-default-color, $ui-button-default-background);
+			@include ui-button();
 			@include ui-button-sizes($ui-button-default);
-			@include ui-button-state-disabled($ui-button-default-background);
+			@include ui-button-state-disabled($ui-button-default-color, $ui-button-default-background);
 		}
 
 		&--focus {
-			@include ui-button($ui-button-default-color, $ui-button-default-background);
+			@include ui-button();
 			@include ui-button-sizes($ui-button-default);
-			@include ui-button-state-focus($ui-button-default-background);
+			@include ui-button-state-focus($ui-button-default-color, $ui-button-default-background);
 		}
 
 		&--active {
-			@include ui-button($ui-button-default-color, $ui-button-default-background);
+			@include ui-button();
 			@include ui-button-sizes($ui-button-default);
-			@include ui-button-state-active($ui-button-default-background);
+			@include ui-button-state-active($ui-button-default-color, $ui-button-default-background);
 		}
 
 		&--hover {
-			@include ui-button($ui-button-default-color, $ui-button-default-background);
+			@include ui-button();
 			@include ui-button-sizes($ui-button-default);
-			@include ui-button-state-hover($ui-button-default-background);
+			@include ui-button-state-hover($ui-button-default-color, $ui-button-default-background);
 		}
 
 		&--large {
-			@include ui-button($ui-button-default-color, $ui-button-default-background);
+			@include ui-button();
 			@include ui-button-sizes($ui-button-large);
 			@include ui-button-states($ui-button-default-color, $ui-button-default-background);
 
 			&--disabled {
-				@include ui-button($ui-button-default-color, $ui-button-default-background);
+				@include ui-button();
 				@include ui-button-sizes($ui-button-large);
-				@include ui-button-state-disabled($ui-button-default-background);
+				@include ui-button-state-disabled($ui-button-default-color, $ui-button-default-background);
 			}
 
 			&--focus {
-				@include ui-button($ui-button-default-color, $ui-button-default-background);
+				@include ui-button();
 				@include ui-button-sizes($ui-button-large);
-				@include ui-button-state-focus($ui-button-default-background);
+				@include ui-button-state-focus($ui-button-default-color, $ui-button-default-background);
 			}
 
 			&--active {
-				@include ui-button($ui-button-default-color, $ui-button-default-background);
+				@include ui-button();
 				@include ui-button-sizes($ui-button-large);
-				@include ui-button-state-active($ui-button-default-background);
+				@include ui-button-state-active($ui-button-default-color, $ui-button-default-background);
 			}
 
 			&--hover {
-				@include ui-button($ui-button-default-color, $ui-button-default-background);
+				@include ui-button();
 				@include ui-button-sizes($ui-button-large);
-				@include ui-button-state-hover($ui-button-default-background);
+				@include ui-button-state-hover($ui-button-default-color, $ui-button-default-background);
 			}
 		}
 
 		&--small {
-			@include ui-button($ui-button-default-color, $ui-button-default-background);
+			@include ui-button();
 			@include ui-button-sizes($ui-button-small);
 			@include ui-button-states($ui-button-default-color, $ui-button-default-background);
 
 			&--disabled {
-				@include ui-button($ui-button-default-color, $ui-button-default-background);
+				@include ui-button();
 				@include ui-button-sizes($ui-button-small);
-				@include ui-button-state-disabled($ui-button-default-background);
+				@include ui-button-state-disabled($ui-button-default-color, $ui-button-default-background);
 			}
 
 			&--focus {
-				@include ui-button($ui-button-default-color, $ui-button-default-background);
+				@include ui-button();
 				@include ui-button-sizes($ui-button-small);
-				@include ui-button-state-focus($ui-button-default-background);
+				@include ui-button-state-focus($ui-button-default-color, $ui-button-default-background);
 			}
 
 			&--active {
-				@include ui-button($ui-button-default-color, $ui-button-default-background);
+				@include ui-button();
 				@include ui-button-sizes($ui-button-small);
-				@include ui-button-state-active($ui-button-default-background);
+				@include ui-button-state-active($ui-button-default-color, $ui-button-default-background);
 			}
 
 			&--hover {
-				@include ui-button($ui-button-default-color, $ui-button-default-background);
+				@include ui-button();
 				@include ui-button-sizes($ui-button-small);
-				@include ui-button-state-hover($ui-button-default-background);
+				@include ui-button-state-hover($ui-button-default-color, $ui-button-default-background);
 			}
 		}
 
 		&--extra-small {
-			@include ui-button($ui-button-default-color, $ui-button-default-background);
+			@include ui-button();
 			@include ui-button-sizes($ui-button-extra-small);
 			@include ui-button-states($ui-button-default-color, $ui-button-default-background);
 
 			&--disabled {
-				@include ui-button($ui-button-default-color, $ui-button-default-background);
+				@include ui-button();
 				@include ui-button-sizes($ui-button-extra-small);
-				@include ui-button-state-disabled($ui-button-default-background);
+				@include ui-button-state-disabled($ui-button-default-color, $ui-button-default-background);
 			}
 
 			&--focus {
-				@include ui-button($ui-button-default-color, $ui-button-default-background);
+				@include ui-button();
 				@include ui-button-sizes($ui-button-extra-small);
-				@include ui-button-state-hover($ui-button-default-background);
+				@include ui-button-state-hover($ui-button-default-color, $ui-button-default-background);
 			}
 
 			&--active {
-				@include ui-button($ui-button-default-color, $ui-button-default-background);
+				@include ui-button();
 				@include ui-button-sizes($ui-button-extra-small);
-				@include ui-button-state-active($ui-button-default-background);
+				@include ui-button-state-active($ui-button-default-color, $ui-button-default-background);
 			}
 
 			&--hover {
-				@include ui-button($ui-button-default-color, $ui-button-default-background);
+				@include ui-button();
 				@include ui-button-sizes($ui-button-extra-small);
-				@include ui-button-state-hover($ui-button-default-background);
+				@include ui-button-state-hover($ui-button-default-color, $ui-button-default-background);
 			}
 		}
 	}
 
 	&--primary {
-		@include ui-button($ui-button-primary-color, $ui-button-primary-background);
+		@include ui-button();
 		@include ui-button-sizes($ui-button-default);
 		@include ui-button-states($ui-button-primary-color, $ui-button-primary-background);
 
 		&--disabled {
-			@include ui-button($ui-button-primary-color, $ui-button-primary-background);
+			@include ui-button();
 			@include ui-button-sizes($ui-button-default);
-			@include ui-button-state-disabled($ui-button-primary-background);
+			@include ui-button-state-disabled($ui-button-primary-color, $ui-button-primary-background);
 		}
 
 		&--focus {
-			@include ui-button($ui-button-primary-color, $ui-button-primary-background);
+			@include ui-button();
 			@include ui-button-sizes($ui-button-default);
-			@include ui-button-state-focus($ui-button-primary-background);
+			@include ui-button-state-focus($ui-button-primary-color, $ui-button-primary-background);
 		}
 
 		&--active {
-			@include ui-button($ui-button-primary-color, $ui-button-primary-background);
+			@include ui-button();
 			@include ui-button-sizes($ui-button-default);
-			@include ui-button-state-active($ui-button-primary-background);
+			@include ui-button-state-active($ui-button-primary-color, $ui-button-primary-background);
 		}
 
 		&--hover {
-			@include ui-button($ui-button-primary-color, $ui-button-primary-background);
+			@include ui-button();
 			@include ui-button-sizes($ui-button-default);
-			@include ui-button-state-hover($ui-button-primary-background);
+			@include ui-button-state-hover($ui-button-primary-color, $ui-button-primary-background);
 		}
 
 		&--large {
-			@include ui-button($ui-button-primary-color, $ui-button-primary-background);
+			@include ui-button();
 			@include ui-button-sizes($ui-button-large);
 			@include ui-button-states($ui-button-primary-color, $ui-button-primary-background);
 
 			&--disabled {
-				@include ui-button($ui-button-primary-color, $ui-button-primary-background);
+				@include ui-button();
 				@include ui-button-sizes($ui-button-large);
-				@include ui-button-state-disabled($ui-button-primary-background);
+				@include ui-button-state-disabled($ui-button-primary-color, $ui-button-primary-background);
 			}
 
 			&--focus {
-				@include ui-button($ui-button-primary-color, $ui-button-primary-background);
+				@include ui-button();
 				@include ui-button-sizes($ui-button-large);
-				@include ui-button-state-focus($ui-button-primary-background);
+				@include ui-button-state-focus($ui-button-primary-color, $ui-button-primary-background);
 			}
 
 			&--active {
-				@include ui-button($ui-button-primary-color, $ui-button-primary-background);
+				@include ui-button();
 				@include ui-button-sizes($ui-button-large);
-				@include ui-button-state-active($ui-button-primary-background);
+				@include ui-button-state-active($ui-button-primary-color, $ui-button-primary-background);
 			}
 
 			&--hover {
-				@include ui-button($ui-button-primary-color, $ui-button-primary-background);
+				@include ui-button();
 				@include ui-button-sizes($ui-button-large);
-				@include ui-button-state-hover($ui-button-primary-background);
+				@include ui-button-state-hover($ui-button-primary-color, $ui-button-primary-background);
 			}
 		}
 
 		&--small {
-			@include ui-button($ui-button-primary-color, $ui-button-primary-background);
+			@include ui-button();
 			@include ui-button-sizes($ui-button-small);
 			@include ui-button-states($ui-button-primary-color, $ui-button-primary-background);
 
 			&--disabled {
-				@include ui-button($ui-button-primary-color, $ui-button-primary-background);
+				@include ui-button();
 				@include ui-button-sizes($ui-button-small);
-				@include ui-button-state-disabled($ui-button-primary-background);
+				@include ui-button-state-disabled($ui-button-primary-color, $ui-button-primary-background);
 			}
 
 			&--focus {
-				@include ui-button($ui-button-primary-color, $ui-button-primary-background);
+				@include ui-button();
 				@include ui-button-sizes($ui-button-small);
-				@include ui-button-state-focus($ui-button-primary-background);
+				@include ui-button-state-focus($ui-button-primary-color, $ui-button-primary-background);
 			}
 
 			&--active {
-				@include ui-button($ui-button-primary-color, $ui-button-primary-background);
+				@include ui-button();
 				@include ui-button-sizes($ui-button-small);
-				@include ui-button-state-active($ui-button-primary-background);
+				@include ui-button-state-active($ui-button-primary-color, $ui-button-primary-background);
 			}
 
 			&--hover {
-				@include ui-button($ui-button-primary-color, $ui-button-primary-background);
+				@include ui-button();
 				@include ui-button-sizes($ui-button-small);
-				@include ui-button-state-hover($ui-button-primary-background);
+				@include ui-button-state-hover($ui-button-primary-color, $ui-button-primary-background);
 			}
 		}
 
 		&--extra-small {
-			@include ui-button($ui-button-primary-color, $ui-button-primary-background);
+			@include ui-button();
 			@include ui-button-sizes($ui-button-extra-small);
 			@include ui-button-states($ui-button-primary-color, $ui-button-primary-background);
 
 			&--disabled {
-				@include ui-button($ui-button-primary-color, $ui-button-primary-background);
+				@include ui-button();
 				@include ui-button-sizes($ui-button-extra-small);
-				@include ui-button-state-disabled($ui-button-primary-background);
+				@include ui-button-state-disabled($ui-button-primary-color, $ui-button-primary-background);
 			}
 
 			&--focus {
-				@include ui-button($ui-button-primary-color, $ui-button-primary-background);
+				@include ui-button();
 				@include ui-button-sizes($ui-button-extra-small);
-				@include ui-button-state-focus($ui-button-primary-background);
+				@include ui-button-state-focus($ui-button-primary-color, $ui-button-primary-background);
 			}
 
 			&--active {
-				@include ui-button($ui-button-primary-color, $ui-button-primary-background);
+				@include ui-button();
 				@include ui-button-sizes($ui-button-extra-small);
-				@include ui-button-state-active($ui-button-primary-background);
+				@include ui-button-state-active($ui-button-primary-color, $ui-button-primary-background);
 			}
 
 			&--hover {
-				@include ui-button($ui-button-primary-color, $ui-button-primary-background);
+				@include ui-button();
 				@include ui-button-sizes($ui-button-extra-small);
-				@include ui-button-state-hover($ui-button-primary-background);
+				@include ui-button-state-hover($ui-button-primary-color, $ui-button-primary-background);
 			}
 		}
 	}
