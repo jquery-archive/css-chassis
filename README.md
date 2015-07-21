@@ -12,10 +12,6 @@ Chassis is an attempt at creating open standards designed for CSS libraries, Jav
 
 If you maintain a JavaScript library that has UI components, we'd love for you to join our efforts. We'd be happy to hear your feedback and work through updates of your project(s) to support CSS Framework. If you have the time and interest to help define the standards and improve on our implementation, that's even better! Check out the [contribution guidelines](https://github.com/jquery/css-chassis/blob/master/CONTRIBUTING.md) for more information.
 
-## Contributing
-
-For more information about contributing to Chassis, please (see our contributing guide)[CONTRIBUTING.md].
-
 ## Getting started
 
 ### Prerequisites
