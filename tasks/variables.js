@@ -8,5 +8,5 @@ module.exports = function( grunt ) {
 			"dest": path.join( process.cwd(), "dist" ),
 			"name": "chassis"
 		} );
-	} )
+	} );
 };

@@ -1,5 +1,5 @@
 module.exports = {
-	files: [ "*.js", "performance/**/*.js" ],
+	files: [ "*.js", "performance/**/*.js", "tasks/**/*.js" ],
 	options: {
 		jshintrc: ".jshintrc"
 	}
