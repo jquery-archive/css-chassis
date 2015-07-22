@@ -1,6 +1,5 @@
 module.exports = function( grunt ) {
-	var target,
-		seleniumChildProcesses = {};
+	var seleniumChildProcesses = {};
 
 	// This saves the process so we can attempt to kill it later in the case of a failure
 	grunt.event.on( "selenium.start", function( target, process ) {

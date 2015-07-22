@@ -16,4 +16,4 @@ module.exports = {
 			"icons/icons.svg": [ "icons/svg-min/*.svg" ]
 		}
 	}
-}
+};
