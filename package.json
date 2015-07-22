@@ -29,12 +29,7 @@
     "url": "git://github.com/jquery/css-chassis.git"
   },
   "bugs": "http://github.com/jquery/css-chassis/issues/",
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/jquery/css-chassis/blob/master/LICENSE.txt"
-    }
-  ],
+  "license": "MIT",
   "scripts": {
     "build": "npm install && grunt build",
     "start": "grunt watch",
