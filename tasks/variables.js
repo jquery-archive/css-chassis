@@ -1,5 +1,5 @@
 module.exports = function( grunt ) {
-	grunt.registerTask( "buildVariables", function() {
+	grunt.registerTask( "variables", function() {
 		var jsass = require( "jsass-vars" );
 		var path = require( "path" );
 		var varPath = path.join( process.cwd(), "scss/variables/*" );
