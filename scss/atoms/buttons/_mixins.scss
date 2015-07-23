@@ -36,9 +36,12 @@
 	&:disabled {
 		@include ui-button-state-disabled($color, $bgcolor);
 	}
-	&[aria-disabled="true"] {
-		@include ui-button-state-disabled($color, $bgcolor);
-	}
+	/**
+	* This triggers 'unqualified-attributes' in csslint
+	* &[aria-disabled="true"] {
+	* 	@include ui-button-state-disabled($color, $bgcolor);
+	* }
+	**/
 }
 
 @mixin ui-button-state-default($color, $bgcolor) {
