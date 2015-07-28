@@ -1,12 +1,13 @@
-( function ( root, factory ) {
-    if ( typeof define === 'function' && define.amd ) {
-        define( [ "./chassis" ], factory );
-    } else if (typeof exports === 'object') {
-        module.exports = factory( require('./chassis') );
-    } else {
-        root.chassis = factory( root.chassis );
-    }
-}(this, function ( chassis ) {
+( function( root, factory ) {
+	if ( typeof define === "function" && define.amd ) {
+		define( [ "./chassis" ], factory );
+	} else if ( typeof exports === "object" ) {
+		module.exports = factory( require( "./chassis" ) );
+	} else {
+		root.chassis = factory( root.chassis );
+	}
+}( this, function( chassis ) {
+
 var colors = {
 	"chassis-gray-dark": {
 		"value": "#383838",
@@ -32,7 +33,7 @@ var colors = {
 		"value": "#fadf51",
 		"name": "Chassis Yellow"
 	}
-}
+};
 chassis.colors = {
 	"background": colors[ "chassis-gray-dark" ],
 	"font": colors[ "chassis-gray-dark" ],
@@ -43,6 +44,6 @@ chassis.colors = {
 		name: "Chassis - Blockquote color",
 		value: "#eee"
 	}
-}
+};
 return chassis;
 } ) );
