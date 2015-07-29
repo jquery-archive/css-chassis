@@ -1,3 +1,6 @@
 module.exports = {
-	src: [ "dist/css/*.css" ]
+	src: [ "dist/css/*.css" ],
+	options: {
+		csslintrc: ".csslintrc"
+	}
 };

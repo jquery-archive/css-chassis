@@ -1,0 +1,17 @@
+/*
+* ==========================================================================
+* Hidden attribute
+*
+* Make the [hidden] global HTML attribute much more useful.
+* It's intended to be used to hide elements, but since it's not `!important`
+* by default, it's normally trumped by mere CSS classes that were only meant
+* to set a default `display` value. Making it `!important` (which is fine
+* because this is a utility attribute) corrects this shortcoming.
+* https://html.spec.whatwg.org/multipage/interaction.html#the-hidden-attribute
+* https://html.spec.whatwg.org/multipage/rendering.html#hiddenCSS
+* ==========================================================================
+*/
+
+[hidden] {
+	display: none !important;
+}
