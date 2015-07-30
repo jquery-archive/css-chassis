@@ -3,9 +3,10 @@ module.exports = function( grunt ) {
 		var jsass = require( "jsass-vars" );
 		var path = require( "path" );
 		var varPath = path.join( process.cwd(), "scss/variables/*" );
-
+		var distPath = path.join( process.cwd(), "dist" );
+		grunt.file.mkdir( distPath );
 		jsass( varPath, {
-			"dest": path.join( process.cwd(), "dist" ),
+			"dest": distPath,
 			"name": "chassis"
 		} );
 	} )
