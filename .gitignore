@@ -10,3 +10,4 @@ external/
 icons/svg-min/
 .sass-cache/
 dist/
+tmp/
