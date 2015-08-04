@@ -1,4 +1,7 @@
-module.exports = {
+module.exports = function( grunt ) {
+grunt.loadNpmTasks( "perfjankie" );
+
+return {
 	options: {
 		suite: "perfSlides - Performance Analysis"
 	},
@@ -40,4 +43,5 @@ module.exports = {
 			]
 		}
 	}
-}
+};
+};
