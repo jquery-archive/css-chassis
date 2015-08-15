@@ -1,5 +1,5 @@
 module.exports = {
-	css: [ "//ajax.googleapis.com/ajax/libs/dojo/1.10.3/dijit/themes/claro/claro.css" ],
+	css: [ "/bower_components/dijit/themes/claro/claro.css" ],
 	button: {
 		generator: function( options ) {
 			var button = "<span class='claro'><span class='dijit dijitReset " +

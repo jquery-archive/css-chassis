@@ -1,7 +1,7 @@
 module.exports = {
 	css: [
-		"//cdnjs.cloudflare.com/ajax/libs/topcoat/0.8.0/css/topcoat-desktop-dark.css",
-		"//cdnjs.cloudflare.com/ajax/libs/topcoat-icons/0.2.0/font/icomatic.css"
+		"/bower_components/topcoat/css/topcoat-desktop-dark.css",
+		"/bower_components/topcoat-icons/font/icomatic.css"
 	],
 	button: {
 		generator: function( options ) {

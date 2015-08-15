@@ -1,0 +1,28 @@
+{
+  "name": "css-chassis",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {},
+  "resolutions": {
+    "jquery": ">= 2.1.0",
+    "jquery-ui": "1.11.4"
+  },
+  "devDependencies": {
+    "foundation-icons": "*",
+    "foundation-icon-fonts": "*",
+    "bootstrap": "3.3.5",
+    "jquery-ui": "1.11.4",
+    "jquery-mobile": "1.4.5",
+    "kendo-ui": "2015.2.813",
+    "dijit": "1.10.4",
+    "foundation": "5.5.2",
+    "semantic-ui": "2.0.8",
+    "topcoat": "0.8.0",
+    "topcoat-icons": "0.2.0"
+  }
+}

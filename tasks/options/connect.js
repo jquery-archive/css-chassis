@@ -1,13 +1,14 @@
 var template = require( "ejs-template" ),
 	urlParser = require( "url" ),
 	componentGenerator = require( "../../performance/component.js" );
-
+var serveStatic = require( "serve-static" );
 module.exports = {
 	options: {
 		port: 4200,
-		base: ".",
+		base: process.cwd(),
 		middleware: [
-			template.middleware({ basedir: __dirname }),
+			serveStatic( process.cwd() ),
+			template.middleware( { basedir: __dirname } ),
 			function( req, res ) {
 				var data, i,
 					url = urlParser.parse( req.url, true ),
