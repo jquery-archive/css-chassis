@@ -1,5 +1,5 @@
 module.exports = {
-	css: [ "/bower_components/jquery-ui/themes/base/jquery.ui.all.css" ],
+	css: [ "/bower_components/jquery-ui/themes/base/jquery-ui.min.css" ],
 	button: {
 		generator: function( options ) {
 			var position,
