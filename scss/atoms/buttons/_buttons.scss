@@ -3,8 +3,9 @@
 * Buttons
 * ==========================================================================
 */
-@import "variables";
-@import "mixins";
+@import
+	"dist/chassis",
+	"mixins";
 
 .ui-button {
 	&--default {
