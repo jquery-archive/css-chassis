@@ -26,6 +26,38 @@ chassis.uiButton = {
 		name: "Primary Button Background",
 		value: "#337ab7"
 	},
+	"ui-button-success-color": {
+		name: "Success Button Color",
+		value: "#ffffff"
+	},
+	"ui-button-success-background": {
+		name: "Success Button Background",
+		value: "#5cb85c"
+	},
+	"ui-button-info-color": {
+		name: "Info Button Color",
+		value: "#ffffff"
+	},
+	"ui-button-info-background": {
+		name: "Info Button Background",
+		value: "#5bc0de"
+	},
+	"ui-button-warning-color": {
+		name: "Warning Button Color",
+		value: "#ffffff"
+	},
+	"ui-button-warning-background": {
+		name: "Warning Button Background",
+		value: "#f0ad4e"
+	},
+	"ui-button-danger-color": {
+		name: "Danger Button Color",
+		value: "#ffffff"
+	},
+	"ui-button-danger-background": {
+		name: "Danger Button Background",
+		value: "#d9534f"
+	},
 	"ui-button-disabled-opacity": {
 		name: "Disabled Button Opacity",
 		value: .6
@@ -40,38 +72,46 @@ chassis.uiButton = {
 	},
 	"ui-button-text-transform": {
 		name: "Button Text Transform",
-		value: "uppercase"
+		value: "none"
+	},
+	"ui-button-border-width": {
+		name: "Button Border Width",
+		value: "1px"
 	},
 	"ui-button-large": {
 		name: "Large Button",
 		value: {
-			"font-size": "20px",
-			"line-height": "20px",
-			"padding": ".75em"
+			"border-radius": "6px",
+			"font-size": "16px",
+			"line-height": "16px",
+			"padding": ".75em 1.25em"
 		}
 	},
 	"ui-button-default": {
 		name: "Default Button",
 		value: {
-			"font-size": "16px",
-			"line-height": "16px",
-			"padding": ".5em"
+			"border-radius": "4px",
+			"font-size": "14px",
+			"line-height": "14px",
+			"padding": ".5em 1em"
 		}
 	},
 	"ui-button-small": {
 		name: "Small Button",
 		value: {
-			"font-size": "14px",
-			"line-height": "14px",
-			"padding": ".2em .5em"
+			"border-radius": "3px",
+			"font-size": "12px",
+			"line-height": "12px",
+			"padding": ".35em .75em"
 		}
 	},
   "ui-button-extra-small": {
 		name: "Extra Small Button",
 		value: {
+			"border-radius": "3px",
 			"font-size": "12px",
 			"line-height": "12px",
-			"padding": ".2em .5em"
+			"padding": ".2em .35em"
 		}
 	},
 };

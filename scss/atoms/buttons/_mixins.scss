@@ -5,7 +5,6 @@
 */
 
 @mixin ui-button() {
-	border: 0;
 	display: inline-block;
 	font-weight: $ui-button-font-weight;
 	margin: $ui-button-margin;
@@ -13,17 +12,21 @@
 	text-decoration: none;
 	text-transform: $ui-button-text-transform;
 	vertical-align: middle;
+	white-space: nowrap;
 }
 
 @mixin ui-button-sizes($size) {
-	font-size: map-get( $size, font-size);
-	line-height: map-get( $size, line-height);
-	padding: map-get( $size, padding);
+	border-radius: map-get( $size, border-radius );
+	font-size: map-get( $size, font-size );
+	line-height: map-get( $size, line-height );
+	padding: map-get( $size, padding );
 }
 
 @mixin ui-button-states($color, $bgcolor) {
 	background: $bgcolor;
+	border: $ui-button-border-width solid darken($bgcolor, 10%);
 	color: $color;
+
 	&:active {
 		@include ui-button-state-active($color, $bgcolor);
 	}
@@ -46,26 +49,31 @@
 
 @mixin ui-button-state-default($color, $bgcolor) {
 	background: $bgcolor;
+	border: $ui-button-border-width solid darken($bgcolor, 10%);
 	color: $color;
 }
 
 @mixin ui-button-state-active($color, $bgcolor) {
 	background: darken($bgcolor, 20%);
+	border: $ui-button-border-width solid darken($bgcolor, 30%);
 	color: $color;
 }
 
 @mixin ui-button-state-focus($color, $bgcolor) {
 	background: darken($bgcolor, 15%);
+	border: $ui-button-border-width solid darken($bgcolor, 25%);
 	color: $color;
 }
 
 @mixin ui-button-state-hover($color, $bgcolor) {
 	background: darken($bgcolor, 10%);
+	border: $ui-button-border-width solid darken($bgcolor, 20%);
 	color: $color;
 }
 
 @mixin ui-button-state-disabled($color, $bgcolor) {
 	background: $bgcolor;
+	border: $ui-button-border-width solid darken($bgcolor, 10%);
 	color: $color;
 	cursor: default;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+$ui-button-disabled-opacity+")";
