@@ -13,6 +13,6 @@ module.exports = function( grunt ) {
 				"Authors ordered by first contribution\n\n" +
 				authors.join( "\n" ) + "\n" );
 			done();
-		});
-	});
+		} );
+	} );
 };

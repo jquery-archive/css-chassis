@@ -7,6 +7,6 @@ grunt.registerTask( "perf", [
 	"connect:perf",
 	"perfjankie",
 	"stop-selenium-server"
-]);
+] );
 grunt.registerTask( "svg", [ "svgmin", "svgstore" ] );
 };

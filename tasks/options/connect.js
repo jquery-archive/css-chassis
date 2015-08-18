@@ -7,7 +7,7 @@ module.exports = {
 		port: 4200,
 		base: ".",
 		middleware: [
-			template.middleware({ basedir: __dirname }),
+			template.middleware( { basedir: __dirname } ),
 			function( req, res ) {
 				var data, i,
 					url = urlParser.parse( req.url, true ),
