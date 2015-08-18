@@ -81,7 +81,7 @@ chassis.uiButton = {
 	"ui-button-large": {
 		name: "Large Button",
 		value: {
-			"border-radius": "6px",
+			"border-radius": "2px",
 			"font-size": "16px",
 			"line-height": "16px",
 			"padding": ".75em 1.25em"
@@ -90,7 +90,7 @@ chassis.uiButton = {
 	"ui-button-default": {
 		name: "Default Button",
 		value: {
-			"border-radius": "4px",
+			"border-radius": "2px",
 			"font-size": "14px",
 			"line-height": "14px",
 			"padding": ".5em 1em"
@@ -99,7 +99,7 @@ chassis.uiButton = {
 	"ui-button-small": {
 		name: "Small Button",
 		value: {
-			"border-radius": "3px",
+			"border-radius": "2px",
 			"font-size": "12px",
 			"line-height": "12px",
 			"padding": ".35em .75em"
@@ -108,7 +108,7 @@ chassis.uiButton = {
   "ui-button-extra-small": {
 		name: "Extra Small Button",
 		value: {
-			"border-radius": "3px",
+			"border-radius": "2px",
 			"font-size": "12px",
 			"line-height": "12px",
 			"padding": ".2em .35em"
