@@ -5,6 +5,7 @@
 */
 
 @mixin ui-button() {
+	cursor: pointer;
 	display: inline-block;
 	font-weight: $ui-button-font-weight;
 	margin: $ui-button-margin;
