@@ -5,7 +5,7 @@ module.exports = function( grunt ) {
 	grunt.event.on( "selenium.start", function( target, process ) {
 		grunt.log.ok( "Saw process for target: " +  target );
 		seleniumChildProcesses[ target ] = process;
-	});
+	} );
 
 	// This trys to gracefully handle failures and kill the selenium server but its not 100%
 	// if this does is not successfull the task will not run again until this has been killed
@@ -24,5 +24,5 @@ module.exports = function( grunt ) {
 				grunt.log.warn( "Unable to stop selenium target: " + target );
 			}
 		}
-	});
+	} );
 };
