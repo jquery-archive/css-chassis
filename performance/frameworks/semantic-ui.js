@@ -1,5 +1,5 @@
 module.exports = {
-	css: [ "/bower_components/semantic-ui/dist/semantic.min.css" ],
+	css: [ "/external/semantic-ui/dist/semantic.min.css" ],
 	button: {
 		generator: function( options ) {
 			var button = "<button class='ui button " + options.state + options.type +

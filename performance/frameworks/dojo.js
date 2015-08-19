@@ -1,5 +1,5 @@
 module.exports = {
-	css: [ "/bower_components/dijit/themes/claro/claro.css" ],
+	css: [ "/external/dijit/themes/claro/claro.css" ],
 	button: {
 		generator: function( options ) {
 			var button = "<span class='claro'><span class='dijit dijitReset " +

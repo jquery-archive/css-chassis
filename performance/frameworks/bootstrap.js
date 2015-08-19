@@ -1,5 +1,5 @@
 module.exports = {
-	css: [ "/bower_components/bootstrap/css/bootstrap.min.css" ],
+	css: [ "/external/bootstrap/css/bootstrap.min.css" ],
 	button: {
 		generator: function( options ) {
 			var button = "<button class='btn " + options.state + " " + options.size + "' >";

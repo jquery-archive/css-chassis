@@ -13,7 +13,6 @@
     "jquery-ui": "1.11.4"
   },
   "devDependencies": {
-    "foundation-icons": "*",
     "foundation-icon-fonts": "*",
     "bootstrap": "3.3.5",
     "jquery-ui": "1.11.4",

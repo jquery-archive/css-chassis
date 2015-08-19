@@ -1,7 +1,7 @@
 module.exports = {
 	css: [
-		"/bower_components/topcoat/css/topcoat-mobile-dark.css",
-		"/bower_components/topcoat-icons/font/icomatic.css"
+		"/external/topcoat/css/topcoat-mobile-dark.css",
+		"/external/topcoat-icons/font/icomatic.css"
 	],
 	button: {
 		generator: function( options ) {
