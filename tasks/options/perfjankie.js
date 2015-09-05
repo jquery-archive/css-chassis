@@ -14,7 +14,7 @@ return {
 			},
 			browsers: [
 				"chrome",
-	
+				"firefox"
 			],
 			couch: {
 				server: "http://localhost:5984",
