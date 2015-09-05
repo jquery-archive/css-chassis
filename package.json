@@ -38,15 +38,16 @@
   "dependencies": {},
   "devDependencies": {
     "browser-perf": "1.2.3",
-    "chromedriver": "2.13.0",
+    "chromedriver": "2.16.0",
     "commitplease": "2.0.0",
     "ejs-template": "0.1.0",
     "grunt": "0.4.5",
     "grunt-autoprefixer": "2.1.0",
-    "grunt-contrib-cssmin": "0.10.0",
-    "grunt-contrib-csslint": "0.4.0",
-    "grunt-contrib-jshint": "0.10.0",
+    "grunt-bowercopy": "^1.2.3",
     "grunt-contrib-connect": "0.9.0",
+    "grunt-contrib-csslint": "0.4.0",
+    "grunt-contrib-cssmin": "0.10.0",
+    "grunt-contrib-jshint": "0.10.0",
     "grunt-contrib-watch": "0.6.1",
     "grunt-csscomb": "3.0.0",
     "grunt-git-authors": "2.0.0",
@@ -58,7 +59,8 @@
     "grunt-svgstore": "0.5.0",
     "jsass-vars": "0.0.3",
     "load-grunt-config": "0.16.0",
-    "perfjankie": "1.2.2"
+    "perfjankie": "2.1.0",
+    "serve-static": "1.10.0"
   },
   "keywords": []
 }

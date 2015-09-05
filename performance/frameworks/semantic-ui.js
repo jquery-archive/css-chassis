@@ -1,5 +1,5 @@
 module.exports = {
-	css: [ "//cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.1/semantic.min.css" ],
+	css: [ "/external/semantic-ui/dist/semantic.min.css" ],
 	button: {
 		generator: function( options ) {
 			var button = "<button class='ui button " + options.state + options.type +

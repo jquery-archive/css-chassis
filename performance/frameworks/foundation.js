@@ -1,8 +1,8 @@
 module.exports = {
 	css: [
-		"//cdn.foundation5.zurb.com/foundation.css",
-		"//cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.eot",
-		"https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.min.css"
+		"/external/foundation/css/foundation.css",
+		"/external/foundation-icon-fonts/foundation-icons.eot",
+		"/external/foundation-icon-fonts/foundation-icons.css"
 	],
 	button: {
 		generator: function( options ) {

@@ -1,5 +1,5 @@
 module.exports = {
-	css: [ "//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" ],
+	css: [ "/bower_components/jquery-mobile/css/themes/default/jquery.mobile.css" ],
 	button: {
 		generator: function( options ) {
 			var position = ( options.icon === "" ) ? "" : options.iconPosition;
