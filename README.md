@@ -12,6 +12,7 @@ Chassis is an attempt at creating open standards designed for CSS libraries, Jav
 
 If you maintain a JavaScript library that has UI components, we'd love for you to join our efforts. We'd be happy to hear your feedback and work through updates of your project(s) to support CSS Framework. If you have the time and interest to help define the standards and improve on our implementation, that's even better! Check out the [contribution guidelines](https://github.com/jquery/css-chassis/blob/master/CONTRIBUTING.md) for more information.
 
+
 ## Getting started
 
 ### Prerequisites
@@ -50,3 +51,4 @@ When the tests complete go to [http://localhost:5984/css-performance/_design/sit
 ## Viewing the test pages
 
 Follow the steps above to build. Once that is complete run `grunt connect:dev` from the root of the Chassis directory. This will start a connect server that will run until you stop it. Then go to http://localhost:4200/framework/{framework name}/component/{component name}/count/{ # of components to render}/ and you can see the generated test page.
+
