@@ -46,7 +46,7 @@ $ grunt perf
 
 ####DO NOT USE YOUR COMPUTER WHILE TESTS ARE RUNNING
 
-When the tests complete go to [http://localhost:5984/css-performance/_design/site/index.html#/page-select](http://localhost:5984/css-performance/_design/site/index.html#/page-select) to view results
+When the tests complete go to [http://localhost:5984/css-performance/_design/site/index.html#/page-select](http://localhost:5984/css-performance/_design/site/index.html#/page-select) to view results.
 
 ## Viewing the test pages
 
