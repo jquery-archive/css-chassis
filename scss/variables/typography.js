@@ -52,6 +52,22 @@ chassis.typography = {
 	sans: {
 		name: "Font Family - Sans",
 		value: "Helvetica, Arial, sans-serif"
+	},
+	"blockquote-color": {
+		name: "blockquote color",
+		value: "#eee"
+	},
+	"code-background": {
+		name: "Code Background Color",
+		value: "#F2F2F2"
+	},
+	"pre-bgcolor": {
+		name: "Pre Background Color",
+		value: "#f7f7f7"
+	},
+	"hr-border-color": {
+		name: "Horizontal Rule Border Color",
+		value: "#999"
 	}
 };
 
