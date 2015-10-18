@@ -22,9 +22,17 @@ If you maintain a JavaScript library that has UI components, we'd love for you t
 ### Building
 
 Once you've cloned Chassis to your machine, run these commands:
-```
+```bash
 $ npm install
 $ grunt build
+```
+
+### Develop
+
+To automate the build process during development, run the `grunt watch` task to compile SCSS upon file change.
+
+```bash
+$ grunt watch
 ```
 
 ### Performance testing
@@ -38,7 +46,7 @@ $ grunt build
 #### Running the tests
 
 Once you have completed the setup run this:
-```
+```bash
 $ grunt perf
 ```
 
@@ -49,8 +57,7 @@ Once the tests completed, [view the results](http://localhost:5984/css-performan
 #### Viewing the test pages
 
 Follow the steps above to build. Once that is complete run this:
-```
+```bash
 $ grunt connect:dev
 ```
 This will start a connect server that will run until you stop it (`Ctrl+C`). Then go to http://localhost:4200/framework/{framework name}/component/{component name}/count/{ # of components to render}/ and you can see the generated test page.
-
