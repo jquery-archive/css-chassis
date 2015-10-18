@@ -39,11 +39,7 @@ chassis.colors = {
 	"font": colors[ "chassis-gray-dark" ],
 	"link": colors[ "chassis-blue-dark" ],
 	"button": colors[ "chassis-blue" ],
-	"buttonText": colors[ "chassis-gray-light" ],
-	"blockquoteBorder": {
-		name: "Chassis - Blockquote color",
-		value: "#eee"
-	}
+	"buttonText": colors[ "chassis-gray-light" ]
 };
 return chassis;
 } ) );
