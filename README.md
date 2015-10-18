@@ -27,6 +27,14 @@ $ npm install
 $ grunt build
 ```
 
+### Develop
+
+Now that you have the environment ready, you may want to 'watch' your build task, so you can run:
+
+```
+$ grunt watch
+```
+
 ### Performance testing
 
 #### Setup
