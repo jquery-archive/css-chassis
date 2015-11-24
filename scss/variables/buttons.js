@@ -92,7 +92,7 @@ chassis.uiButton = {
 			"padding": ".35em .75em"
 		}
 	},
-  "ui-btn-xs": {
+	"ui-btn-xs": {
 		name: "Extra Small Button",
 		value: {
 			"border-radius": "2px",
