@@ -1,0 +1,85 @@
+/*
+* ==========================================================================
+* Buttons (Mixins)
+* ==========================================================================
+*/
+
+@mixin ui-button() {
+	cursor: pointer;
+	display: inline-block;
+	font-weight: $ui-button-font-weight;
+	margin: $ui-button-margin;
+	text-align: center;
+	text-decoration: none;
+	text-transform: $ui-button-text-transform;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+@mixin ui-button-sizes($size) {
+	border-radius: map-get( $size, border-radius );
+	font-size: map-get( $size, font-size );
+	line-height: map-get( $size, line-height );
+	padding: map-get( $size, padding );
+}
+
+@mixin ui-button-states($color, $bgcolor) {
+	background: $bgcolor;
+	border: $ui-button-border-width solid darken($bgcolor, 10%);
+	color: $color;
+
+	&:active {
+		@include ui-button-state-active($color, $bgcolor);
+	}
+	&:focus {
+		@include ui-button-state-focus($color, $bgcolor);
+	}
+	&:hover {
+		@include ui-button-state-active($color, $bgcolor);
+	}
+	&:disabled {
+		@include ui-button-state-disabled($color, $bgcolor);
+	}
+	/**
+	* This triggers 'unqualified-attributes' in csslint
+	* &[aria-disabled="true"] {
+	* 	@include ui-button-state-disabled($color, $bgcolor);
+	* }
+	**/
+}
+
+@mixin ui-button-state-default($color, $bgcolor) {
+	background: $bgcolor;
+	border: $ui-button-border-width solid darken($bgcolor, 10%);
+	color: $color;
+}
+
+@mixin ui-button-state-active($color, $bgcolor) {
+	background: darken($bgcolor, 20%);
+	border: $ui-button-border-width solid darken($bgcolor, 30%);
+	color: $color;
+}
+
+@mixin ui-button-state-focus($color, $bgcolor) {
+	background: darken($bgcolor, 15%);
+	border: $ui-button-border-width solid darken($bgcolor, 25%);
+	color: $color;
+}
+
+@mixin ui-button-state-hover($color, $bgcolor) {
+	background: darken($bgcolor, 10%);
+	border: $ui-button-border-width solid darken($bgcolor, 20%);
+	color: $color;
+}
+
+@mixin ui-button-state-disabled($color, $bgcolor) {
+	background: $bgcolor;
+	border: $ui-button-border-width solid darken($bgcolor, 10%);
+	color: $color;
+	cursor: default;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+$ui-button-disabled-opacity+")";
+	filter: alpha(opacity=$ui-button-disabled-opacity);
+	-moz-opacity: $ui-button-disabled-opacity;
+	-khtml-opacity: $ui-button-disabled-opacity;
+	opacity: $ui-button-disabled-opacity;
+}
