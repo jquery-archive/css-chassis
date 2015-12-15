@@ -1,0 +1,45 @@
+@mixin btn-colors($btn-colors) {
+	color: map-get($btn-colors, color);
+	background: map-get($btn-colors, background);
+	border-color: map-get($btn-colors, border);
+
+	&:active,
+	&.active {
+		@include btn-active($btn-colors);
+	}
+
+	&:focus,
+	&.focus {
+		@include btn-focus($btn-colors);
+	}
+
+	&:hover,
+	&.hover {
+		@include btn-hover($btn-colors);
+	}
+}
+
+@mixin btn-size($btn-size) {
+	border-radius: map-get($btn-size, border-radius);
+	font-size: map-get($btn-size, font-size);
+	line-height: map-get($btn-size, line-height);
+	padding: map-get($btn-size, padding);
+}
+
+@mixin btn-active($btn-colors) {
+	color: map-get($btn-colors, color);
+	background: darken(map-get($btn-colors, background), 30%);
+	border-color: map-get($btn-colors, border);
+}
+
+@mixin btn-focus($btn-colors) {
+	color: map-get($btn-colors, color);
+	background: darken(map-get($btn-colors, background), 25%);
+	border-color: map-get($btn-colors, border);
+}
+
+@mixin btn-hover($btn-colors) {
+	color: map-get($btn-colors, color);
+	background: darken(map-get($btn-colors, background), 20%);
+	border-color: map-get($btn-colors, border);
+}

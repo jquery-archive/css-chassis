@@ -17,46 +17,57 @@ chassis.uiButton = {
 		 "text-transform": "none"
 		}
 	},
+	"ui-btn-font": {
+		name: "Button Font",
+		value: "$sans"
+	},
 	"ui-btn-default": {
 		name: "Default Button",
 		value: {
 			"color": "#383838",
-			"background": "#ffffff"
+			"background": "#ffffff",
+			"border": "#383838"
 		}
 	},
 	"ui-btn-primary": {
 		name: "Primary Button",
 		value: {
 			"color": "#ffffff",
-			"background": "#337ab7"
+			"background": "#3F51B5",
+			"border": "darken( #3F51B5, 10% )"
 		}
 	},
 	"ui-btn-success": {
 		name: "Success Button",
 		value: {
 			"color": "#ffffff",
-			"background": "#5cb85c"
+			"background": "#4CAF50",
+			"border": "darken( #4CAF50, 10% )"
 		}
 	},
+
 	"ui-btn-info": {
 		name: "Info Button",
 		value: {
 			"color": "#ffffff",
-			"background": "#5bc0de"
+			"background": "#00BCD4",
+			"border": "darken( #00BCD4, 10% )"
 		}
 	},
 	"ui-btn-warning": {
 		name: "Warning Button",
 		value: {
 			"color": "#ffffff",
-			"background": "#f0ad4e"
+			"background": "#FF5722",
+			"border": "darken( #FF5722, 10% )"
 		}
 	},
 	"ui-btn-danger": {
 		name: "Danger Button",
 		value: {
 			"color": "#ffffff",
-			"background": "#d9534f"
+			"background": "#F44336",
+			"border": "darken( #F44336, 10% )"
 		}
 	},
 	"ui-btn-disabled": {
