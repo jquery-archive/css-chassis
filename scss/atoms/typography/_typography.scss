@@ -12,10 +12,10 @@
 body {
 	font: $normal #{ map-get( $defaultFont, font-size ) }/1.5 $sans;
 
-	@media ( max-width: 800px ) {
+	@media ( max-width: $viewport-md-min ) {
 		font-size: 16px;
 	}
-	@media ( max-width: 500px ) {
+	@media ( max-width: $viewport-sm-min ) {
 		font-size: 14px;
 	}
 }
