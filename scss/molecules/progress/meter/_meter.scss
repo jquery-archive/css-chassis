@@ -1,0 +1,74 @@
+/*
+* ==========================================================================
+* Meter
+* ==========================================================================
+*/
+@import
+	"dist/chassis",
+	"mixins",
+	"../mixins";
+meter {
+	appearance: none;
+	@include ui-meter();
+
+	&::-webkit-meter-bar {
+		background: $ui-meter-background;
+	}
+	@include ui-meter-optimum-variations() {
+		@include ui-meter-value( $ui-meter-optimum-color, $ui-meter-optimum-background );
+	}
+
+	@include ui-meter-suboptimum-variations() {
+		@include ui-meter-value( $ui-meter-suboptimum-color, $ui-meter-suboptimum-background );
+	}
+	@include ui-meter-bad-variations() {
+		@include ui-meter-value( $ui-meter-bad-color, $ui-meter-bad-background );
+	}
+
+	&.striped {
+		@include ui-meter-variations() {
+			@include ui-stripes();
+		}
+	}
+}
+
+/*
+* Meter Fallback using div
+*/
+.ui-meter {
+	padding: 0;
+	@include ui-meter();
+	display: inline-block;
+	span {
+		display: block;
+		height: 100%;
+		text-align: center;
+		line-height: $ui-meter-height;
+		@include ui-meter-value( $ui-meter-optimum-color, $ui-meter-optimum-background );
+	}
+	&.striped {
+		span {
+			@include ui-stripes();
+		}
+		&.animated {
+			span{
+				animation: ui-stripes-animate $ui-meter-animation-time linear infinite;
+			}
+
+		}
+	}
+
+	&.warning {
+		span {
+
+			background-color:  $ui-meter-suboptimum-background ;
+		}
+	}
+	&.error {
+		span {
+
+			background-color:  $ui-meter-bad-background ;
+		}
+
+	}
+}

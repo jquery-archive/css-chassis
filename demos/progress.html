@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CSS Chassis - Typography</title>
+	<meta name="description" content="Typography skeleton for styling">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../dist/css/chassis.css">
+	<link rel="stylesheet" href="demos.css">
+	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,400italic,700italic" rel="stylesheet">
+</head>
+<body>
+
+<h1>CSS Chassis</h1>
+<h2>Progress and Meter</h2>
+<hr>
+<h3>Meter Element</h3>
+<meter max="100" value="70" min="0" low="50" high="90"></meter>
+<meter max="100" value="40" min="20" low="50" high="90"></meter>
+<meter max="100" value="10" low="50" optimum="100" high="90"></meter>
+<meter class="ui_meter striped " max="100" value="70" min="0" low="50" high="90"></meter>
+<meter class="ui_meter striped " max="100" value="40" min="20" low="50" high="90"></meter>
+<meter class="ui_meter striped " max="100" value="10" low="50" optimum="100" high="90"></meter>
+
+
+<h3>Meter Fallback</h3>
+<h5>Use ui-meter modifier class for meter</h5>
+
+<div class="ui-meter default">
+	<span  style="width:60%;"></span>
+</div>
+
+<div class="ui-meter warning">
+	<span  style="width:50%;"></span>
+</div>
+
+<div class="ui-meter error">
+	<span  style="width:30%;"></span>
+</div>
+
+<h5>Add  striped to stripe</h5>
+<div class="ui-meter default striped">
+	<span  style="width:60%;"></span>
+</div>
+
+<div class="ui-meter warning striped">
+	<span  style="width:50%;"></span>
+</div>
+
+<div class="ui-meter error striped">
+	<span  style="width:30%;"></span>
+</div>
+
+<h5>Add  striped animated to stripe and animate</h5>
+
+
+<div class="ui-meter default striped animated">
+	<span  style="width:60%;"></span>
+</div>
+
+<div class="ui-meter warning striped animated">
+	<span  style="width:50%;"></span>
+</div>
+
+<div class="ui-meter error striped animated">
+	<span  style="width:30%;"></span>
+</div>
+
+
+
+
+
+<h3>Progress Element</h3>
+<p>Use same class as fallback for variations</p>
+<progress max="100" value="70" class=""></progress>
+<progress max="100" value="70" class="error striped"></progress>
+
+
+<h3>Progress Fallback</h3>
+<h5>Use ui-progress--modifier class for progress</h5>
+<div class="ui-progress default">
+	<span  style="width:60%;"></span>
+</div>
+
+<div class="ui-progress warning">
+	<span  style="width:50%;"></span>
+</div>
+
+<div class="ui-progress error">
+	<span  style="width:30%;"></span>
+</div>
+
+<h5>Add --striped to stripe</h5>
+<div class="ui-progress default striped">
+	<span  style="width:60%;"></span>
+</div>
+
+<div class="ui-progress warning striped">
+	<span  style="width:50%;"></span>
+</div>
+
+<div class="ui-progress error striped">
+	<span  style="width:30%;"></span>
+</div>
+
+<h5>Add --striped--animated to stripe and animate</h5>
+
+
+<div class="ui-progress default striped animated">
+	<span  style="width:60%;"></span>
+</div>
+
+<div class="ui-progress warning striped animated">
+	<span  style="width:50%;"></span>
+</div>
+
+<div class="ui-progress error striped animated">
+	<span  style="width:30%;"></span>
+</div>
+
+
+
+
+</body>
+</html>
