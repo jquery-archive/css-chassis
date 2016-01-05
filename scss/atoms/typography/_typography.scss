@@ -64,22 +64,22 @@ h6 {
 */
 
 hr {
-	border: 0;
-	border-bottom: 1px solid #999;
+	border: map-get($hr, border);
+	border-bottom: map-get($hr, border-bottom) $hr-border-color;
 }
 
 blockquote {
-	margin: 0;
-	padding-left: 1em;
-	position: relative;
-	border-left: 4px solid #eee; // TODO replace with color variable
-	font-style: italic;
+	margin: map-get($blockquote, margin);
+	padding-left: map-get($blockquote, padding-left);
+	position: map-get($blockquote, position);
+	border-left: map-get($blockquote, border-left) $blockquote-color;
+	font-style: map-get($blockquote, font-style);
 }
 
 pre {
-	padding: 16px 20px;
-	background: #f7f7f7;
-	font: normal 12px/1.4 $monospace;
+	padding: map-get($pre, padding);
+	background: map-get($pre, background);
+	font: map-get($pre, font) $monospace;
 }
 
 /*
@@ -89,11 +89,11 @@ pre {
 */
 
 dt {
-	font-weight: 600;
+	font-weight: $dt-font-weight;
 }
 
 dd {
-	margin: 0;
+	margin: $dd-margin;
 }
 
 /*
@@ -121,8 +121,8 @@ strong {
 }
 
 code {
-	background: #f2f2f2; // TODO replace with color variable
-	font-size: em( 16px );
-	padding: em( 4px, 16px ) em( 8px, 16px );
-	border-radius: 3px;
+	background: $code-background;
+	font-size: map-get($code, font-size);
+	padding: map-get($code, padding);
+	border-radius: map-get($code, border-radius);
 }
