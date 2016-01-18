@@ -10,7 +10,8 @@
 
 var color = "#222",
 	fontSize = "20px",
-	lineHeight = 1.5;
+	lineHeight = 1.5,
+	linkColor = "#4078c0";
 
 chassis.typography = {
 	normal: {
@@ -52,6 +53,34 @@ chassis.typography = {
 	sans: {
 		name: "Font Family - Sans",
 		value: "Helvetica, Arial, sans-serif"
+	},
+	link: {
+		name: "Link",
+		value: {
+			color: linkColor, // TODO replace with a color from the color-palette
+			decoration: "none"
+		}
+	},
+	"link-hover": {
+		name: "Link On Mouse Hover",
+		value: {
+			color: linkColor,
+			decoration: "underline"
+		}
+	},
+	"link-focus": {
+		name: "Link On Focus or Active",
+		value: {
+			color: linkColor,
+			decoration: "none"
+		}
+	},
+	"link-visited": {
+		name: "Link If Visited",
+		value: {
+			color: linkColor,
+			decoration: "none"
+		}
 	}
 };
 

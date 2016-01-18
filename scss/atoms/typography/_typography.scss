@@ -54,7 +54,7 @@ h6 {
 	font-size: em( 16px );
 	font-weight: 600;
 	line-height: 1;
-	text-transform: uppercase;
+	text-transform: uppercase; // FIXME Is this opinionated?
 }
 
 /*
@@ -65,7 +65,7 @@ h6 {
 
 hr {
 	border: 0;
-	border-bottom: 1px solid #999;
+	border-bottom: 1px solid #999; //TODO replace with color variable
 }
 
 blockquote {
@@ -78,7 +78,7 @@ blockquote {
 
 pre {
 	padding: 16px 20px;
-	background: #f7f7f7;
+	background: #f7f7f7; // TODO replace with color variable
 	font: normal 12px/1.4 $monospace;
 }
 
@@ -103,15 +103,23 @@ dd {
 */
 
 a {
-	//TODO add colors
+	color: map-get($link,color);
+	font-weight: map-get($link,weight);
+	text-decoration: map-get($link,decoration);
 
-	&:hover,
+	&:hover {
+		color: map-get($link-hover,color);
+		text-decoration: map-get($link-hover,decoration);
+	}
+
 	&:active,
 	&:focus {
-		//TODO add colors
+		color: map-get($link-focus,color);
+		text-decoration: map-get($link-focus,decoration);
 	}
 	&:visited {
-		// TODO add colors
+		color: map-get($link-visited,color);
+		text-decoration: map-get($link-visited,decoration);
 	}
 }
 
@@ -124,5 +132,5 @@ code {
 	background: #f2f2f2; // TODO replace with color variable
 	font-size: em( 16px );
 	padding: em( 4px, 16px ) em( 8px, 16px );
-	border-radius: 3px;
+	border-radius: 3px; // TODO replace with variable
 }
