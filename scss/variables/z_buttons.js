@@ -14,7 +14,7 @@ chassis.uiButton = {
 		value: {
 		 "font-weight": 500,
 		 "margin": ".25em",
-		 "text-transform": "uppercase",
+		 "text-transform": "uppercase"
 		}
 	},
 	"ui-btn-font": {
