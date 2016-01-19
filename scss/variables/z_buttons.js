@@ -14,7 +14,7 @@ chassis.uiButton = {
 		value: {
 		 "font-weight": 500,
 		 "margin": ".25em",
-		 "text-transform": "none"
+		 "text-transform": "uppercase",
 		}
 	},
 	"ui-btn-font": {
@@ -34,7 +34,7 @@ chassis.uiButton = {
 		value: {
 			"color": "#ffffff",
 			"background": "#3F51B5",
-			"border": "darken( #3F51B5, 10% )"
+			"border": "transparent"
 		}
 	},
 	"ui-btn-success": {
@@ -42,7 +42,7 @@ chassis.uiButton = {
 		value: {
 			"color": "#ffffff",
 			"background": "#4CAF50",
-			"border": "darken( #4CAF50, 10% )"
+			"border": "transparent"
 		}
 	},
 
@@ -51,7 +51,7 @@ chassis.uiButton = {
 		value: {
 			"color": "#ffffff",
 			"background": "#00BCD4",
-			"border": "darken( #00BCD4, 10% )"
+			"border": "transparent"
 		}
 	},
 	"ui-btn-warning": {
@@ -59,7 +59,7 @@ chassis.uiButton = {
 		value: {
 			"color": "#ffffff",
 			"background": "#FF5722",
-			"border": "darken( #FF5722, 10% )"
+			"border": "transparent"
 		}
 	},
 	"ui-btn-danger": {
@@ -67,7 +67,7 @@ chassis.uiButton = {
 		value: {
 			"color": "#ffffff",
 			"background": "#F44336",
-			"border": "darken( #F44336, 10% )"
+			"border": "transparent"
 		}
 	},
 	"ui-btn-disabled": {
@@ -100,7 +100,7 @@ chassis.uiButton = {
 			"border-radius": "2px",
 			"font-size": "12px",
 			"line-height": "12px",
-			"padding": ".35em .75em"
+			"padding": ".45em .75em"
 		}
 	},
 	"ui-btn-xs": {
@@ -109,7 +109,7 @@ chassis.uiButton = {
 			"border-radius": "2px",
 			"font-size": "12px",
 			"line-height": "12px",
-			"padding": ".2em .35em"
+			"padding": ".35em"
 		}
 	}
 };
