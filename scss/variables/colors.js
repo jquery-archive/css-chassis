@@ -8,42 +8,65 @@
 	}
 }( this, function( chassis ) {
 
-var colors = {
-	"chassis-gray-dark": {
-		"value": "#383838",
-		"name": "Chassis Gray - Dark"
-	},
-	"chassis-gray": {
-		"value": "#c1c1c1",
-		"name": "Chassis Gray"
-	},
-	"chassis-gray-light": {
-		"value": "#f2f2f2",
-		"name": "Chassis Gray - Light"
-	},
-	"chassis-blue-dark": {
-		"value": "#388695",
-		"name": "Chassis Blue - Dark"
-	},
-	"chassis-blue": {
-		"value": "#4fc0c8",
-		"name": "Chassis Blue"
-	},
-	"chassis-yellow": {
-		"value": "#fadf51",
-		"name": "Chassis Yellow"
-	}
-};
 chassis.colors = {
-	"background": colors[ "chassis-gray-dark" ],
-	"font": colors[ "chassis-gray-dark" ],
-	"link": colors[ "chassis-blue-dark" ],
-	"button": colors[ "chassis-blue" ],
-	"buttonText": colors[ "chassis-gray-light" ],
-	"blockquoteBorder": {
-		name: "Chassis - Blockquote color",
-		value: "#eee"
-	}
+	"primary": {
+		name: "Primary Colors",
+		value: {
+			"base": "#3F51B5",
+			"light": "#5C6BC0",
+			"dark": "#3949AB",
+			"darker": "#303F9F"
+		}
+	},
+	"success": {
+			name: "Success Colors",
+			values: {
+				"base": "#8BC34A",
+				"light": "#9CCC65",
+				"dark": "#8BC34A",
+				"darker": "#689F38"
+			}
+		},
+	 "warning": {
+			name: "Warning Colors",
+			value: {
+				"base": "#FF9800",
+				"light": "#FFA726",
+				"dark": "#FB8C00",
+				"darker": "#F57C00"
+		 }
+	 },
+		"info": {
+			name: "Info Colors",
+			values: {
+				"base": "#00BCD4",
+				"light": "#26C6DA",
+				"dark": "#00ACC1",
+				"darker": "#0097A7"
+			}
+	 },
+	 "error": {
+			name: "Error Colors",
+			values: {
+				"base": "#F44336",
+				"light": "#EF5350",
+				"dark": "#E53935",
+				"darker": "#D32F2F"
+			}
+	 },
+	 "text": {
+			name: "Text Colors",
+			values: {
+				"base": "#212121",
+				"light": "#727272"
+			}
+	 },
+	 "background": {
+		 name: "Background Colors",
+		 values: {
+			"base": "#fff"
+		 }
+	 }
 };
 return chassis;
 } ) );
