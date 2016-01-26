@@ -33,7 +33,7 @@ chassis.uiButton = {
 		name: "Primary Button",
 		value: {
 			"color": "#ffffff",
-			"background": "#3F51B5",
+			"background": "$primary",
 			"border": "transparent"
 		}
 	},
@@ -41,7 +41,7 @@ chassis.uiButton = {
 		name: "Success Button",
 		value: {
 			"color": "#ffffff",
-			"background": "#4CAF50",
+			"background": "$success",
 			"border": "transparent"
 		}
 	},
@@ -50,7 +50,7 @@ chassis.uiButton = {
 		name: "Info Button",
 		value: {
 			"color": "#ffffff",
-			"background": "#00BCD4",
+			"background": "$info",
 			"border": "transparent"
 		}
 	},
@@ -58,7 +58,7 @@ chassis.uiButton = {
 		name: "Warning Button",
 		value: {
 			"color": "#ffffff",
-			"background": "#FF5722",
+			"background": "$warning",
 			"border": "transparent"
 		}
 	},
@@ -66,7 +66,7 @@ chassis.uiButton = {
 		name: "Danger Button",
 		value: {
 			"color": "#ffffff",
-			"background": "#F44336",
+			"background": "$error",
 			"border": "transparent"
 		}
 	},

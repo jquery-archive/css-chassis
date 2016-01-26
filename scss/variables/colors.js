@@ -20,7 +20,7 @@ chassis.colors = {
 	},
 	"success": {
 			name: "Success Colors",
-			values: {
+			value: {
 				"base": "#8BC34A",
 				"light": "#9CCC65",
 				"dark": "#8BC34A",
@@ -38,7 +38,7 @@ chassis.colors = {
 	 },
 		"info": {
 			name: "Info Colors",
-			values: {
+			value: {
 				"base": "#00BCD4",
 				"light": "#26C6DA",
 				"dark": "#00ACC1",
@@ -47,7 +47,7 @@ chassis.colors = {
 	 },
 	 "error": {
 			name: "Error Colors",
-			values: {
+			value: {
 				"base": "#F44336",
 				"light": "#EF5350",
 				"dark": "#E53935",
@@ -56,14 +56,14 @@ chassis.colors = {
 	 },
 	 "text": {
 			name: "Text Colors",
-			values: {
+			value: {
 				"base": "#212121",
 				"light": "#727272"
 			}
 	 },
 	 "background": {
 		 name: "Background Colors",
-		 values: {
+		 value: {
 			"base": "#fff"
 		 }
 	 }

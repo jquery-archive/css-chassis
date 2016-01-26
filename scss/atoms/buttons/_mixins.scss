@@ -1,6 +1,6 @@
 @mixin btn-colors($btn-colors) {
 	color: map-get($btn-colors, color);
-	background: map-get($btn-colors, background);
+	background: map-deep-get($btn-colors, "background", "base");
 	border-color: map-get($btn-colors, border);
 
 	&:active,
@@ -28,18 +28,18 @@
 
 @mixin btn-active($btn-colors) {
 	color: map-get($btn-colors, color);
-	background: darken(map-get($btn-colors, background), 30%);
+	background: map-deep-get($btn-colors, "background", "dark");
 	border-color: map-get($btn-colors, border);
 }
 
 @mixin btn-focus($btn-colors) {
 	color: map-get($btn-colors, color);
-	background: darken(map-get($btn-colors, background), 25%);
+	background: map-deep-get($btn-colors, "background", "darker");
 	border-color: map-get($btn-colors, border);
 }
 
 @mixin btn-hover($btn-colors) {
 	color: map-get($btn-colors, color);
-	background: darken(map-get($btn-colors, background), 20%);
+	background: map-deep-get($btn-colors, "background", "light");
 	border-color: map-get($btn-colors, border);
 }
