@@ -9,5 +9,7 @@
 	"important": false,
 	"outline-none": false,
 	"overqualified-elements": false,
+	"unique-headings": false,
+	"unqualified-attributes": false,
 	"text-indent": false
 }
