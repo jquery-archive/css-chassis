@@ -9,12 +9,23 @@
 }( this, function( chassis ) {
 
 chassis.uiButton = {
+	"ui-btn-shadows": {
+		name: "Button Shadow Styles",
+		value: {
+			"transition": "box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1)",
+			"box-shadow-base": "0 2px 5px 0 rgba(0,0,0,.26)",
+			"box-shadow-active": "0 8px 15px 0 rgba(0,0,0,.2)",
+			"box-shadow-disabled": "0 0 0 rgba(0,0,0,0)"
+		}
+	},
+
 	"ui-btn": {
 		name: "Generic Button Styles",
 		value: {
 		 "font-weight": 500,
 		 "margin": ".25em",
-		 "text-transform": "uppercase"
+		 "text-transform": "uppercase",
+		 "letter-spacing": "1px"
 		}
 	},
 	"ui-btn-font": {
@@ -26,7 +37,8 @@ chassis.uiButton = {
 		value: {
 			"color": "#212121",
 			"background": "$default",
-			"border": "transparent"
+			"border": "transparent",
+			"shadow": "false"
 		}
 	},
 	"ui-btn-primary": {
@@ -34,7 +46,8 @@ chassis.uiButton = {
 		value: {
 			"color": "#ffffff",
 			"background": "$primary",
-			"border": "transparent"
+			"border": "transparent",
+			"shadow": "true"
 		}
 	},
 	"ui-btn-success": {
@@ -42,7 +55,8 @@ chassis.uiButton = {
 		value: {
 			"color": "#ffffff",
 			"background": "$success",
-			"border": "transparent"
+			"border": "transparent",
+			"shadow": "true"
 		}
 	},
 
@@ -51,7 +65,8 @@ chassis.uiButton = {
 		value: {
 			"color": "#ffffff",
 			"background": "$info",
-			"border": "transparent"
+			"border": "transparent",
+			"shadow": "true"
 		}
 	},
 	"ui-btn-warning": {
@@ -59,7 +74,8 @@ chassis.uiButton = {
 		value: {
 			"color": "#ffffff",
 			"background": "$warning",
-			"border": "transparent"
+			"border": "transparent",
+			"shadow": "true"
 		}
 	},
 	"ui-btn-danger": {
@@ -67,7 +83,8 @@ chassis.uiButton = {
 		value: {
 			"color": "#ffffff",
 			"background": "$error",
-			"border": "transparent"
+			"border": "transparent",
+			"shadow": "true"
 		}
 	},
 	"ui-btn-disabled": {

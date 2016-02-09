@@ -11,6 +11,7 @@
 .btn {
 	border: 1px solid transparent;
 	cursor: pointer;
+	letter-spacing: map-get($ui-btn, letter-spacing);
 	font-family: $ui-btn-font;
 	font-weight: map-get($ui-btn, font-weight);
 	margin: map-get($ui-btn, margin);

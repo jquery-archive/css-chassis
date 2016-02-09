@@ -2,10 +2,17 @@
 	color: map-get($btn-colors, color);
 	background: map-deep-get($btn-colors, "background", "base");
 	border-color: map-get($btn-colors, border);
+	@if (map-get($btn-colors, shadow) == true) {
+		transition: map-get($ui-btn-shadows, transition);
+		box-shadow: map-get($ui-btn-shadows, box-shadow-base);
+	}
 
 	&:active,
 	&.active {
 		@include btn-active($btn-colors);
+		@if (map-get($btn-colors, shadow) == true) {
+			box-shadow: map-get($ui-btn-shadows, box-shadow-active);
+		}
 	}
 
 	&:focus,
@@ -21,6 +28,9 @@
 	&:disabled,
 	&.disabled {
 		@include	btn-disabled($btn-colors);
+		@if (map-get($btn-colors, shadow) == true) {
+			box-shadow: map-get($ui-btn-shadows, box-shadow-disabled);
+		}
 	}
 }
 
