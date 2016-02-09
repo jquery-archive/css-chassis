@@ -17,6 +17,11 @@
 	&.hover {
 		@include btn-hover($btn-colors);
 	}
+
+	&:disabled,
+	&.disabled {
+		@include	btn-disabled($btn-colors);
+	}
 }
 
 @mixin btn-size($btn-size) {
@@ -42,4 +47,20 @@
 	color: map-get($btn-colors, color);
 	background: map-deep-get($btn-colors, "background", "light");
 	border-color: map-get($btn-colors, border);
+}
+
+@mixin btn-disabled($btn-colors) {
+	cursor: default;
+	color: rgba(map-get($btn-colors, color), .6);
+	$bg: map-deep-get($btn-colors, "background", "base");
+	@if ($bg == transparent) {
+		background: map-deep-get($btn-colors, "background", "base");
+	} @else {
+		background: rgba($bg, .3);
+	}
+	@if (map-get($btn-colors, border) == transparent) {
+		border-color: map-get($btn-colors, border);
+	} @else {
+		border-color: rgba(map-get($btn-colors, border), .3);
+	}
 }

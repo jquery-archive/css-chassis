@@ -24,9 +24,9 @@ chassis.uiButton = {
 	"ui-btn-default": {
 		name: "Default Button",
 		value: {
-			"color": "#383838",
-			"background": "#ffffff",
-			"border": "#383838"
+			"color": "#212121",
+			"background": "$default",
+			"border": "transparent"
 		}
 	},
 	"ui-btn-primary": {
