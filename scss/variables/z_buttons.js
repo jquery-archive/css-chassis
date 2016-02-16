@@ -38,7 +38,7 @@ chassis.uiButton = {
 			"color": "#212121",
 			"background": "$default",
 			"border": "transparent",
-			"shadow": "false"
+			"shadow": "true"
 		}
 	},
 	"ui-btn-primary": {

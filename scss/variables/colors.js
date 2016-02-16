@@ -12,10 +12,10 @@ chassis.colors = {
 	"default": {
 		name: "Default Colors",
 		value: {
-			"base": "transparent",
-			"light": "transparent",
-			"dark": "transparent",
-			"darker": "transparent"
+			"base": "#FAFAFA",
+			"light": "#FFFFFF",
+			"dark": "#FAFAFA",
+			"darker": "#F5F5F5"
 		}
 	},
 	"primary": {

@@ -21,6 +21,37 @@
 	@include btn-size($ui-btn-md);
 }
 
+.btn-group {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+
+	.btn {
+		float: left;
+		margin: 0;
+	}
+
+	.btn:first-child {
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+
+	.btn:last-child {
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+	}
+
+	.btn:not(:first-child):not(:last-child) {
+		border-radius: 0;
+	}
+}
+
+
+.btn-block {
+	display: block;
+	width: 100%;
+}
+
 /* Button Colors */
 
 .btn-primary {
