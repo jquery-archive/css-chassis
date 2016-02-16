@@ -9,6 +9,15 @@
 }( this, function( chassis ) {
 
 chassis.colors = {
+	"default": {
+		name: "Default Colors",
+		value: {
+			"base": "transparent",
+			"light": "transparent",
+			"dark": "transparent",
+			"darker": "transparent"
+		}
+	},
 	"primary": {
 		name: "Primary Colors",
 		value: {
@@ -21,31 +30,31 @@ chassis.colors = {
 	"success": {
 			name: "Success Colors",
 			value: {
-				"base": "#8BC34A",
-				"light": "#9CCC65",
-				"dark": "#8BC34A",
-				"darker": "#689F38"
+				"base": "#43A047",
+				"light": "#4CAF50",
+				"dark": "#388E3C",
+				"darker": "#2E7D32"
 			}
 		},
-		"warning": {
+	 "warning": {
 			name: "Warning Colors",
 			value: {
-				"base": "#FF9800",
-				"light": "#FFA726",
-				"dark": "#FB8C00",
-				"darker": "#F57C00"
-		}
-	},
+				"base": "#FF5722",
+				"light": "#FF7043",
+				"dark": "#F4511E",
+				"darker": "#E64A19"
+		 }
+	 },
 		"info": {
 			name: "Info Colors",
 			value: {
-				"base": "#00BCD4",
-				"light": "#26C6DA",
-				"dark": "#00ACC1",
-				"darker": "#0097A7"
+				"base": "#039BE5",
+				"light": "#03A9F4",
+				"dark": "#0288D1",
+				"darker": "#0277BD"
 			}
-	},
-	"error": {
+	 },
+	 "error": {
 			name: "Error Colors",
 			value: {
 				"base": "#F44336",
@@ -53,20 +62,20 @@ chassis.colors = {
 				"dark": "#E53935",
 				"darker": "#D32F2F"
 			}
-	},
-	"text": {
+	 },
+	 "text": {
 			name: "Text Colors",
 			value: {
 				"base": "#212121",
 				"light": "#727272"
 			}
-	},
-	"background": {
+	 },
+	 "background": {
 		 name: "Background Colors",
 		 value: {
 			"base": "#fff"
-		}
-	}
+		 }
+	 }
 };
 return chassis;
 } ) );
