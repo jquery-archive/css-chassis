@@ -15,6 +15,7 @@
 	font-family: $ui-btn-font;
 	font-weight: map-get($ui-btn, font-weight);
 	margin: map-get($ui-btn, margin);
+	text-decoration: none;
 	text-transform: map-get($ui-btn, text-transform);
 	@include btn-colors($ui-btn-default);
 	@include btn-size($ui-btn-md);
