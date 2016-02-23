@@ -65,7 +65,7 @@ h6 {
 
 hr {
 	border: 0;
-	border-bottom: 1px solid #999; //TODO replace with color variable
+	border-bottom: map-get($hr, thickness) map-get($hr, style) map-get($hr, color);
 }
 
 blockquote {

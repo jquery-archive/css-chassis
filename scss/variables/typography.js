@@ -8,10 +8,10 @@
 	}
 }( this, function( chassis ) {
 
-var color = "#222",
+var color = "map-get($text, base)",
 	fontSize = "20px",
 	lineHeight = 1.5,
-	linkColor = "#4078c0";
+	linkColor = "map-get($primary, light)";
 
 chassis.typography = {
 	normal: {
@@ -57,7 +57,7 @@ chassis.typography = {
 	link: {
 		name: "Link",
 		value: {
-			color: linkColor, // TODO replace with a color from the color-palette
+			color: linkColor,
 			decoration: "none"
 		}
 	},
@@ -80,6 +80,14 @@ chassis.typography = {
 		value: {
 			color: linkColor,
 			decoration: "none"
+		}
+	},
+	"hr": {
+		name: "HR style",
+		value: {
+			color: "#999",
+			thickness: "1px",
+			style: "solid"
 		}
 	}
 };
