@@ -82,14 +82,76 @@ chassis.typography = {
 			decoration: "none"
 		}
 	},
-	"hr": {
+	hr: {
 		name: "HR style",
 		value: {
 			color: "#999",
 			thickness: "1px",
 			style: "solid"
 		}
+	},
+	code: {
+		name: "code style",
+		value: {
+			background: "#f2f2f2",
+			borderRadius: "3px"
+		}
+	},
+	pre: {
+		name: "Pre style",
+		value: {
+			background: "#f7f7f7"
+		}
+	},
+	h1: {
+		name: "H1 Style",
+		value: {
+			fontWeight: "700",
+			fontSize: "67px",
+			capitalization: "none"
+		}
+	},
+	h2: {
+		name: "H2 Style",
+		value: {
+			fontWeight: "600",
+			fontSize: "36px",
+			capitalization: "none"
+		}
+	},
+	h3: {
+		name: "H3 Style",
+		value: {
+			fontWeight: "600",
+			fontSize: "30px",
+			capitalization: "none"
+		}
+	},
+	h4: {
+		name: "H4 Style",
+		value: {
+			fontWeight: "600",
+			fontSize: "24px",
+			capitalization: "none"
+		}
+	},
+	h5: {
+		name: "H5 Style",
+		value: {
+			fontWeight: "600",
+			fontSize: "20px",
+			capitalization: "none"
+		}
+	},
+	h6: {
+		name: "H6 Style",
+		value: {
+			fontWeight: "600",
+			fontSize: "16px",
+			capitalization: "uppercase"
+		}
 	}
+
 };
 
 return chassis;

@@ -1,5 +1,11 @@
 /*
 * ==========================================================================
-* Typography functions
+* Typography mixins
 * ==========================================================================
 */
+@mixin heading($style) {
+	font-size: em(map-get($style,fontSize));
+	font-weight: map-get($style,fontWeight);
+	line-height: 1;
+	text-transform: map-get($style,capitalization);
+}

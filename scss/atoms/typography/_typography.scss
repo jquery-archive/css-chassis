@@ -21,40 +21,27 @@ body {
 }
 
 h1 {
-	font-size: em( 67px ); // 54px works nicely, as well
-	font-weight: 700;
-	line-height: 1;
+	@include heading($h1);
 }
 
 h2 {
-	font-size: em( 36px );
-	font-weight: 600;
-	line-height: 1;
+	@include heading($h2);
 }
 
 h3 {
-	font-size: em( 30px );
-	font-weight: 600;
-	line-height: 1;
+	@include heading($h3);
 }
 
 h4 {
-	font-size: em( 24px );
-	font-weight: 600;
-	line-height: 1;
+	@include heading($h4);
 }
 
 h5 {
-	font-size: em( 20px );
-	font-weight: 600;
-	line-height: 1;
+	@include heading($h5);
 }
 
 h6 {
-	font-size: em( 16px );
-	font-weight: 600;
-	line-height: 1;
-	text-transform: uppercase; // FIXME Is this opinionated?
+	@include heading($h6);
 }
 
 /*
@@ -78,7 +65,7 @@ blockquote {
 
 pre {
 	padding: 16px 20px;
-	background: #f7f7f7; // TODO replace with color variable
+	background: map-get($pre,background);
 	font: normal 12px/1.4 $monospace;
 }
 
@@ -129,8 +116,8 @@ strong {
 }
 
 code {
-	background: #f2f2f2; // TODO replace with color variable
+	background: map-get($code,background);
 	font-size: em( 16px );
 	padding: em( 4px, 16px ) em( 8px, 16px );
-	border-radius: 3px; // TODO replace with variable
+	border-radius: map-get($code,borderRadius);
 }
