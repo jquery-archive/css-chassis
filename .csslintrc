@@ -4,6 +4,7 @@
 	"box-sizing": false,
 	"compatible-vendor-prefixes": false,
 	"duplicate-background-images": false,
+	"font-sizes": false,
 	"import": false,
 	"important": false,
 	"outline-none": false,

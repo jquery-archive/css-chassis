@@ -4,11 +4,13 @@
 
 @import
 	"_utilities/clearfix",
+	"_utilities/functions",
 	"_utilities/hidden";
 
 @import
 	"atoms/icons/icons",
-	"atoms/typography/typography";
+	"atoms/typography/typography",
+	"atoms/buttons/buttons";
 
 @import
 	"views/main";

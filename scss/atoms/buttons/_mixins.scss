@@ -1,0 +1,87 @@
+@mixin btn($margin) {
+	border: 1px solid transparent;
+	cursor: pointer;
+	letter-spacing: map-get($ui-btn, letter-spacing);
+	font-family: $ui-btn-font;
+	font-weight: map-get($ui-btn, font-weight);
+	margin: $margin;
+	text-decoration: none;
+	text-transform: map-get($ui-btn, text-transform);
+}
+
+@mixin btn-colors($btn-colors) {
+	color: map-get($btn-colors, color);
+	background: map-deep-get($btn-colors, "background", "base");
+	border-color: map-get($btn-colors, border);
+	@if (map-get($btn-colors, shadow) == true) {
+		transition: map-get($ui-btn-shadows, transition);
+		box-shadow: map-get($ui-btn-shadows, box-shadow-base);
+	}
+
+	&:active,
+	&.active {
+		@include btn-active($btn-colors);
+		@if (map-get($btn-colors, shadow) == true) {
+			box-shadow: map-get($ui-btn-shadows, box-shadow-active);
+		}
+	}
+
+	&:focus,
+	&.focus {
+		@include btn-focus($btn-colors);
+	}
+
+	&:hover,
+	&.hover {
+		@include btn-hover($btn-colors);
+	}
+
+	&:disabled,
+	&.disabled {
+		@include	btn-disabled($btn-colors);
+		@if (map-get($btn-colors, shadow) == true) {
+			box-shadow: map-get($ui-btn-shadows, box-shadow-disabled);
+		}
+	}
+}
+
+@mixin btn-size($btn-size) {
+	border-radius: map-get($btn-size, border-radius);
+	font-size: map-get($btn-size, font-size);
+	line-height: map-get($btn-size, line-height);
+	padding: map-get($btn-size, padding);
+}
+
+@mixin btn-active($btn-colors) {
+	color: map-get($btn-colors, color);
+	background: map-deep-get($btn-colors, "background", "dark");
+	border-color: map-get($btn-colors, border);
+}
+
+@mixin btn-focus($btn-colors) {
+	color: map-get($btn-colors, color);
+	background: map-deep-get($btn-colors, "background", "darker");
+	border-color: map-get($btn-colors, border);
+}
+
+@mixin btn-hover($btn-colors) {
+	color: map-get($btn-colors, color);
+	background: map-deep-get($btn-colors, "background", "light");
+	border-color: map-get($btn-colors, border);
+}
+
+@mixin btn-disabled($btn-colors) {
+	cursor: default;
+	color: rgba(map-get($btn-colors, color), .6);
+	$bg: map-deep-get($btn-colors, "background", "base");
+	@if ($bg == transparent) {
+		background: map-deep-get($btn-colors, "background", "base");
+	} @else {
+		background: rgba($bg, .3);
+	}
+	@if (map-get($btn-colors, border) == transparent) {
+		border-color: map-get($btn-colors, border);
+	} @else {
+		border-color: rgba(map-get($btn-colors, border), .3);
+	}
+}
