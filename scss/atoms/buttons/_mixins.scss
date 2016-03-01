@@ -38,7 +38,7 @@
 
 	&:disabled,
 	&.disabled {
-		@include	btn-disabled($btn-colors);
+		@include btn-disabled($btn-colors);
 		@if (map-get($btn-colors, shadow) == true) {
 			box-shadow: map-get($ui-btn-shadows, box-shadow-disabled);
 		}

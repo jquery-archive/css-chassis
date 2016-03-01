@@ -22,10 +22,10 @@ chassis.uiButton = {
 	"ui-btn": {
 		name: "Generic Button Styles",
 		value: {
-		 "font-weight": 500,
-		 "margin": ".25em",
-		 "text-transform": "uppercase",
-		 "letter-spacing": "1px"
+			"font-weight": 500,
+			"margin": ".25em",
+			"text-transform": "uppercase",
+			"letter-spacing": "1px"
 		}
 	},
 	"ui-btn-font": {
