@@ -8,51 +8,45 @@
 	"dist/chassis",
 	"mixins";
 
-.btn {
-	border: 1px solid transparent;
-	cursor: pointer;
-	letter-spacing: map-get($ui-btn, letter-spacing);
-	font-family: $ui-btn-font;
-	font-weight: map-get($ui-btn, font-weight);
-	margin: map-get($ui-btn, margin);
-	text-decoration: none;
-	text-transform: map-get($ui-btn, text-transform);
-	@include btn-colors($ui-btn-default);
-	@include btn-size($ui-btn-md);
-}
-
 .btn-group {
 	position: relative;
 	display: inline-block;
 	vertical-align: middle;
 
-	.btn {
+	&--btn {
 		float: left;
-		margin: 0;
+		@include btn(0);
 	}
 
-	.btn:first-child {
+	&--btn:first-child {
 		border-top-right-radius: 0;
 		border-bottom-right-radius: 0;
 	}
 
-	.btn:last-child {
+	&--btn:last-child {
 		border-top-left-radius: 0;
 		border-bottom-left-radius: 0;
 	}
 
-	.btn:not(:first-child):not(:last-child) {
+	&--btn:not(:first-child):not(:last-child) {
 		border-radius: 0;
 	}
 }
-
 
 .btn-block {
 	display: block;
 	width: 100%;
 }
 
+.btn {
+	@include btn(	map-get($ui-btn, margin));
+}
+
 /* Button Colors */
+
+.btn-default {
+	@include btn-colors($ui-btn-default);
+}
 
 .btn-primary {
 	@include btn-colors($ui-btn-primary);
@@ -78,6 +72,10 @@
 
 .btn-lg {
 	@include btn-size($ui-btn-lg);
+}
+
+.btn-md {
+	@include btn-size($ui-btn-md);
 }
 
 .btn-sm {

@@ -1,3 +1,14 @@
+@mixin btn($margin) {
+	border: 1px solid transparent;
+	cursor: pointer;
+	letter-spacing: map-get($ui-btn, letter-spacing);
+	font-family: $ui-btn-font;
+	font-weight: map-get($ui-btn, font-weight);
+	margin: $margin;
+	text-decoration: none;
+	text-transform: map-get($ui-btn, text-transform);
+}
+
 @mixin btn-colors($btn-colors) {
 	color: map-get($btn-colors, color);
 	background: map-deep-get($btn-colors, "background", "base");
