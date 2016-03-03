@@ -4,8 +4,13 @@
 * ==========================================================================
 */
 @mixin heading($style) {
-	font-size: em(map-get($style,fontSize));
-	font-weight: map-get($style,fontWeight);
+	font-size: em(map-get($style,font-size));
+	font-weight: map-get($style,font-weight);
 	line-height: 1;
 	text-transform: map-get($style,capitalization);
+}
+@mixin link($style) {
+	color: map-get($style,color);
+	font-weight: map-get($style,font-weight);
+	text-decoration: map-get($style,decoration);
 }

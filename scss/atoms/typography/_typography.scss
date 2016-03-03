@@ -10,7 +10,7 @@
 	"mixins";
 
 body {
-	font: $normal #{ map-get( $defaultFont, font-size ) }/1.5 $sans;
+	font: $normal #{ map-get( $font-default, font-size ) }/1.5 $sans;
 
 	@media ( max-width: $viewport-md-min ) {
 		font-size: 16px;
@@ -57,10 +57,10 @@ hr {
 
 blockquote {
 	margin: 0;
-	padding-left: 1em;
+	padding-left: map-get($blockquote,padding-left); //TODO consider all padding variables
 	position: relative;
-	border-left: 4px solid #eee; // TODO replace with color variable
-	font-style: italic;
+	border-left: map-get($blockquote,border);
+	font-style: map-get($blockquote,font-style);
 }
 
 pre {
@@ -90,23 +90,16 @@ dd {
 */
 
 a {
-	color: map-get($link,color);
-	font-weight: map-get($link,weight);
-	text-decoration: map-get($link,decoration);
-
-	&:hover {
-		color: map-get($link-hover,color);
-		text-decoration: map-get($link-hover,decoration);
+	@include link($link);
+	&:visited {
+		@include link($link-visited);
 	}
-
 	&:active,
 	&:focus {
-		color: map-get($link-focus,color);
-		text-decoration: map-get($link-focus,decoration);
+		@include link($link-focus);
 	}
-	&:visited {
-		color: map-get($link-visited,color);
-		text-decoration: map-get($link-visited,decoration);
+	&:hover {
+		@include link($link-hover);
 	}
 }
 
@@ -119,5 +112,5 @@ code {
 	background: map-get($code,background);
 	font-size: em( 16px );
 	padding: em( 4px, 16px ) em( 8px, 16px );
-	border-radius: map-get($code,borderRadius);
+	border-radius: map-get($code,border-radius);
 }

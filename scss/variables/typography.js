@@ -10,145 +10,156 @@
 
 var color = "map-get($text, base)",
 	fontSize = "20px",
-	lineHeight = 1.5,
-	linkColor = "map-get($primary, light)";
+	lineHeight = 1.5;
 
 chassis.typography = {
-	normal: {
+	"normal": {
 		name: "Font weight - Normal",
 		value: "normal"
 	},
-	bold: {
+	"bold": {
 		name: "Font weight - Bold",
 		value: "bold"
 	},
-	color: {
+	"color": {
 		name: "Font color",
 		value: color
 	},
-	fontSize: {
+	"font-size": {
 		name: "Font size",
 		value: fontSize
 	},
-	lineHeight: {
+	"line-height": {
 		name: "Line Height",
 		value: lineHeight
 	},
-	defaultFont: {
+	"font-default": {
 		name: "Type Style - Default",
 		value: {
-			color: color,
+			"color": color,
 			"font-size": fontSize,
 			"line-height": lineHeight
 		}
 	},
-	monospace: {
+	"monospace": {
 		name: "Font Family - Monospace",
 		value: "\"courier new\", monospace"
 	},
-	serif: {
+	"serif": {
 		name: "Font Family - Serif",
 		value: "Georgia, \"Times New Roman\", Times, serif"
 	},
-	sans: {
+	"sans": {
 		name: "Font Family - Sans",
 		value: "Helvetica, Arial, sans-serif"
 	},
-	link: {
+	"link": {
 		name: "Link",
 		value: {
-			color: linkColor,
-			decoration: "none"
+			"color": "map-get($primary, base)",
+			"decoration": "none",
+			"font-weight": "normal"
 		}
 	},
 	"link-hover": {
 		name: "Link On Mouse Hover",
 		value: {
-			color: linkColor,
-			decoration: "underline"
+			"color": "map-get($primary, light)",
+			"decoration": "underline",
+			"font-weight": "normal"
 		}
 	},
 	"link-focus": {
 		name: "Link On Focus or Active",
 		value: {
-			color: linkColor,
-			decoration: "none"
+			"color": "map-get($primary, dark)",
+			"decoration": "none",
+			"font-weight": "normal"
 		}
 	},
 	"link-visited": {
 		name: "Link If Visited",
 		value: {
-			color: linkColor,
-			decoration: "none"
+			"color": "map-get($primary, base)",
+			"decoration": "none",
+			"font-weight": "normal"
 		}
 	},
-	hr: {
+	"hr": {
 		name: "HR style",
 		value: {
-			color: "#999",
-			thickness: "1px",
-			style: "solid"
+			"color": "#999",
+			"thickness": "1px",
+			"style": "solid"
 		}
 	},
-	code: {
+	"code": {
 		name: "code style",
 		value: {
-			background: "#f2f2f2",
-			borderRadius: "3px"
+			"background": "#f2f2f2",
+			"border-radius": "3px"
 		}
 	},
-	pre: {
+	"pre": {
 		name: "Pre style",
 		value: {
-			background: "#f7f7f7"
+			"background": "#f7f7f7"
 		}
 	},
-	h1: {
+	"h1": {
 		name: "H1 Style",
 		value: {
-			fontWeight: "700",
-			fontSize: "67px",
-			capitalization: "none"
+			"font-weight": "700",
+			"font-size": "67px",
+			"capitalization": "none"
 		}
 	},
-	h2: {
+	"h2": {
 		name: "H2 Style",
 		value: {
-			fontWeight: "600",
-			fontSize: "36px",
-			capitalization: "none"
+			"font-weight": "600",
+			"font-size": "36px",
+			"capitalization": "none"
 		}
 	},
-	h3: {
+	"h3": {
 		name: "H3 Style",
 		value: {
-			fontWeight: "600",
-			fontSize: "30px",
-			capitalization: "none"
+			"font-weight": "600",
+			"font-size": "30px",
+			"capitalization": "none"
 		}
 	},
-	h4: {
+	"h4": {
 		name: "H4 Style",
 		value: {
-			fontWeight: "600",
-			fontSize: "24px",
-			capitalization: "none"
+			"font-weight": "600",
+			"font-size": "24px",
+			"capitalization": "none"
 		}
 	},
-	h5: {
+	"h5": {
 		name: "H5 Style",
 		value: {
-			fontWeight: "600",
-			fontSize: "20px",
-			capitalization: "none"
+			"font-weight": "600",
+			"font-size": "20px",
+			"capitalization": "none"
 		}
 	},
-	h6: {
+	"h6": {
 		name: "H6 Style",
 		value: {
-			fontWeight: "600",
-			fontSize: "16px",
-			capitalization: "uppercase"
+			"font-weight": "600",
+			"font-size": "16px",
+			"capitalization": "uppercase"
+		}
+	},
+	"blockquote": {
+		name: "BlockQuote Style",
+		value: {
+			"border": "4px solid #eee",
+			"font-style": "italic",
+			"padding-left": "1em"
 		}
 	}
 
