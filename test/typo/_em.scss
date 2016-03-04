@@ -1,0 +1,7 @@
+@include test-module('em') {
+  @include test('should return the appropriate em value for a given px value') {
+    $actual: em(40px);
+    $expected: 2em; // based on base 20px
+    @include assert-equal($actual, $expected);
+  }
+}

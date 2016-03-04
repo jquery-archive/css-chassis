@@ -33,7 +33,8 @@
   "scripts": {
     "build": "npm install && grunt build",
     "start": "grunt watch",
-    "test": "grunt"
+    "test": "grunt",
+    "unittest": "./node_modules/.bin/mocha --reporter spec"
   },
   "dependencies": {},
   "devDependencies": {
@@ -58,7 +59,9 @@
     "grunt-svgstore": "0.5.0",
     "jsass-vars": "0.0.3",
     "load-grunt-config": "0.16.0",
-    "perfjankie": "1.2.2"
+    "perfjankie": "1.2.2",
+    "mocha": "2.4.5",
+    "sass-true": "2.0.3"
   },
   "keywords": []
 }
