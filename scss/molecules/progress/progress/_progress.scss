@@ -1,0 +1,76 @@
+/*
+* ==========================================================================
+* Progress
+* ==========================================================================
+*/
+
+@import
+	"dist/chassis",
+	"mixins",
+	"../mixins";
+
+progress {
+	appearance: none;
+	@include ui-progress();
+
+	&::-webkit-progress-bar {
+		background: $ui-progress-background;
+	}
+	@include ui-progress-variations {
+		@include ui-progress-value( $ui-progress-optimum-color, $ui-progress-optimum-background );
+	}
+
+
+	&.warning {
+		@include ui-progress-value( $ui-progress-suboptimum-color, $ui-progress-suboptimum-background ) ;
+	}
+	&.error {
+		@include ui-progress-value( $ui-progress-bad-color, $ui-progress-bad-background );
+
+	}
+	&.striped {
+		@include ui-progress-variations() {
+			@include ui-stripes();
+		}
+	}
+
+}
+
+/*
+* Progress Fallback using div
+*/
+.ui-progress {
+	padding: 0;
+	display: inline-block;
+	@include ui-progress();
+	span {
+		display: block;
+		height: 100%;
+		text-align: center;
+		line-height: $ui-progress-height;
+		@include ui-progress-value( $ui-progress-optimum-color, $ui-progress-optimum-background  );
+	}
+	&.warning {
+		span {
+			background-color:  $ui-progress-suboptimum-background ;
+		}
+	}
+	&.error {
+		span {
+			background-color:  $ui-progress-bad-background ;
+		}
+	}
+
+	&.striped {
+		span {
+			@include ui-stripes();
+		}
+		&.animated {
+			span{
+				animation: ui-stripes-animate $ui-meter-animation-time linear infinite;
+			}
+
+		}
+	}
+
+}

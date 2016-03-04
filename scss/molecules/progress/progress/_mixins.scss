@@ -1,0 +1,27 @@
+
+//General Progress
+
+@mixin ui-progress {
+	width: $ui-progress-width;
+	border-radius: $ui-progress-border-radius;
+	height: $ui-progress-height;
+	outline: $ui-progress-border-size solid $ui-progress-border-color;
+	background: $ui-progress-background;
+}
+
+@mixin ui-progress-value( $fgcolor, $bgcolor ) {
+	background: $bgcolor;
+	color: $fgcolor;
+	box-shadow: $ui-progress-shadow;
+}
+
+
+// Progress ELement
+@mixin ui-progress-variations() {
+	&::-webkit-progress-value {
+		@content;
+	}
+	&::-moz-progress-bar {
+		@content;
+	}
+}

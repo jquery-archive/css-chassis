@@ -1,0 +1,59 @@
+
+//General Meter Mixins
+
+@mixin ui-meter {
+	width: $ui-meter-width;
+	border-radius: $ui-meter-border-radius;
+	height: $ui-meter-height;
+	outline: $ui-meter-border-size solid $ui-meter-border-color;
+	background: $ui-meter-background;
+}
+
+@mixin ui-meter-value( $fgcolor, $bgcolor ) {
+	background: $bgcolor;
+	color: $fgcolor;
+	box-shadow:$ui-meter-shadow;
+}
+
+
+// Meter ELement
+@mixin ui-meter-variations() {
+	@include ui-meter-optimum-variations() {
+		@content;
+	}
+
+	@include ui-meter-suboptimum-variations() {
+		@content;
+	}
+	@include ui-meter-bad-variations() {
+		@content;
+	}
+}
+
+
+@mixin ui-meter-optimum-variations() {
+	&::-webkit-meter-optimum-value {
+		@content;
+	}
+	&:-moz-meter-optimum::-moz-meter-bar {
+		@content;
+	}
+}
+
+@mixin ui-meter-suboptimum-variations() {
+	&::-webkit-meter-suboptimum-value {
+		@content;
+	}
+	&:-moz-meter-sub-optimum::-moz-meter-bar {
+		@content;
+	}
+}
+
+@mixin ui-meter-bad-variations() {
+	&::-webkit-meter-even-less-good-value {
+		@content;
+	}
+	&:-moz-meter-sub-sub-optimum::-moz-meter-bar {
+		@content;
+	}
+}
