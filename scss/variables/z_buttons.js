@@ -14,7 +14,7 @@ chassis.uiButton = {
 		value: {
 			"transition": "box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1)",
 			"box-shadow-base": "0 2px 5px 0 rgba(0,0,0,.26)",
-			"box-shadow-active": "0 8px 15px 0 rgba(0,0,0,.2)",
+			"box-shadow-active": "0 3px 10px 0 rgba(0,0,0,.2)",
 			"box-shadow-disabled": "0 0 0 rgba(0,0,0,0)"
 		}
 	},
