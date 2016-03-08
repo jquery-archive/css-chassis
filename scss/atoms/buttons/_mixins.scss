@@ -71,17 +71,17 @@
 }
 
 @mixin btn-disabled($btn-colors) {
-	cursor: default;
-	color: rgba(map-get($btn-colors, color), .6);
+	cursor: map-get($ui-btn-disabled, cursor);
+	color: rgba(map-get($btn-colors, color),  map-get($ui-btn-disabled, "color-opacity"));
 	$bg: map-deep-get($btn-colors, "background", "base");
 	@if ($bg == transparent) {
 		background: map-deep-get($btn-colors, "background", "base");
 	} @else {
-		background: rgba($bg, .3);
+		background: rgba($bg,  map-get($ui-btn-disabled, "background-opacity"));
 	}
 	@if (map-get($btn-colors, border) == transparent) {
 		border-color: map-get($btn-colors, border);
 	} @else {
-		border-color: rgba(map-get($btn-colors, border), .3);
+		border-color: rgba(map-get($btn-colors, border), map-get($ui-btn-disabled, "background-opacity"));
 	}
 }

@@ -90,7 +90,9 @@ chassis.uiButton = {
 	"ui-btn-disabled": {
 		name: "Disabled Button",
 		value: {
-			"opacity": ".6"
+			"color-opacity": 0.6,
+			"background-opacity": 0.3,
+			"cursor": "not-allowed"
 		}
 	},
 	"ui-btn-lg": {
