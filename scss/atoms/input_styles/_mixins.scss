@@ -1,0 +1,29 @@
+@mixin input-normal() {
+	border: map-get($ui-input-borders, border-normal);
+	border-radius: map-get($ui-input, border-radius);
+	padding: map-get($ui-input, padding);
+	box-shadow: map-get($ui-input-shadows, box-shadow-normal);
+	background: map-get($ui-input-backgrounds, background-normal);
+}
+
+@mixin input-focus() {
+	@include input-normal();
+	box-shadow: map-get($ui-input-shadows, box-shadow-focus);
+	background: map-get($ui-input-backgrounds, background-focus);
+}
+
+@mixin input-active() {
+	@include input-normal();
+	box-shadow: map-get($ui-input-shadows, box-shadow-active);
+	background: map-get($ui-input-backgrounds, background-active);
+}
+
+@mixin input-disabled() {
+	@include input-normal();
+	background: map-get($ui-input-backgrounds, background-disabled);
+}
+
+@mixin input-hover() {
+	@include input-normal();
+	border: map-get($ui-input-borders, border-hover);
+}
