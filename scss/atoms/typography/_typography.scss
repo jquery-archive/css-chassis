@@ -10,7 +10,7 @@
 	"mixins";
 
 body {
-	font: $normal #{ map-get( $defaultFont, font-size ) }/1.5 $sans;
+	font: $normal #{ map-get( $font-default, font-size ) }/1.5 $sans;
 
 	@media ( max-width: $viewport-md-min ) {
 		font-size: 16px;
@@ -21,40 +21,27 @@ body {
 }
 
 h1 {
-	font-size: em( 67px ); // 54px works nicely, as well
-	font-weight: 700;
-	line-height: 1;
+	@include heading($h1);
 }
 
 h2 {
-	font-size: em( 36px );
-	font-weight: 600;
-	line-height: 1;
+	@include heading($h2);
 }
 
 h3 {
-	font-size: em( 30px );
-	font-weight: 600;
-	line-height: 1;
+	@include heading($h3);
 }
 
 h4 {
-	font-size: em( 24px );
-	font-weight: 600;
-	line-height: 1;
+	@include heading($h4);
 }
 
 h5 {
-	font-size: em( 20px );
-	font-weight: 600;
-	line-height: 1;
+	@include heading($h5);
 }
 
 h6 {
-	font-size: em( 16px );
-	font-weight: 600;
-	line-height: 1;
-	text-transform: uppercase;
+	@include heading($h6);
 }
 
 /*
@@ -65,20 +52,20 @@ h6 {
 
 hr {
 	border: 0;
-	border-bottom: 1px solid #999;
+	border-bottom: map-get($hr, thickness) map-get($hr, style) map-get($hr, color);
 }
 
 blockquote {
 	margin: 0;
-	padding-left: 1em;
+	padding-left: map-get($blockquote,padding-left); //TODO consider all padding variables
 	position: relative;
-	border-left: 4px solid #eee; // TODO replace with color variable
-	font-style: italic;
+	border-left: map-get($blockquote,border);
+	font-style: map-get($blockquote,font-style);
 }
 
 pre {
 	padding: 16px 20px;
-	background: #f7f7f7;
+	background: map-get($pre,background);
 	font: normal 12px/1.4 $monospace;
 }
 
@@ -103,15 +90,16 @@ dd {
 */
 
 a {
-	//TODO add colors
-
-	&:hover,
+	@include link($link);
+	&:visited {
+		@include link($link-visited);
+	}
 	&:active,
 	&:focus {
-		//TODO add colors
+		@include link($link-focus);
 	}
-	&:visited {
-		// TODO add colors
+	&:hover {
+		@include link($link-hover);
 	}
 }
 
@@ -121,8 +109,8 @@ strong {
 }
 
 code {
-	background: #f2f2f2; // TODO replace with color variable
+	background: map-get($code,background);
 	font-size: em( 16px );
 	padding: em( 4px, 16px ) em( 8px, 16px );
-	border-radius: 3px;
+	border-radius: map-get($code,border-radius);
 }

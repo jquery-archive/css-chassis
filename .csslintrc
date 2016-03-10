@@ -4,6 +4,8 @@
 	"box-sizing": false,
 	"compatible-vendor-prefixes": false,
 	"duplicate-background-images": false,
+	"fallback-colors": false,
+	"font-sizes": false,
 	"import": false,
 	"important": false,
 	"outline-none": false,
