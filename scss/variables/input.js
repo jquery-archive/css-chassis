@@ -38,7 +38,7 @@ chassis.input = {
 	"ui-input": {
 		name: "Normal state input styles",
 		value: {
-			"border-radius": "2px",
+			"border-radius": "0px",
 			"padding": "5px"
 		}
 	}
