@@ -48,7 +48,7 @@ p {
 	text-align: map-get($p,text-alignment);
 	margin: em(map-get($p,margin-top)) em(map-get($p,margin-right)) em(map-get($p,margin-bottom)) em(map-get($p,margin-left));
 	line-height: 1.5;
-	font-size: map-get($font-default, font-size);
+	font-size: em(map-get($p, font-size));
 }
 
 ul, ol {
