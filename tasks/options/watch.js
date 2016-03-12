@@ -1,4 +1,7 @@
 module.exports = {
+	options: {
+		atBegin: true
+	},
 	sass: {
 		files: [ "scss/**/*.scss" ],
 		tasks: [ "build" ],
