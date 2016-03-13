@@ -39,7 +39,8 @@ chassis.input = {
 		name: "Normal state input styles",
 		value: {
 			"border-radius": "0px",
-			"padding": "5px"
+			"padding": "15px",
+			"width" : "100%"
 		}
 	}
 };

@@ -3,6 +3,7 @@
 	border-radius: map-get($ui-input, border-radius);
 	padding: map-get($ui-input, padding);
 	box-shadow: map-get($ui-input-shadows, box-shadow-normal);
+	width: map-get($ui-input, width);
 }
 
 @mixin input-focus() {

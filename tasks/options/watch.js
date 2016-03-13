@@ -12,5 +12,13 @@ module.exports = {
 		options: {
 			spawn: false
 		}
+	},
+	jsassvars: {
+		files: [ "scsss/variables/**/*.js" ],
+		tasks: [ "build" ],
+		options: {
+			spawn: true
+		}
 	}
+
 };
