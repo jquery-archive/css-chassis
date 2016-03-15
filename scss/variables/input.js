@@ -12,9 +12,10 @@ chassis.input = {
 	"ui-input-shadows": {
 		name: "Input Shadow Styles",
 		value: {
-			"box-shadow-normal": "inset 0 1px 3px  rgba(0,0,0,.24)",
-			"box-shadow-focus": "0 0 5px rgba(92, 107, 192, .56)",
-			"box-shadow-active": "0 0 5px rgba(92, 107, 192, .56)"
+			"transition": "box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1)",
+			"box-shadow-normal": "inset 0 1px 2px  rgba(0,0,0,.1)",
+			"box-shadow-focus": "0 0 5px 1px rgba(92, 107, 192, .3)",
+			"box-shadow-active": "0 0 5px 1px rgba(92, 107, 192, .3)"
 		}
 	},
 	"ui-input-borders":{
@@ -38,9 +39,11 @@ chassis.input = {
 	"ui-input": {
 		name: "Normal state input styles",
 		value: {
-			"border-radius": "0px",
-			"padding": "15px",
-			"width" : "100%"
+			"border-radius": "2px",
+			"padding": "6px 12px",
+			"width" : "100%",
+			"font-size" : "18px",
+			"font-weight" : "300"
 		}
 	}
 };
