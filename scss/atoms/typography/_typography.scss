@@ -10,38 +10,38 @@
 	"mixins";
 
 body {
-	font: $normal #{ map-get( $font-default, font-size ) }/1.5 $sans;
+	font: $typography-normal #{ map-get( $typography-font-default, font-size ) }/1.5 $typography-sans;
 
-	@media ( max-width: $viewport-md-min ) {
+	@media ( max-width: $breakpoints-viewport-md-min ) {
 		font-size: 16px;
 	}
-	@media ( max-width: $viewport-sm-min ) {
+	@media ( max-width: $breakpoints-viewport-sm-min ) {
 		font-size: 14px;
 	}
 }
 
 h1 {
-	@include heading($h1);
+	@include heading($typography-h1);
 }
 
 h2 {
-	@include heading($h2);
+	@include heading($typography-h2);
 }
 
 h3 {
-	@include heading($h3);
+	@include heading($typography-h3);
 }
 
 h4 {
-	@include heading($h4);
+	@include heading($typography-h4);
 }
 
 h5 {
-	@include heading($h5);
+	@include heading($typography-h5);
 }
 
 h6 {
-	@include heading($h6);
+	@include heading($typography-h6);
 }
 
 /*
@@ -52,21 +52,21 @@ h6 {
 
 hr {
 	border: 0;
-	border-bottom: map-get($hr, thickness) map-get($hr, style) map-get($hr, color);
+	border-bottom: map-get($typography-hr, thickness) map-get($typography-hr, style) map-get($typography-hr, color);
 }
 
 blockquote {
 	margin: 0;
-	padding-left: map-get($blockquote,padding-left); //TODO consider all padding variables
+	padding-left: map-get($typography-blockquote,padding-left); //TODO consider all padding variables
 	position: relative;
-	border-left: map-get($blockquote,border);
-	font-style: map-get($blockquote,font-style);
+	border-left: map-get($typography-blockquote,border);
+	font-style: map-get($typography-blockquote,font-style);
 }
 
 pre {
 	padding: 16px 20px;
-	background: map-get($pre,background);
-	font: normal 12px/1.4 $monospace;
+	background: map-get($typography-pre,background);
+	font: normal 12px/1.4 $typography-monospace;
 }
 
 /*
@@ -90,27 +90,27 @@ dd {
 */
 
 a {
-	@include link($link);
+	@include link($typography-link);
 	&:visited {
-		@include link($link-visited);
+		@include link($typography-link-visited);
 	}
 	&:active,
 	&:focus {
-		@include link($link-focus);
+		@include link($typography-link-focus);
 	}
 	&:hover {
-		@include link($link-hover);
+		@include link($typography-link-hover);
 	}
 }
 
 b,
 strong {
-	font-weight: $bold;
+	font-weight: $typography-bold;
 }
 
 code {
-	background: map-get($code,background);
+	background: map-get($typography-code,background);
 	font-size: em( 16px );
 	padding: em( 4px, 16px ) em( 8px, 16px );
-	border-radius: map-get($code,border-radius);
+	border-radius: map-get($typography-code,border-radius);
 }
