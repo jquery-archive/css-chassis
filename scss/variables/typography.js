@@ -1,14 +1,15 @@
 ( function( root, factory ) {
 	if ( typeof define === "function" && define.amd ) {
-		define( [ "./chassis" ], factory );
+		define( [ "./chassis", "./colors" ], factory );
 	} else if ( typeof exports === "object" ) {
-		module.exports = factory( require( "./chassis" ) );
+		require( "./chassis" );
+		module.exports = factory( require( "./colors" ) );
 	} else {
 		root.chassis = factory( root.chassis );
 	}
 }( this, function( chassis ) {
 
-var color = "map-get($text, base)",
+var color = "map-get($colors-text, base)",
 	fontSize = "20px",
 	lineHeight = 1.5;
 
@@ -56,7 +57,7 @@ chassis.typography = {
 	"link": {
 		name: "Link",
 		value: {
-			"color": "map-get($primary, base)",
+			"color": "map-get($colors-primary, base)",
 			"decoration": "none",
 			"font-weight": "normal"
 		}
@@ -64,7 +65,7 @@ chassis.typography = {
 	"link-hover": {
 		name: "Link On Mouse Hover",
 		value: {
-			"color": "map-get($primary, light)",
+			"color": "map-get($colors-primary, light)",
 			"decoration": "underline",
 			"font-weight": "normal"
 		}
@@ -72,7 +73,7 @@ chassis.typography = {
 	"link-focus": {
 		name: "Link On Focus or Active",
 		value: {
-			"color": "map-get($primary, dark)",
+			"color": "map-get($colors-primary, dark)",
 			"decoration": "none",
 			"font-weight": "normal"
 		}
@@ -80,7 +81,7 @@ chassis.typography = {
 	"link-visited": {
 		name: "Link If Visited",
 		value: {
-			"color": "map-get($primary, base)",
+			"color": "map-get($colors-primary, base)",
 			"decoration": "none",
 			"font-weight": "normal"
 		}

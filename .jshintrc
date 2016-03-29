@@ -4,6 +4,7 @@
 	"eqeqeq": true,
 	"eqnull": true,
 	"expr": true,
+	"esnext": true,
 	"immed": true,
 	"noarg": true,
 	"quotmark": "double",
