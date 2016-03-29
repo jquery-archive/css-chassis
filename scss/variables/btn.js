@@ -1,15 +1,17 @@
 ( function( root, factory ) {
 	if ( typeof define === "function" && define.amd ) {
-		define( [ "./chassis" ], factory );
+		define( [ "./chassis", "./colors", "./typograpy" ], factory );
 	} else if ( typeof exports === "object" ) {
-		module.exports = factory( require( "./chassis" ) );
+		require( "./chassis" );
+		require( "./colors" );
+		module.exports = factory( require( "./typography" ) );
 	} else {
 		root.chassis = factory( root.chassis );
 	}
 }( this, function( chassis ) {
 
-chassis.uiButton = {
-	"ui-btn-shadows": {
+chassis.btn = {
+	"shadows": {
 		name: "Button Shadow Styles",
 		value: {
 			"transition": "box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1)",
@@ -19,7 +21,7 @@ chassis.uiButton = {
 		}
 	},
 
-	"ui-btn": {
+	"element": {
 		name: "Generic Button Styles",
 		value: {
 			"font-weight": 500,
@@ -28,66 +30,66 @@ chassis.uiButton = {
 			"letter-spacing": "1px"
 		}
 	},
-	"ui-btn-font": {
+	"font": {
 		name: "Button Font",
-		value: "$sans"
+		value: () => "typography.sans"
 	},
-	"ui-btn-default": {
+	"default": {
 		name: "Default Button",
 		value: {
 			"color": "#212121",
-			"background": "$default",
+			"background": () => "colors.default",
 			"border": "transparent",
 			"shadow": "true"
 		}
 	},
-	"ui-btn-primary": {
+	"primary": {
 		name: "Primary Button",
 		value: {
 			"color": "#ffffff",
-			"background": "$primary",
+			"background": () => "colors.primary",
 			"border": "transparent",
 			"shadow": "true"
 		}
 	},
-	"ui-btn-success": {
+	"success": {
 		name: "Success Button",
 		value: {
 			"color": "#ffffff",
-			"background": "$success",
+			"background": () => "colors.success",
 			"border": "transparent",
 			"shadow": "true"
 		}
 	},
 
-	"ui-btn-info": {
+	"info": {
 		name: "Info Button",
 		value: {
 			"color": "#ffffff",
-			"background": "$info",
+			"background": () => "colors.info",
 			"border": "transparent",
 			"shadow": "true"
 		}
 	},
-	"ui-btn-warning": {
+	"warning": {
 		name: "Warning Button",
 		value: {
 			"color": "#ffffff",
-			"background": "$warning",
+			"background": () => "colors.warning",
 			"border": "transparent",
 			"shadow": "true"
 		}
 	},
-	"ui-btn-danger": {
+	"danger": {
 		name: "Danger Button",
 		value: {
 			"color": "#ffffff",
-			"background": "$error",
+			"background": () => "colors.error",
 			"border": "transparent",
 			"shadow": "true"
 		}
 	},
-	"ui-btn-disabled": {
+	"disable": {
 		name: "Disabled Button",
 		value: {
 			"color-opacity": 0.6,
@@ -95,7 +97,7 @@ chassis.uiButton = {
 			"cursor": "not-allowed"
 		}
 	},
-	"ui-btn-lg": {
+	"lg": {
 		name: "Large Button",
 		value: {
 			"border-radius": "2px",
@@ -104,7 +106,7 @@ chassis.uiButton = {
 			"padding": ".75em 1.25em"
 		}
 	},
-	"ui-btn-md": {
+	"md": {
 		name: "Medium Sized Button",
 		value: {
 			"border-radius": "2px",
@@ -113,7 +115,7 @@ chassis.uiButton = {
 			"padding": ".5em 1em"
 		}
 	},
-	"ui-btn-sm": {
+	"sm": {
 		name: "Small Button",
 		value: {
 			"border-radius": "2px",
@@ -122,7 +124,7 @@ chassis.uiButton = {
 			"padding": ".45em .75em"
 		}
 	},
-	"ui-btn-xs": {
+	"xs": {
 		name: "Extra Small Button",
 		value: {
 			"border-radius": "2px",

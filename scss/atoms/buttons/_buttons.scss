@@ -39,49 +39,49 @@
 }
 
 .btn {
-	@include btn(	map-get($ui-btn, margin));
+	@include btn(	map-get($btn-element, margin));
 }
 
 /* Button Colors */
 
 .btn-default {
-	@include btn-colors($ui-btn-default);
+	@include btn-colors($btn-default);
 }
 
 .btn-primary {
-	@include btn-colors($ui-btn-primary);
+	@include btn-colors($btn-primary);
 }
 
 .btn-success {
-	@include btn-colors($ui-btn-success);
+	@include btn-colors($btn-success);
 }
 
 .btn-info {
-	@include btn-colors($ui-btn-info);
+	@include btn-colors($btn-info);
 }
 
 .btn-warning {
-	@include btn-colors($ui-btn-warning);
+	@include btn-colors($btn-warning);
 }
 
 .btn-danger {
-	@include btn-colors($ui-btn-danger );
+	@include btn-colors($btn-danger );
 }
 
 /* Button Sizes */
 
 .btn-lg {
-	@include btn-size($ui-btn-lg);
+	@include btn-size($btn-lg);
 }
 
 .btn-md {
-	@include btn-size($ui-btn-md);
+	@include btn-size($btn-md);
 }
 
 .btn-sm {
-	@include btn-size($ui-btn-sm);
+	@include btn-size($btn-sm);
 }
 
 .btn-xs {
-	@include btn-size($ui-btn-xs);
+	@include btn-size($btn-xs);
 }
