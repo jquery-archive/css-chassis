@@ -9,7 +9,7 @@
 }( this, function( chassis ) {
 
 chassis.input = {
-	"ui-input-shadows": {
+	"input-shadows": {
 		name: "Input Shadow Styles",
 		value: {
 			"transition": "box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1)",
@@ -18,7 +18,7 @@ chassis.input = {
 			"box-shadow-active": "0 0 5px 1px rgba(92, 107, 192, .3)"
 		}
 	},
-	"ui-input-borders":{
+	"input-borders":{
 		name: "Input border styles",
 		value: {
 			"border-normal": "1px solid #727272",
@@ -28,7 +28,7 @@ chassis.input = {
 			"border-hover": "1px solid #5C6BC0"
 		}
 	},
-	"ui-input-backgrounds": {
+	"input-backgrounds": {
 		name: "Input background colors",
 		value: {
 			"background-normal": "#FFFFFF",
@@ -36,7 +36,7 @@ chassis.input = {
 			"background-disabled": "#E0E0E0"
 		}
 	},
-	"ui-input": {
+	"input": {
 		name: "Normal state input styles",
 		value: {
 			"border-radius": "2px",
