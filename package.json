@@ -58,7 +58,9 @@
     "grunt-svgstore": "0.5.0",
     "jsass-vars": "0.0.3",
     "load-grunt-config": "0.16.0",
-    "perfjankie": "1.2.2"
+    "perfjankie": "1.2.2",
+    "grunt-cssjanus": "0.2.4",
+    "grunt-concat-css": "0.3.1"
   },
   "keywords": []
 }
