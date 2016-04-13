@@ -1,9 +1,9 @@
 module.exports = {
 	sass: {
-		files: [ "scss/**/*.scss" ],
+		files: [ "scss/**/*.scss", "scss/variables/**/*.js" ],
 		tasks: [ "build" ],
 		options: {
-			spawn: false
+			spawn: true
 		}
 	},
 	svg: {
