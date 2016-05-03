@@ -1,0 +1,32 @@
+/*
+* ==========================================================================
+* Input field styles
+* ==========================================================================
+*/
+
+@import
+	"dist/chassis",
+	"mixins";
+
+input[type=text],
+input[type=url],
+input[type=tel],
+input[type=number],
+input[type=color],
+input[type=email],
+input[type=search],
+input[type=password] {
+	@include input-normal();
+	margin: 0 0 15px 0;
+	&:focus {
+		@include input-focus();
+	}
+
+	&:active {
+		@include input-active();
+	}
+
+	&:disabled {
+		@include input-disabled();
+	}
+}

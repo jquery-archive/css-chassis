@@ -1,0 +1,30 @@
+@mixin input-normal() {
+	border: map-get($input-borders, border-normal);
+	border-radius: map-get($input, border-radius);
+	padding: map-get($input, padding);
+	// box-shadow: map-get($input-shadows, box-shadow-normal);
+	width: map-get($input, width);
+	font-size: map-get($input, font-size);
+	font-weight: map-get($input, font-weight);
+}
+
+@mixin input-focus() {
+	box-shadow: map-get($input-shadows, box-shadow-focus);
+	background: map-get($input-backgrounds, background-focus);
+}
+
+@mixin input-active() {
+	box-shadow: map-get($input-shadows, box-shadow-active);
+	background: map-get($input-backgrounds, background-active);
+	transition: map-get($input-shadows, transition);
+}
+
+@mixin input-disabled() {
+	// @include input-normal();
+	background: map-get($input-backgrounds, background-disabled);
+}
+
+@mixin input-hover() {
+	// @include input-normal();
+	border: map-get($input-borders, border-hover);
+}
