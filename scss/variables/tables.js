@@ -9,7 +9,7 @@
 }( this, function( chassis ) {
 
 chassis.table = {
-	"table-base": {
+	"base": {
 		name: "Table Element",
 		value: {
 			"margin": "0 0 1em",

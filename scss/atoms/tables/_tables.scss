@@ -29,7 +29,7 @@ td {
 th {
 	border-top: map-get($table-base, border);
 	padding: map-get($table-base, padding);
-	color: map-get($text, light);
+	color: map-get($colors-text, light);
 	font-weight: 400;
 	font-size: map-get($table-base, thead-font-size);
 	white-space: nowrap;
