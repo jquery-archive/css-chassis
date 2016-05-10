@@ -35,9 +35,9 @@ To automate the build process during development, run the `grunt watch` task to 
 $ grunt watch
 ```
 
-### Travis CI Tests
+### Grunt Tests
 
-To run the Travis tests locally, run the `grunt test` task. It's a good idea to run the tests before committing to avoid having failed tests in your PRs.
+To run the grunt tests locally, run the `grunt test` task. It's a good idea to run the tests before committing to avoid having failed tests in your PRs.
 
 ```bash
 $ grunt test
