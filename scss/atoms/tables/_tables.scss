@@ -8,29 +8,47 @@
 	"dist/chassis",
 	"mixins";
 
-table {
+.table {
+	display: table;
 	margin: map-get($table-base, margin);
 	font-size: map-get($table-base, font-size);
 	text-align: left;
 }
 
-thead {
-	border-bottom: map-get($table-base, border);
-	> tr > th {
-		border-top: 0;
-	}
+/* thead */
+.table-head {
+	display: table-header-group;
 }
 
-td {
-	border-top: map-get($table-base, border);
-	padding: map-get($table-base, padding);
+/* tbody */
+.table-body {
+	display: table-row-group;
 }
 
-th {
+/* tfoot */
+.table-foot {
+	display: table-footer-group;
+}
+
+/* tr */
+.table-row {
+	display: table-row;
+}
+
+/* th */
+.table-heading {
+	display: table-cell;
 	border-top: map-get($table-base, border);
 	padding: map-get($table-base, padding);
 	color: map-get($colors-text, light);
 	font-weight: 400;
 	font-size: map-get($table-base, thead-font-size);
-	white-space: nowrap;
+	//white-space: nowrap;
+}
+
+/* td */
+.table-cell {
+	display: table-cell;
+	border-top: map-get($table-base, border);
+	padding: map-get($table-base, padding);
 }
