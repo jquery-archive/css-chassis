@@ -37,11 +37,12 @@ $ grunt watch
 
 ### Grunt Tests
 
-To run the grunt tests locally, run the `grunt test` task. It's a good idea to run the tests before committing to avoid having failed tests in your PRs.
+To run the tests locally run:
 
 ```bash
 $ grunt test
 ```
+Make sure you run the tests before creating a pull request.
 
 ### Performance testing
 
