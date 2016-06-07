@@ -36,6 +36,10 @@
 		@include btn-hover($btn-colors);
 	}
 
+	&:hover {
+		text-decoration: none;
+	}
+
 	&:disabled,
 	&.disabled {
 		@include btn-disabled($btn-colors);
