@@ -1,0 +1,25 @@
+/*
+* ==========================================================================
+* File: _mixins.scss
+* For : Notifications
+* ==========================================================================
+*/
+
+@mixin notification() {
+	border-radius: map-get($notifications-element, border-radius);
+	margin: map-get($notifications-element, margin);
+	letter-spacing: map-get($notifications-element, letter-spacing);
+	font-weight: map-get($notifications-element, font-weight);
+	padding: map-get($notifications-element, padding);
+	font-size: em(map-get($notifications-element, font-size));
+	box-shadow: map-get($notifications-shadows, box-shadow-base);
+}
+
+@mixin notification-colors($type) {
+	background: map-deep-get($type, background, base);
+	color: map-deep-get($type, color, base);
+}
+
+@mixin notification-title() {
+	font-weight: map-get($notifications-title, font-weight);
+}
