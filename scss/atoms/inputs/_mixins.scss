@@ -1,0 +1,82 @@
+/*
+* ==========================================================================
+* File : _mixins.scss
+* For : Inputs 
+* ==========================================================================
+*/
+
+$margin: em(map-get($inputs-element, margin));
+$margin-label: em(map-get($inputs-label, margin));
+
+@mixin input() {
+	padding: em(map-get($inputs-element, padding));
+	margin: $margin;
+	border: map-get($inputs-element, border);
+	border-color: map-deep-get($inputs-element, border-color, base);
+	background: map-deep-get($inputs-element, background, base);
+	box-shadow: map-get($inputs-shadows, normal);
+	border-radius: em(map-get($inputs-element, border-radius));
+	transition: map-get($inputs-transitions, blur-shadow), map-get($inputs-transitions, blur-border-color);
+	font-size: em(map-get($inputs-element, font-size));
+	width: map-get($inputs-element, width);
+
+	&:focus,
+	&.focus {
+		@include input-focus();
+	}
+
+	&:disabled,
+	&.disabled {
+		@include input-disabled();
+	}
+
+	&:active,
+	&.active {
+		@include input-active();
+	}
+
+	&.error {
+		@include input-error();
+	}
+}
+
+// Input state mixins 
+
+@mixin input-focus() {
+	border-color: map-deep-get($inputs-focus, border-color, light);
+	transition: map-get($inputs-transitions, focus-shadow), map-get($inputs-transitions, focus-border-color);
+	outline: map-get($inputs-focus, outline);
+	box-shadow: map-get($inputs-shadows, focus-base), map-get($inputs-shadows, focus-spread);
+}
+
+@mixin input-disabled() {
+	background: map-deep-get($inputs-disabled, background, base);
+	box-shadow: map-get($inputs-shadows, disabled);
+	border-color: map-deep-get($inputs-disabled, border-color, darker);
+	color: map-deep-get($inputs-disabled, color, darker);
+	cursor: map-get($inputs-disabled, cursor);
+}
+
+@mixin input-active() {
+	border-color: map-deep-get($inputs-active, border-color, light);
+}
+
+@mixin input-error() {
+	border-color: map-deep-get($inputs-error, border-color, base);
+	box-shadow: map-get($inputs-shadows, error-base), map-get($inputs-shadows, error-spread);
+	background: rgba(map-deep-get($inputs-error, background, base), .08);
+}
+
+@mixin input-label() {
+	display: map-get($inputs-label, display);
+	max-width: map-get($inputs-label, max-width);
+	font-size: em(map-get($inputs-label, font-size));
+	font-weight: map-get($inputs-label, font-weight);
+	margin: $margin-label 0;
+
+	&.error {
+		font-size: em(map-get($inputs-label-error, font-size));
+		color: map-deep-get($inputs-label-error, color, base);
+		font-weight: map-get($inputs-label-error, font-weight);
+	}
+}
