@@ -88,6 +88,18 @@ chassis.inputs = {
 			"border-color": () => "colors.error",
 			"background":  () => "colors.error"
 		}
+	},
+	"lg": {
+		name: "Styles for large sized inputs",
+		value: {
+			"font-size": "30px"
+		}
+	},
+	"sm": {
+		name: "Styles for small sized inputs",
+		value: {
+			"font-size": "14px"
+		}
 	}
 
 };

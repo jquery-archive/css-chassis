@@ -40,7 +40,7 @@ $margin-label: em(map-get($inputs-label, margin));
 	}
 }
 
-// Input state mixins 
+/* Input States */
 
 @mixin input-focus() {
 	border-color: map-deep-get($inputs-focus, border-color, light);
@@ -79,4 +79,14 @@ $margin-label: em(map-get($inputs-label, margin));
 		color: map-deep-get($inputs-label-error, color, base);
 		font-weight: map-get($inputs-label-error, font-weight);
 	}
+}
+
+/* Input Sizes */
+
+@mixin input-lg() {
+	font-size: em(map-get($inputs-lg, font-size));
+}
+
+@mixin input-sm() {
+	font-size: em(map-get($inputs-sm, font-size));
 }

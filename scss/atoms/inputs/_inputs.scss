@@ -15,3 +15,13 @@
 .input-label {
 	@include input-label();
 }
+
+/* Input Sizes */
+
+.input-lg {
+	@include input-lg();
+}
+
+.input-sm {
+	@include input-sm();
+}
