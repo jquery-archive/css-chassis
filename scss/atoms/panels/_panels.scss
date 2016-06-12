@@ -1,3 +1,68 @@
 @import
 	"dist/chassis",
 	"mixins";
+
+.panel {
+	@include panel();
+}
+
+.panel-default {
+	@include panel-colors($panel-default);
+}
+
+.panel-success {
+	@include panel-colors($panel-success);
+}
+
+.panel-error {
+	@include panel-colors($panel-error);
+}
+
+.panel-info {
+	@include panel-colors($panel-info);
+}
+
+.panel-warning {
+	@include panel-colors($panel-warning);
+}
+
+.panel-body {
+	@include panel-body();
+}
+
+
+.panel-title {
+	@include panel-title();
+
+	&-left {
+		text-align: left;
+	}
+
+	&-center {
+		text-align: center;
+	}
+}
+
+.panel-header {
+	@include panel-header();
+}
+
+.panel-header-default {
+	@include panel-header-colors($panel-header-default);
+}
+
+.panel-header-success {
+	@include panel-header-colors($panel-header-success);
+}
+
+.panel-header-warning {
+	@include panel-header-colors($panel-header-warning);
+}
+
+.panel-header-info {
+	@include panel-header-colors($panel-header-info);
+}
+
+.panel-header-error {
+	@include panel-header-colors($panel-header-error);
+}
