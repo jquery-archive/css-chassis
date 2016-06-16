@@ -90,3 +90,40 @@ $margin-label: em(map-get($inputs-label, margin));
 @mixin input-sm() {
 	font-size: em(map-get($inputs-sm, font-size));
 }
+
+/* Radio Buttons */
+
+$default-border: map-deep-get($inputs-radiobutton, default-color, base);
+$checked-border: map-deep-get($inputs-radiobutton, checked-color, base);
+
+@mixin radiobutton() {
+	opacity: 0;
+	position: absolute;
+
+	&-label {
+		display: inline-block;
+		vertical-align: middle;
+		margin: 5px;
+		cursor: pointer;
+		position: relative;
+	}
+
+	& + &-label:before {
+		content: "";
+		display: inline-block;
+		vertical-align: middle;
+		width: map-get($inputs-radiobutton, width);
+		height: map-get($inputs-radiobutton, height);
+		box-shadow: 0 2px 2px 0 rgba(0,0,0,.24), inset 0 0 0 1px $default-border;
+		padding: 2px;
+		margin-right: 10px;
+		text-align: center;
+		transition: box-shadow .1s;
+		border-radius: 50%;
+	}
+
+	&:checked + &-label:before {
+		box-shadow: 0 2px 2px 0 rgba(0,0,0,.24), inset 0 0 0 7px $checked-border;
+		transition: box-shadow .2s;
+	}
+}

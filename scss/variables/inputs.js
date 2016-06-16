@@ -100,6 +100,15 @@ chassis.inputs = {
 		value: {
 			"font-size": "14px"
 		}
+	},
+	"radiobutton": {
+		name: "Styles for custom radio buttons",
+		value: {
+			"width": "20px",
+			"height": "20px",
+			"default-color": () => "colors.text",
+			"checked-color": () => "colors.info"
+		}
 	}
 
 };

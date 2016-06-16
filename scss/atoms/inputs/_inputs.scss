@@ -25,3 +25,9 @@
 .input-sm {
 	@include input-sm();
 }
+
+/* Checkboxes and RadioButtons (IDK why radiobuttons remind me of radiohead yo!) */
+
+.radiobutton {
+	@include radiobutton();
+}
