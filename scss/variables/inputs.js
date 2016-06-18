@@ -109,8 +109,16 @@ chassis.inputs = {
 			"default-color": () => "colors.text",
 			"checked-color": () => "colors.info"
 		}
+	},
+	"checkbox": {
+		name: "Styles for custom radio buttons",
+		value: {
+			"width": "20px",
+			"height": "20px",
+			"default-color": () => "colors.text",
+			"checked-color": () => "colors.info"
+		}
 	}
-
 };
 return chassis;
 } ) );

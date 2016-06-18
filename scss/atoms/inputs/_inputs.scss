@@ -31,3 +31,7 @@
 .radiobutton {
 	@include radiobutton();
 }
+
+.checkbox {
+	@include checkbox();
+}
