@@ -1,0 +1,37 @@
+/*
+* ==========================================================================
+* Notifications
+* ==========================================================================
+*/
+
+@import
+	"dist/chassis",
+	"mixins";
+
+.notification {
+	@include notification();
+}
+
+.notification-default {
+	@include notification-colors($notifications-default);
+}
+
+.notification-info {
+	@include notification-colors($notifications-info);
+}
+
+.notification-success {
+	@include notification-colors($notifications-success);
+}
+
+.notification-warning {
+	@include notification-colors($notifications-warning);
+}
+
+.notification-error {
+	@include notification-colors($notifications-error);
+}
+
+.notification-title {
+	@include notification-title();
+}
