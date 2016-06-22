@@ -1,0 +1,45 @@
+// ==============================================
+// File: _mixins.scss
+// For: Panels
+// ==============================================
+
+$border-radius: map-get($panel-border-radius, border-radius);
+
+@mixin panel() {
+	border-radius: $border-radius;
+	box-shadow: map-get($panel-shadows, base), map-get($panel-shadows, spread);
+	border: map-get($panel-element, border);
+	border-color: map-deep-get($panel-element, border-color, darker);
+}
+
+@mixin panel-colors($type) {
+	color: map-get($type, color);
+	background: map-deep-get($type, background, light);
+	border-color: map-deep-get($type, border-color, darker);
+}
+
+$header-vertical-padding: map-get($panel-header, vertical-padding);
+$header-horizontal-padding: map-get($panel-header, horizontal-padding);
+
+@mixin panel-header {
+	padding: $header-horizontal-padding $header-vertical-padding $header-horizontal-padding $header-vertical-padding;
+	border-radius: $border-radius $border-radius 0 0;
+	color: map-get($panel-header, color);
+	background: map-deep-get($panel-header, background, dark);
+}
+
+@mixin panel-header-colors($type) {
+	color: map-get($type, color);
+	background: map-deep-get($type, background, dark);
+}
+
+@mixin panel-body {
+	padding: em(map-get($panel-body, padding));
+}
+
+@mixin panel-title {
+	display: map-get($panel-title, display);
+	width: map-get($panel-title, width);
+	font-weight: map-get($panel-title, font-weight);
+	font-size: em(map-get($panel-title, font-size));
+}

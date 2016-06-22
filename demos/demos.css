@@ -1,5 +1,10 @@
 body {
+	font-family: "Open Sans", "Helvetica";
 	max-width: 900px;
 	margin: 3em auto;
 	padding: 0 1em;
+}
+
+.panel {
+	margin-bottom: 30px;
 }
