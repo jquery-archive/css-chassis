@@ -1,0 +1,31 @@
+/*
+* ==========================================================================
+* Images
+* ==========================================================================
+*/
+
+@import
+	"dist/chassis",
+	"mixins";
+
+.img-round {
+	@include img();
+	border-radius: map-get($img-round, border-radius);
+}
+.img-circle {
+	@include img();
+	border-radius: map-get($img-circle, border-radius);
+}
+.img-thumbnail {
+	@include img();
+	display: inline-block;
+	padding: map-get($img-thumbnail, padding);
+	line-height: map-get($img-thumbnail, line-height);
+	background-color: map-get($img-thumbnail, background-color);
+	border: map-get($img-thumbnail, border-width) map-get($img-thumbnail, border-style) map-get($img-thumbnail, border-color);
+	border-radius: map-get($img-thumbnail, border-radius);
+}
+.img-responsive {
+	@include img();
+	display: inline-block;
+}
