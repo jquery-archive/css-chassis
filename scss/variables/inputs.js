@@ -12,12 +12,9 @@ chassis.inputs = {
 	"shadows": {
 		name: "Styles for input shadows",
 		value: {
-			"disabled": "0 0 2px 0 rgba(0, 0, 0, 0.12)",
-			"normal": "0 2px 2px 0 rgba(0, 0, 0, 0.12)",
-			"focus-base": "0 0 8px 0 rgba(0, 0, 0, 0.08)",
-			"focus-spread": "0 8px 8px 0 rgba(0, 0, 0, 0.18)",
-			"error-base": "0 0 2px 0 rgba(198,62,54,0.24)",
-			"error-spread": "0 2px 2px 0 rgba(198,62,54,0.48)"
+			"inset": "inset 0px 2px 2px 0px rgba(0,0,0,0.10)",
+			"focus": "0px 0px 2px 1px #03a9f4",
+			"error": "0px 0px 2px 1px #F44336",
 		}
 	},
 	"transitions": {
@@ -32,30 +29,40 @@ chassis.inputs = {
 	"label": {
 		name: "Styles for input label",
 		value: {
-			"display": "block",
+			"display": "inline",
 			"max-width": "100%",
-			"font-size": "18px",
-			"font-weight": "600",
-			"margin": "8px"
+			"font-size": "20px",
+			"margin": "5px"
+		}
+	},
+	"label-md": {
+		name: "Styles for small input lables",
+		value: {
+			"font-size": "28px"
+		}
+	},
+	"label-lg": {
+		name: "Styles for large input lables",
+		value: {
+			"font-size": "36px"
 		}
 	},
 	"label-error": {
 		name: "Styles for error labels",
 		value: {
-			"font-size": "14px",
 			color: () => "colors.error",
 			"font-weight": "400"
 		}
 	},
-	"element": {
+	"input-full-width": {
 		name: "Generic styles for single line inputs",
 		value: {
-			"padding": "15px",
+			"padding": "10px",
 			"margin": "0px",
 			"border": "1px solid",
 			"border-color": () => "colors.text",
-			"border-radius": "3px",
-			"font-size": "18px",
+			"border-radius": "2px",
+			"font-size": "20px",
 			"width": "100%",
 			"background": () => "colors.background"
 		}
@@ -63,10 +70,19 @@ chassis.inputs = {
 	"disabled": {
 		name: "Styles for disabled input",
 		value: {
-			"border-color": () => "colors.default",
+			"border-color": () => "colors.text",
 			"background": () => "colors.default",
-			"color": () => "colors.default",
+			"color": () => "colors.text",
 			"cursor": "not-allowed"
+		}
+	},
+	"readonly": {
+		name: "Styles for readonly inputs",
+		value: {
+			"border-color": () => "colors.text",
+			"background": () => "colors.default",
+			"color": () => "colors.text",
+			"cursor": "auto"
 		}
 	},
 	"focus": {
@@ -89,25 +105,25 @@ chassis.inputs = {
 			"background":  () => "colors.error"
 		}
 	},
-	"lg": {
+	"input-md": {
 		name: "Styles for large sized inputs",
 		value: {
-			"font-size": "30px"
+			"font-size": "28px"
 		}
 	},
-	"sm": {
+	"input-lg": {
 		name: "Styles for small sized inputs",
 		value: {
-			"font-size": "14px"
+			"font-size": "36px"
 		}
 	},
-	"radiobutton": {
+	"radio": {
 		name: "Styles for custom radio buttons",
 		value: {
 			"width": "20px",
 			"height": "20px",
 			"default-color": () => "colors.text",
-			"checked-color": () => "colors.info"
+			"checked-color": () => "colors.primary"
 		}
 	},
 	"checkbox": {
@@ -116,7 +132,7 @@ chassis.inputs = {
 			"width": "20px",
 			"height": "20px",
 			"default-color": () => "colors.text",
-			"checked-color": () => "colors.info"
+			"checked-color": () => "colors.primary"
 		}
 	}
 };

@@ -3,3 +3,8 @@ body {
 	margin: 3em auto;
 	padding: 0 1em;
 }
+
+ul {
+	margin: 0;
+	padding: 0;
+}

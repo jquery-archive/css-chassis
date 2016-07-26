@@ -10,286 +10,183 @@
 	</head>
 	<body>
 
-		<h2>Inputs - (Size: Default)</h2>
-
-		<h3>Checkboxes</h3>
+		<h3>Inputs</h3>
+		<label class="input-label input-label-md input-label-block">Make multiple choices</label>
 		<!-- Custom check boxes -->
 
 		<input id="check1" type="checkbox" class="checkbox">
-		<label for="check1" class="checkbox-label">Choose this</label>
+		<label for="check1" class="input-label">Choose this</label>
 
 		<input id="check2" type="checkbox" class="checkbox">
-		<label for="check2" class="checkbox-label">And this</label>
+		<label for="check2" class="input-label">And this</label>
 
 		<input id="check3" type="checkbox" class="checkbox">
-		<label for="check3" class="checkbox-label">And this too</label>
+		<label for="check3" class="input-label">And this too</label>
 
+		<br/>
+		<br/>
+		
 		<!-- Custom Radio button -->
+		<label class="input-label input-label-md input-label-block">Make a choice</label>
+		<input id="radio-1" class="radio" name="radio-group" type="radio" checked>
+		<label for="radio-1" class="input-label">Second Choice</label>
 
-		<h3>Radio buttons</h3>
+		<input id="radio-2" class="radio" name="radio-group" type="radio" checked>
+		<label for="radio-2" class="input-label">Third Choice</label>
 
-		<div>
-			<input id="radio-1" class="radiobutton" name="radio-group" type="radio" checked>
-			<label for="radio-1" class="radiobutton-label">Second Choice</label>
-		</div>
+		<input id="radio-3" class="radio" name="radio-group" type="radio" checked>
+		<label for="radio-3" class="input-label">Fourth Choice</label>
 
-		<div>
-			<input id="radio-2" class="radiobutton" name="radio-group" type="radio" checked>
-			<label for="radio-2" class="radiobutton-label">Third Choice</label>
-		</div>
+		<input id="radio-4" class="radio" name="radio-group" type="radio" checked>
+		<label for="radio-4" class="input-label">Fifth Choice</label>
 
-		<div>
-			<input id="radio-3" class="radiobutton" name="radio-group" type="radio" checked>
-			<label for="radio-3" class="radiobutton-label">Fourth Choice</label>
-		</div>
+		<br/>
+		<br/>
 
-		<div>
-			<input id="radio-4" class="radiobutton" name="radio-group" type="radio" checked>
-			<label for="radio-4" class="radiobutton-label">Fifth Choice</label>
-		</div>
+		<label class="input-label input-label-md input-label-block">Make a choice</label>
+		<ul style="list-style-type:none">
+			<li>
+				<input id="radio-1" class="radio" name="radio-group" type="radio" checked>
+				<label for="radio-1" class="input-label">Second Choice</label>
+			</li>
+
+			<li>
+				<input id="radio-2" class="radio" name="radio-group" type="radio" checked>
+				<label for="radio-2" class="input-label">Third Choice</label>
+			</li>
+
+			<li>
+				<input id="radio-3" class="radio" name="radio-group" type="radio" checked>
+				<label for="radio-3" class="input-label">Fourth Choice</label>
+			</li>
+
+			<li>
+				<input id="radio-4" class="radio" name="radio-group" type="radio" checked>
+				<label for="radio-4" class="input-label">Fifth Choice</label>
+			</li>
+
+		</ul>
 
 
-		<label class="input-label">Name: </label>
-		<input class="input" type="text" placeholder="Enter your Name">
-		<label class="input-label">Password: </label>
-		<input class="input" type="password" placeholder="Choose a password">
-		<!-- 	<label class="input-label">Color: </label>
-		<input class="input" type="color">
-		-->
-		<label class="input-label">Email: </label>
-		<input class="input" type="email" placeholder="name@example.com">
-		<!-- 	<label class="input-label">Date: </label>
-		<input class="input" type="date">
-		-->
-		<label class="input-label">Amount: </label>
-		<input class="input" type="number" placeholder="XX">
-		<h2>Inputs (Disabled) </h2>
-		<label class="input-label">Name: </label>
-		<input class="input disabled" type="text" placeholder="Enter your Name">
-		<label class="input-label">Password: </label>
-		<input class="input disabled" type="password" placeholder="Choose a password">
-		<!-- 	<label class="input-label">Color: </label>
-		<input class="input disabled" type="color">
-		-->
-		<label class="input-label">Email: </label>
-		<input class="input disabled" type="email" placeholder="name@example.com">
-		<!-- 	<label class="input-label">Date: </label>
-		<input class="input disabled" type="date">
-		-->
-		<label class="input-label">Amount: </label>
-		<input class="input disabled" type="number" placeholder="XX">
-		<h2>Inputs (Focus) </h2>
-		<label class="input-label">Name: </label>
-		<input class="input focus" type="text" placeholder="Enter your Name">
-		<label class="input-label">Password: </label>
-		<input class="input focus" type="password" placeholder="Choose a password">
-		<!-- 	<label class="input-label">Color: </label>
-		<input class="input focus" type="color">
-		-->
-		<label class="input-label">Email: </label>
-		<input class="input focus" type="email" placeholder="name@example.com">
-		<!-- 	<label class="input-label">Date: </label>
-		<input class="input focus" type="date">
-		-->
-		<label class="input-label">Amount: </label>
-		<input class="input focus" type="number" placeholder="XX">
-		<h2>Inputs (Active) </h2>
-		<label class="input-label">Name: </label>
-		<input class="input active" type="text" placeholder="Enter your Name">
-		<label class="input-label">Password: </label>
-		<input class="input active" type="password" placeholder="Choose a password">
-		<!-- 	<label class="input-label">Color: </label>
-		<input class="input active" type="color">
-		-->
-		<label class="input-label">Email: </label>
-		<input class="input active" type="email" placeholder="name@example.com">
-		<!-- 	<label class="input-label">Date: </label>
-		<input class="input active" type="date">
-		-->
-		<label class="input-label">Amount: </label>
-		<input class="input active" type="number" placeholder="XX">
-		<h2>Inputs (Error) </h2>
-		<label class="input-label">Name: </label>
-		<input class="input error" type="text" placeholder="Enter your Name">
-		<label class="input-label error">We were unable to process your input.</label>
-		<label class="input-label">Password: </label>
-		<input class="input error" type="password" placeholder="Choose a password">
-		<label class="input-label error">We were unable to process your input.</label>
-		<!-- 	<label class="input-label">Color: </label>
-		<input class="input error" type="color">
-		<label class="input-label error">We were unable to process your input.</label>
-		-->
-		<label class="input-label">Email: </label>
-		<input class="input error" type="email" placeholder="name@example.com">
-		<label class="input-label error">We were unable to process your input.</label>
-		<!-- 	<label class="input-label">Date: </label>
-		<input class="input error" type="date">
-		<label class="input-label error">We were unable to process your input.</label>
-		-->
-		<label class="input-label">Amount: </label>
-		<input class="input error" type="number" placeholder="XX">
-		<label class="input-label error">We were unable to process your input.</label>
-		<h2>Inputs - (Size: Small)</h2>
-		<label class="input-label">Name: </label>
-		<input class="input input-sm" type="text" placeholder="Enter your Name">
-		<label class="input-label">Password: </label>
-		<input class="input input-sm" type="password" placeholder="Choose a password">
-		<!-- 	<label class="input-label">Color: </label>
-		<input class="input" type="color">
-		-->
-		<label class="input-label">Email: </label>
-		<input class="input input-sm" type="email" placeholder="name@example.com">
-		<!-- 	<label class="input-label">Date: </label>
-		<input class="input input-sm" type="date">
-		-->
-		<label class="input-label">Amount: </label>
-		<input class="input input-sm" type="number" placeholder="XX">
-		<h2>Inputs (Disabled) </h2>
-		<label class="input-label">Name: </label>
-		<input class="input disabled input-sm" type="text" placeholder="Enter your Name">
-		<label class="input-label">Password: </label>
-		<input class="input disabled input-sm" type="password" placeholder="Choose a password">
-		<!-- 	<label class="input-label">Color: </label>
-		<input class="input disabled input-sm" type="color">
-		-->
-		<label class="input-label">Email: </label>
-		<input class="input disabled input-sm" type="email" placeholder="name@example.com">
-		<!-- 	<label class="input-label">Date: </label>
-		<input class="input disabled input-sm" type="date">
-		-->
-		<label class="input-label">Amount: </label>
-		<input class="input disabled input-sm" type="number" placeholder="XX">
-		<h2>Inputs (Focus) </h2>
-		<label class="input-label">Name: </label>
-		<input class="input focus input-sm" type="text" placeholder="Enter your Name">
-		<label class="input-label">Password: </label>
-		<input class="input focus input-sm" type="password" placeholder="Choose a password">
-		<!-- 	<label class="input-label">Color: </label>
-		<input class="input focus input-sm" type="color">
-		-->
-		<label class="input-label">Email: </label>
-		<input class="input focus input-sm" type="email" placeholder="name@example.com">
-		<!-- 	<label class="input-label">Date: </label>
-		<input class="input focus input-sm" type="date">
-		-->
-		<label class="input-label">Amount: </label>
-		<input class="input focus input-sm" type="number" placeholder="XX">
-		<h2>Inputs (Active) </h2>
-		<label class="input-label">Name: </label>
-		<input class="input active input-sm" type="text" placeholder="Enter your Name">
-		<label class="input-label">Password: </label>
-		<input class="input active input-sm" type="password" placeholder="Choose a password">
-		<!-- 	<label class="input-label">Color: </label>
-		<input class="input active input-sm" type="color">
-		-->
-		<label class="input-label">Email: </label>
-		<input class="input active input-sm" type="email" placeholder="name@example.com">
-		<!-- 	<label class="input-label">Date: </label>
-		<input class="input active input-sm" type="date">
-		-->
-		<label class="input-label">Amount: </label>
-		<input class="input active input-sm" type="number" placeholder="XX">
-		<h2>Inputs (Error) </h2>
-		<label class="input-label">Name: </label>
-		<input class="input error input-sm" type="text" placeholder="Enter your Name">
-		<label class="input-label error">We were unable to process your input.</label>
-		<label class="input-label">Password: </label>
-		<input class="input error input-sm" type="password" placeholder="Choose a password">
-		<label class="input-label error">We were unable to process your input.</label>
-		<!-- 	<label class="input-label">Color: </label>
-		<input class="input error input-sm" type="color">
-		<label class="input-label error">We were unable to process your input.</label>
-		-->
-		<label class="input-label">Email: </label>
-		<input class="input error input-sm" type="email" placeholder="name@example.com">
-		<label class="input-label error">We were unable to process your input.</label>
-		<!-- 	<label class="input-label">Date: </label>
-		<input class="input error input-sm" type="date">
-		<label class="input-label error">We were unable to process your input.</label>
-		-->
-		<label class="input-label">Amount: </label>
-		<input class="input error input-sm" type="number" placeholder="XX">
-		<label class="input-label error">We were unable to process your input.</label>
-		<h2>Inputs - (Size: Large)</h2>
-		<label class="input-label">Name: </label>
-		<input class="input input-lg" type="text" placeholder="Enter your Name">
-		<label class="input-label">Password: </label>
-		<input class="input input-lg" type="password" placeholder="Choose a password">
-		<!-- 	<label class="input-label">Color: </label>
-		<input class="input" type="color">
-		-->
-		<label class="input-label">Email: </label>
-		<input class="input input-lg" type="email" placeholder="name@example.com">
-		<!-- 	<label class="input-label">Date: </label>
-		<input class="input input-lg" type="date">
-		-->
-		<label class="input-label">Amount: </label>
-		<input class="input input-lg" type="number" placeholder="XX">
-		<h2>Inputs (Disabled) </h2>
-		<label class="input-label">Name: </label>
-		<input class="input disabled input-lg" type="text" placeholder="Enter your Name">
-		<label class="input-label">Password: </label>
-		<input class="input disabled input-lg" type="password" placeholder="Choose a password">
-		<!-- 	<label class="input-label">Color: </label>
-		<input class="input disabled input-lg" type="color">
-		-->
-		<label class="input-label">Email: </label>
-		<input class="input disabled input-lg" type="email" placeholder="name@example.com">
-		<!-- 	<label class="input-label">Date: </label>
-		<input class="input disabled input-lg" type="date">
-		-->
-		<label class="input-label">Amount: </label>
-		<input class="input disabled input-lg" type="number" placeholder="XX">
-		<h2>Inputs (Focus) </h2>
-		<label class="input-label">Name: </label>
-		<input class="input focus input-lg" type="text" placeholder="Enter your Name">
-		<label class="input-label">Password: </label>
-		<input class="input focus input-lg" type="password" placeholder="Choose a password">
-		<!-- 	<label class="input-label">Color: </label>
-		<input class="input focus input-lg" type="color">
-		-->
-		<label class="input-label">Email: </label>
-		<input class="input focus input-lg" type="email" placeholder="name@example.com">
-		<!-- 	<label class="input-label">Date: </label>
-		<input class="input focus input-lg" type="date">
-		-->
-		<label class="input-label">Amount: </label>
-		<input class="input focus input-lg" type="number" placeholder="XX">
-		<h2>Inputs (Active) </h2>
-		<label class="input-label">Name: </label>
-		<input class="input active input-lg" type="text" placeholder="Enter your Name">
-		<label class="input-label">Password: </label>
-		<input class="input active input-lg" type="password" placeholder="Choose a password">
-		<!-- 	<label class="input-label">Color: </label>
-		<input class="input active input-lg" type="color">
-		-->
-		<label class="input-label">Email: </label>
-		<input class="input active input-lg" type="email" placeholder="name@example.com">
-		<!-- 	<label class="input-label">Date: </label>
-		<input class="input active input-lg" type="date">
-		-->
-		<label class="input-label">Amount: </label>
-		<input class="input active input-lg" type="number" placeholder="XX">
-		<h2>Inputs (Error) </h2>
-		<label class="input-label">Name: </label>
-		<input class="input error input-lg" type="text" placeholder="Enter your Name">
-		<label class="input-label error">We were unable to process your input.</label>
-		<label class="input-label">Password: </label>
-		<input class="input error input-lg" type="password" placeholder="Choose a password">
-		<label class="input-label error">We were unable to process your input.</label>
-		<!-- 	<label class="input-label">Color: </label>
-		<input class="input error input-lg" type="color">
-		<label class="input-label error">We were unable to process your input.</label>
-		-->
-		<label class="input-label">Email: </label>
-		<input class="input error input-lg" type="email" placeholder="name@example.com">
-		<label class="input-label error">We were unable to process your input.</label>
-		<!-- 	<label class="input-label">Date: </label>
-		<input class="input error input-lg" type="date">
-		<label class="input-label error">We were unable to process your input.</label>
-		-->
-		<label class="input-label">Amount: </label>
-		<input class="input error input-lg" type="number" placeholder="XX">
-		<label class="input-label error">We were unable to process your input.</label>
+
+		<h3>Inputs - Inline</h3>
+
+		<table>
+			<tr style="margin-bottom:10px">
+				<td style="text-align: right">
+					<label class="input-label">Name </label>
+				</td>
+				<td>
+					<input class="input" type="text" placeholder="Enter your Name"/>
+				</td>
+			</tr>
+			<tr>
+				<td style="text-align: right">
+					<label class="input-label input-label-md">Name </label>
+				</td>
+				<td>
+					<input class="input input-md" type="text" placeholder="Enter your Name"/>
+				</td>
+			</tr>
+			<tr>
+				<td style="text-align: right">
+					<label class="input-label input-label-lg">Name </label>
+				</td>
+				<td>
+					<input class="input input-lg" type="text" placeholder="Enter your Name"/>
+				</td>
+			</tr>
+		</table>
+
+		<label class="input-label">Name </label>
+		<input class="input" type="text" placeholder="Enter your Name"/>
+
+		<label class="input-label">Password </label>
+		<input class="input" type="password" placeholder="Choose a password"/>
+
+		<label class="input-label">Email </label>
+		<input class="input" type="email" placeholder="name@example.com"/>
+
+		<label class="input-label">Amount </label>
+		<input class="input" type="number" placeholder="XX"/>
+
+		<br/>
+		<br/>
+
+
+
+		<h3>Inputs (Disabled) </h3>
+
+		<label class="input-label input-label-sm">Name </label>
+		<input class="input disabled" type="text" placeholder="Enter your Name" disabled/>
+
+		<label class="input-label input-label-sm">Password </label>
+		<input class="input disabled" type="password" placeholder="Choose a password" disabled/>
+
+		<label class="input-label input-label-sm">Email </label>
+		<input class="input disabled" type="email" placeholder="name@example.com" disabled/>
+
+		<label class="input-label input-label-sm">Amount </label>
+		<input class="input disabled" type="number" placeholder="XX" disabled/>
+
+		<h3>Inputs (Readonly) </h3>
+
+		<label class="input-label input-label-sm">Name </label>
+		<input class="input readonly" type="text" placeholder="Enter your Name" value="Tester" readonly/>
+
+		<label class="input-label input-label-sm">Password </label>
+		<input class="input readonly" type="password" placeholder="Choose a password" readonly/>
+
+		<label class="input-label input-label-sm">Email </label>
+		<input class="input readonly" type="email" placeholder="name@example.com" readonly/>
+
+		<label class="input-label input-label-sm">Amount </label>
+		<input class="input readonly" type="number" placeholder="XX" readonly/>
+
+		<h3>Inputs (Focus) </h3>
+
+		<label class="input-label input-label-sm">Name </label>
+		<input class="input focus" type="text" placeholder="Enter your Name"/>
+
+		<label class="input-label input-label-sm">Password </label>
+		<input class="input focus" type="password" placeholder="Choose a password"/>
+
+		<label class="input-label input-label-sm">Email </label>
+		<input class="input focus" type="email" placeholder="name@example.com"/>
+
+		<label class="input-label input-label-sm">Amount </label>
+		<input class="input focus" type="number" placeholder="XX"/>
+
+		<h3>Inputs (Active) </h3>
+
+		<label class="input-label input-label-sm">Name </label>
+		<input class="input active" type="text" placeholder="Enter your Name"/>
+
+		<label class="input-label input-label-sm">Password </label>
+		<input class="input active" type="password" placeholder="Choose a password"/>
+
+		<label class="input-label input-label-sm">Email </label>
+		<input class="input active" type="email" placeholder="name@example.com"/>
+
+		<label class="input-label input-label-sm">Amount </label>
+		<input class="input active" type="number" placeholder="XX"/>
+
+		<h3>Inputs (Error) </h3>
+
+		<label class="input-label error">Name </label>
+		<input class="input error" type="text" placeholder="Enter your Name"/>
+		<label class="input-label input-label-block error">We were unable to process your input.</label>
+
+		<label class="input-label error">Password </label>
+		<input class="input error" type="password" placeholder="Choose a password"/>
+		<label class="input-label input-label-block error">We were unable to process your input.</label>
+
+		<label class="input-label error">Email </label>
+		<input class="input error" type="email" placeholder="name@example.com"/>
+		<label class="input-label input-label-block error">We were unable to process your input.</label>
+
+		<label class="input-label error">Amount </label>
+		<input class="input error" type="number" placeholder="XX"/>
+		<label class="input-label input-label-block error">We were unable to process your input.</label>
 	</body>
 </html>

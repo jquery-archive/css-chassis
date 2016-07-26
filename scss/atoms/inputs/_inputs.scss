@@ -16,20 +16,8 @@
 	@include input-label();
 }
 
-/* Input Sizes */
-
-.input-lg {
-	@include input-lg();
-}
-
-.input-sm {
-	@include input-sm();
-}
-
-/* Checkboxes and RadioButtons (IDK why radiobuttons remind me of radiohead yo!) */
-
-.radiobutton {
-	@include radiobutton();
+.radio {
+	@include radio();
 }
 
 .checkbox {
