@@ -10,7 +10,9 @@
 	</head>
 	<body>
 
-		<h3>Inputs</h3>
+		<h2>Chassis - Inputs</h2>
+
+		<h3>Checkboxes and Radios</h3>
 		<label class="input-label input-label-md input-label-block">Make multiple choices</label>
 		<!-- Custom check boxes -->
 
@@ -44,25 +46,25 @@
 		<br/>
 
 		<label class="input-label input-label-md input-label-block">Make a choice</label>
-		<ul style="list-style-type:none">
+		<ul>
 			<li>
-				<input id="radio-1" class="radio" name="radio-group" type="radio" checked>
-				<label for="radio-1" class="input-label">Second Choice</label>
+				<input id="radio-2-1" class="radio" name="radio-group-2" type="radio" checked>
+				<label for="radio-2-1" class="input-label">Second Choice</label>
 			</li>
 
 			<li>
-				<input id="radio-2" class="radio" name="radio-group" type="radio" checked>
-				<label for="radio-2" class="input-label">Third Choice</label>
+				<input id="radio-2-2" class="radio" name="radio-group-2" type="radio" checked>
+				<label for="radio-2-2" class="input-label">Third Choice</label>
 			</li>
 
 			<li>
-				<input id="radio-3" class="radio" name="radio-group" type="radio" checked>
-				<label for="radio-3" class="input-label">Fourth Choice</label>
+				<input id="radio-2-3" class="radio" name="radio-group-2" type="radio" checked>
+				<label for="radio-2-3" class="input-label">Fourth Choice</label>
 			</li>
 
 			<li>
-				<input id="radio-4" class="radio" name="radio-group" type="radio" checked>
-				<label for="radio-4" class="input-label">Fifth Choice</label>
+				<input id="radio-2-4" class="radio" name="radio-group-2" type="radio" checked>
+				<label for="radio-2-4" class="input-label">Fifth Choice</label>
 			</li>
 
 		</ul>
@@ -71,8 +73,16 @@
 
 		<h3>Inputs - Inline</h3>
 
-		<table>
-			<tr style="margin-bottom:10px">
+		<table style="width:100%">
+			<tr>
+				<td style="text-align: right">
+					<label class="input-label input-label-xs">Name </label>
+				</td>
+				<td>
+					<input class="input input-xs" type="text" placeholder="Enter your Name"/>
+				</td>
+			</tr>
+			<tr>
 				<td style="text-align: right">
 					<label class="input-label">Name </label>
 				</td>
@@ -97,6 +107,8 @@
 				</td>
 			</tr>
 		</table>
+
+		<h3>Inputs</h3>
 
 		<label class="input-label">Name </label>
 		<input class="input" type="text" placeholder="Enter your Name"/>

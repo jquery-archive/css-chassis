@@ -47,6 +47,12 @@ chassis.inputs = {
 			"font-size": "36px"
 		}
 	},
+	"label-xs": {
+		name: "Styles for extra small input labels",
+		value: {
+			"font-size": "14px"
+		}
+	},
 	"label-error": {
 		name: "Styles for error labels",
 		value: {
@@ -115,6 +121,12 @@ chassis.inputs = {
 		name: "Styles for small sized inputs",
 		value: {
 			"font-size": "36px"
+		}
+	},
+	"input-xs": {
+		name: "Styles for extra small sized inputs",
+		value: {
+			"font-size": "14px"
 		}
 	},
 	"radio": {
