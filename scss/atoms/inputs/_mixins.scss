@@ -11,7 +11,7 @@ $input-padding: em(map-get($inputs-input-full-width, padding));
 
 @mixin input() {
 	padding: $input-padding 0 $input-padding $input-padding;
-	margin: $margin;
+	margin: $margin 0 $margin 0;
 	border: map-get($inputs-input-full-width, border);
 	border-color: map-deep-get($inputs-input-full-width, border-color, light);
 	background: map-deep-get($inputs-input-full-width, background, base);
@@ -42,6 +42,10 @@ $input-padding: em(map-get($inputs-input-full-width, padding));
 
 	&.error {
 		@include input-error();
+	}
+
+	&.warning {
+		@include input-warning();
 	}
 
 	/* Sizes */
@@ -104,13 +108,17 @@ $input-padding: em(map-get($inputs-input-full-width, padding));
 	box-shadow: map-get($inputs-shadows, inset), map-get($inputs-shadows, error);
 }
 
+@mixin input-warning() {
+	border-color: map-deep-get($inputs-error, border-color, base)	;
+	box-shadow: map-get($inputs-shadows, inset), map-get($inputs-shadows, warning);
+}
+
 /* Labels */
 
 @mixin input-label() {
 	font-size: em(map-get($inputs-label, font-size));
 	display: map-get($inputs-label, display);
 	max-width: map-get($inputs-label, max-width);
-	margin-bottom: em(map-get($inputs-label, margin));
 
 	&.input-label-md {
 		@include input-label-md();

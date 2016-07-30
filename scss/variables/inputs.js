@@ -13,8 +13,9 @@ chassis.inputs = {
 		name: "Styles for input shadows",
 		value: {
 			"inset": "inset 0px 2px 2px 0px rgba(0,0,0,0.10)",
-			"focus": "0px 0px 2px 1px #03a9f4",
+			"focus": "0px 0px 2px 1px #03A9F4",
 			"error": "0px 0px 2px 1px #F44336",
+			"warning": "0px 0px 2px 1px #FF7043"
 		}
 	},
 	"transitions": {
@@ -32,7 +33,7 @@ chassis.inputs = {
 			"display": "inline",
 			"max-width": "100%",
 			"font-size": "20px",
-			"margin": "5px"
+			"margin": "0px"
 		}
 	},
 	"label-md": {
@@ -56,15 +57,14 @@ chassis.inputs = {
 	"label-error": {
 		name: "Styles for error labels",
 		value: {
-			color: () => "colors.error",
-			"font-weight": "400"
+			color: () => "colors.error"
 		}
 	},
 	"input-full-width": {
 		name: "Generic styles for single line inputs",
 		value: {
 			"padding": "10px",
-			"margin": "0px",
+			"margin": "5px",
 			"border": "1px solid",
 			"border-color": () => "colors.text",
 			"border-radius": "2px",
@@ -107,8 +107,13 @@ chassis.inputs = {
 	"error": {
 		name: "Styles for error state of inputs",
 		value: {
-			"border-color": () => "colors.error",
-			"background":  () => "colors.error"
+			"border-color": () => "colors.error"
+		}
+	},
+	"warning": {
+		name: "Styles for warning state inputs",
+		value: {
+			"border-color": () => "colors.warning"
 		}
 	},
 	"input-md": {
