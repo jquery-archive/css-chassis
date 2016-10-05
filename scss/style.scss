@@ -1,16 +1,11 @@
-// ==========================================================================
-// CSS Chassis
-// ==========================================================================
+/*
+* ==========================================================================
+* CSS Chassis
+*
+* This adds normalize.css to the build see lint.scss for expanation
+* ==========================================================================
+*/
 
 @import
-	"_utilities/clearfix",
-	"_utilities/functions",
-	"_utilities/hidden";
-
-@import
-	"atoms/icons/icons",
-	"atoms/typography/typography",
-	"atoms/buttons/buttons";
-
-@import
-	"views/main";
+	"external/normalize.css/normalize",
+	"scss/lint";
