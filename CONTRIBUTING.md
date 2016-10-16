@@ -5,3 +5,6 @@ You may also want to take a look at our [commit & pull request guide](http://con
 You can find us on [IRC](http://irc.jquery.org), specifically in #css-chassis should you have any questions. If you've never contributed to open source before, we've put together [a short guide with tips, tricks, and ideas on getting started](http://contribute.jquery.org/open-source/).
 
 Our weekly meetings on Tuesday at 2pm ET on [IRC](http://irc.jquery.org) in #jquery-meeting. These meetings are public and all are welcome to attend and participate. If you can't make the meeting, you can find the internal notes for each meeting on [the jQuery Meeting site](https://meetings.jquery.org/category/chassis/).
+
+In case you have missed the meetings or want to view the discussions, you can view the irc logs here.
+https://irc.jquery.org/%23jquery-meeting/
