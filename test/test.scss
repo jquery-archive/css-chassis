@@ -1,0 +1,10 @@
+@import 'true';
+
+@import '../dist/chassis';
+@import '../scss/atoms/typography/functions';
+
+// Import the test files
+@import 'typo/all';
+
+// Run the tests
+@include report();
