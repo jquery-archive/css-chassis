@@ -1,0 +1,54 @@
+/*
+* ==========================================================================
+* File: _mixins.scss
+* For : Modals
+* ==========================================================================
+*/
+
+// Styles shared by modal's inner components
+
+// Declared separately because parts of Modal (header and footer) share the same border radius.
+// When/if it comes to changing the radius better to change it at a single place than 3 different.
+$border-radius: map-get($modal-borders, radius);
+
+// Declared separately because we want to use shorthands, as writing something like "0 0 15px 15px"
+// doesn't work in JSASS as of now.
+$padding: em(map-get($modal-padding, padding));
+
+@mixin modal() {
+	padding: $padding;
+	margin: em(map-get($modal-element, margin));
+	background: map-deep-get($modal-element, background, base);
+	border: map-get($modal-element, border);
+	border-color: map-deep-get($modal-element, border-color, dark);
+	border-radius: $border-radius;
+	box-shadow: map-get($modal-shadows, base);
+}
+
+@mixin modal-header() {
+	padding: $padding;
+	margin: em(map-get($modal-header, margin));
+	background: map-deep-get($modal-header, background, base);
+	border-radius: $border-radius $border-radius 0 0;
+}
+
+@mixin modal-body() {
+	padding: 0 $padding;
+	margin: em(map-get($modal-header, margin));
+	background: map-deep-get($modal-body, background, base);
+	overflow-y: map-get($modal-body, overflow-y);
+}
+
+@mixin modal-footer() {
+	padding: $padding;
+	margin: em(map-get($modal-header, margin));
+	background: map-deep-get($modal-footer, background, base);
+	border-radius: 0 0 $border-radius $border-radius;
+	@include clearfix();
+}
+
+@mixin modal-title() {
+	font-size: em(map-get($modal-title, font-size));
+	font-weight: map-get($modal-title, font-weight);
+	margin: map-get($modal-title, margin);
+}

@@ -1,0 +1,38 @@
+/*
+* ==========================================================================
+* Modals
+* ==========================================================================
+*/
+
+@import
+	"dist/chassis",
+	"mixins";
+
+.modal {
+	@include modal();
+}
+
+.modal-header {
+	@include modal-header();
+}
+
+.modal-title {
+	@include modal-title();
+}
+
+.modal-body {
+	@include modal-body();
+}
+
+.modal-footer {
+	@include modal-footer();
+	@include clearfix();
+}
+
+.modal-btn-left {
+	float: left;
+}
+
+.modal-btn-right {
+	float: right;
+}
