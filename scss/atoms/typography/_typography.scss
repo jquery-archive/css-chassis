@@ -44,6 +44,24 @@ h6 {
 	@include heading($typography-h6);
 }
 
+p {
+	text-align: map-get($p,text-alignment);
+	margin: em(map-get($p,margin-top)) em(map-get($p,margin-right)) em(map-get($p,margin-bottom)) em(map-get($p,margin-left));
+	line-height: 1.5;
+	font-size: em(map-get($p, font-size));
+}
+
+ul, ol {
+	margin: 0 0 10px;
+}
+
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+	margin: 0;
+}
+
 /*
 * ==========================================================================
 * Block elements

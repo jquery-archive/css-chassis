@@ -162,6 +162,17 @@ chassis.typography = {
 			"font-style": "italic",
 			"padding-left": "1em"
 		}
+	},
+	"p": {
+		name: "Paragraph style",
+		value: {
+			"margin-top": "25px",
+			"margin-bottom": "25px",
+			"margin-left": "0px",
+			"margin-right": "0px",
+			"text-alignment": "left",
+			"font-size": fontSize
+		}
 	}
 
 };
