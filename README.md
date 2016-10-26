@@ -35,6 +35,15 @@ To automate the build process during development, run the `grunt watch` task to 
 $ grunt watch
 ```
 
+### Grunt Tests
+
+To run the tests locally run:
+
+```bash
+$ grunt test
+```
+Make sure you run the tests before creating a pull request.
+
 ### Performance testing
 
 #### Setup
