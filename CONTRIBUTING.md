@@ -6,5 +6,5 @@ You can find us on [IRC](http://irc.jquery.org), specifically in #css-chassis sh
 
 Our weekly meetings on Tuesday at 2pm ET on [IRC](http://irc.jquery.org) in #jquery-meeting. These meetings are public and all are welcome to attend and participate. If you can't make the meeting, you can find the internal notes for each meeting on [the jQuery Meeting site](https://meetings.jquery.org/category/chassis/).
 
-In case you have missed the meetings or want to view the discussions, you can <a href = "https://irc.jquery.org/%23jquery-meeting/">view the irc logs here.</a>
+In case you have missed the meetings or want to view the discussions, you can [view the irc logs here.](https://irc.jquery.org/%23jquery-meeting/)
 
