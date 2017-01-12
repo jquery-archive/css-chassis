@@ -110,7 +110,7 @@ strong {
 
 code {
 	background: map-get($typography-code,background);
-	font-size: em( 16px );
-	padding: em( 4px, 16px ) em( 8px, 16px );
+	font-size: rem( 16px );
+	padding: rem( 4px, 16px ) rem( 8px, 16px );
 	border-radius: map-get($typography-code,border-radius);
 }
