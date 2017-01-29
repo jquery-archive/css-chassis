@@ -1,0 +1,100 @@
+/*
+* ====================================
+* Form base styling for html5 elements
+* ====================================
+*/
+
+@import
+	"dist/chassis",
+	"mixin";
+
+#wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+input[ type = "search" ] {
+	display: block;
+	border-radius: .2em;
+	padding-left: .5em;
+	color: map-get($formelements-searchbox, color);
+	border: 1px solid map-get($formelements-searchbox, border-color);
+	background: transparent;
+	@include focus;
+
+	&.searchbox-sm {
+		@include sm;
+	}
+
+	&.searchbox-md {
+		@include md;
+	}
+
+	&.searchbox-lg {
+		@include lg;
+	}
+}
+
+input[ type = "email" ] {
+	display: block;
+	border-radius: .2em;
+	padding-left: .5em;
+	color: #566573;
+	border: 1px solid map-get($formelements-emailbox, border-color);
+	background: transparent;
+
+	&:focus:not(:invalid) {
+		outline: none;
+		border-color: #3498db;
+		box-shadow: 0 0 4px #3498db;
+	}
+
+	&:focus:invalid {
+		outline: none;
+		border-color: #e74c3c;
+		box-shadow: 0 0 4px #ec7063;
+	}
+
+	&.emaibox-sm {
+		@include sm;
+	}
+
+	&.emailbox-md {
+		@include md;
+	}
+
+	&.emailbox-lg {
+		@include lg;
+	}
+}
+
+.urlbox {
+	display: block;
+	padding-left: .5em;
+	width: 20em;
+	line-height: 2.5em;
+	font-size: 1rem;
+	color: #566573;
+	border: 1px solid #212f3d;
+	border-radius: .2em;
+	background: transparent;
+
+	&::-webkit-input-placeholder {
+		padding-left: 1em;
+		font-size: 1.2rem;
+	}
+
+	&::-moz-input-placeholder {
+		padding-left: 1em;
+		font-size: 1.2rem;
+	}
+
+
+	&::-o-input-placeholder {
+		padding-left: 1em;
+		font-size: 1.2rem;
+	}
+}

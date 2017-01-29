@@ -1,0 +1,71 @@
+@mixin focus {
+	&:focus {
+		outline: none;
+		border-color: #3498db;
+		box-shadow: 0 0 4px #3498db;
+	}
+
+	&::-webkit-input-placeholder {
+		padding-left: 1em;
+		font-size: 1.2rem;
+	}
+
+	&::-moz-input-placeholder {
+		padding-left: 1em;
+		font-size: 1.2rem;
+	}
+
+
+	&::-o-input-placeholder {
+		padding-left: 1em;
+		font-size: 1.2rem;
+	}
+
+	&.disabled {
+		pointer-events: none;
+		cursor: map-get($btn-disable, cursor);
+		opacity: .4;
+	}
+}
+
+@mixin sm {
+	width: 10em;
+	line-height: 1.5em;
+	font-size: 1rem;
+	border-radius: .2em;
+	@extend %placeholder;
+}
+
+@mixin md {
+	width: 15em;
+	line-height: 2em;
+	font-size: 1rem;
+	border-radius: .2em;
+	@extend %placeholder;
+}
+
+@mixin lg {
+	width: 20em;
+	line-height: 2.5em;
+	font-size: 1rem;
+	border-radius: .2em;
+	@extend %placeholder;
+}
+
+%placeholder {
+	&::-webkit-input-placeholder {
+		padding-left: 1em;
+		font-size: 1rem;
+	}
+
+	&::-moz-input-placeholder {
+		padding-left: 1em;
+		font-size: 1rem;
+	}
+
+
+	&::-o-input-placeholder {
+		padding-left: 1em;
+		font-size: 1rem;
+	}
+}
