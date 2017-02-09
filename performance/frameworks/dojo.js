@@ -45,5 +45,35 @@ module.exports = {
 			]
 
 		}
+	},
+	checkbox: {
+		generator: function( options ) {
+			var checkbox = "<span class='claro'><div class='dijit dijitReset" +
+				" dijitInline dijitCheckBox",
+				input = "<input type='checkbox' class='dijitReset dijitCheckBoxInput' ";
+			if ( options.checked ) {
+				checkbox += " dijitCheckBoxChecked dijitChecked";
+				input += " checked='checked'";
+			}
+			if ( options.disabled ) {
+				checkbox += " dijitCheckBoxDisabled dijitDisabled";
+				input += " disabled=''";
+			}
+			if ( options.checked && options.disabled ) {
+				checkbox += " dijitCheckBoxCheckedDisabled dijitCheckedDisabled";
+			}
+			return checkbox + "' >" + input + " />" + "</div><label>checkbox</label></span>";
+
+		},
+		variations: {
+			checked: [
+				false,
+				true
+			],
+			disabled: [
+				false,
+				true
+			]
+		}
 	}
 };

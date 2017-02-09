@@ -52,5 +52,22 @@ module.exports = {
 			]
 
 		}
+	},
+	checkbox: {
+		generator: function( options ) {
+			return "<label class='topcoat-checkbox'><input type='checkbox' " +
+				options.checked + options.disabled + " /><div class=" +
+				"'topcoat-checkbox__checkmark'></div>checkbox</label>";
+		},
+		variations: {
+			checked: [
+				"",
+				" checked='checked'"
+			],
+			disabled: [
+				"",
+				" disabled='disabled'"
+			]
+		}
 	}
 };
