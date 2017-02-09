@@ -39,7 +39,9 @@ return {
 				"http://localhost:4200/framework/semantic-ui/component/button/count/1000/" +
 					"semantic-ui:button",
 				"http://localhost:4200/framework/dojo/component/button/count/1000/" +
-					"dojo:button"
+					"dojo:button",
+				"http://localhost:4200/framework/bem-components/component/button/count/1000/" +
+					"bem-components:button"
 			]
 		}
 	}
