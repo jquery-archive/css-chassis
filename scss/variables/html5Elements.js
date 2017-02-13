@@ -9,11 +9,11 @@
 }( this, function( chassis ) {
 
 chassis.formelements = {
-	"searchbox" : {
+	"searchbox": {
 		name: "Search Input Styling",
 		value: {
-			"border-color" : "#212f3d",
-			"color" : "#566573"
+			"border-color": "#212f3d",
+			"color": "#566573"
 		}
 	},
 	"emailbox": {
