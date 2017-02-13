@@ -10,22 +10,22 @@
 
 chassis.formelements = {
 	"searchbox" : {
-		name : "Search Input Styling",
-		value : {
+		name: "Search Input Styling",
+		value: {
 			"border-color" : "#212f3d",
 			"color" : "#566573"
 		}
 	},
-	"emailbox" : {
-		name : "Email Input Styling",
-		value : {
-			"valid" : {
-				"color" : "#566573",
-				"border-color" : "#212f3d"
+	"emailbox": {
+		name: "Email Input Styling",
+		value: {
+			"valid": {
+				"color": "#566573",
+				"border-color": "#212f3d"
 			},
-			"invalid" : {
-				"color" : "#566573",
-				"border-color" : "#e74c3c"
+			"invalid": {
+				"color": "#566573",
+				"border-color": "#e74c3c"
 			}
 		}
 	}
