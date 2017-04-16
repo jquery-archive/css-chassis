@@ -1,5 +1,7 @@
 Chassis is creating open standards designed for CSS libraries, JavaScript UI libraries, and web developers in general. This project will define standards for markup and class names for common widgets and patterns, as well as an implementation of those standards. Similar to how DOM libraries can build upon [Sizzle](https://github.com/jquery/sizzle), we hope UI libraries will build upon this project.
 
+Bottom line: it's like Bootstrap for Bootstrap (yodawg)
+
 ## Goals
 
 * **Broad Device Support**: The number of devices being used around the world continues to grow. We aim to support a wide range of devices without sacrificing usability or aesthetics.
