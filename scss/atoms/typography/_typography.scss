@@ -10,7 +10,7 @@
 	"mixins";
 
 body {
-	font: $typography-normal #{ map-get( $typography-font-default, font-size ) }/1.5 $typography-sans;
+	font: $typography-normal #{ map-get( $typography-default, font-size ) }/1.5 $typography-sans;
 
 	@media ( max-width: $breakpoints-viewport-md-min ) {
 		font-size: 16px;
