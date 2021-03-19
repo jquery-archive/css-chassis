@@ -1,0 +1,255 @@
+/*
+* ==========================================================================
+* File : _mixins.scss
+* For : Inputs 
+* ==========================================================================
+*/
+
+$margin: em(map-get($inputs-input-full-width, margin));
+$margin-label: em(map-get($inputs-label, margin));
+$input-padding: em(map-get($inputs-input-full-width, padding));
+
+@mixin input() {
+	padding: $input-padding 0 $input-padding $input-padding;
+	margin: $margin 0 $margin 0;
+	border: map-get($inputs-input-full-width, border);
+	border-color: map-deep-get($inputs-input-full-width, border-color, light);
+	background: map-deep-get($inputs-input-full-width, background, base);
+	box-shadow: map-get($inputs-shadows, inset);
+	border-radius: em(map-get($inputs-input-full-width, border-radius));
+	transition: map-get($inputs-transitions, blur-shadow), map-get($inputs-transitions, blur-border-color);
+	font-size: em(map-get($inputs-input-full-width, font-size));
+	width: map-get($inputs-input-full-width, width);
+
+	&:focus,
+	&.focus {
+		@include input-focus();
+	}
+
+	&:disabled,
+	&.disabled {
+		@include input-disabled();
+	}
+
+	&.readonly {
+		@include input-readonly();
+	}
+
+	&:active,
+	&.active {
+		@include input-active();
+	}
+
+	&.error {
+		@include input-error();
+	}
+
+	&.warning {
+		@include input-warning();
+	}
+
+	/* Sizes */
+	&.input-xs {
+		@include input-xs();
+	}
+
+	&.input-md {
+		@include input-md();
+	}
+
+	&.input-lg {
+		@include input-lg();
+	}
+}
+
+/* Input Sizes */
+
+@mixin input-xs() {
+	font-size: em(map-get($inputs-input-xs, font-size));
+}
+
+@mixin input-md() {
+	font-size: em(map-get($inputs-input-md, font-size));
+}
+
+@mixin input-lg() {
+	font-size: em(map-get($inputs-input-lg, font-size));
+}
+
+/* Input States */
+
+@mixin input-focus() {
+	border-color: map-deep-get($inputs-focus, border-color, light);
+	transition: map-get($inputs-transitions, focus-shadow), map-get($inputs-transitions, focus-border-color);
+	outline: map-get($inputs-focus, outline);
+	box-shadow: map-get($inputs-shadows, inset), map-get($inputs-shadows, focus);
+}
+
+@mixin input-disabled() {
+	background: map-deep-get($inputs-disabled, background, base);
+	border-color: rgba(map-deep-get($inputs-disabled, border-color, light), .65);
+	color: map-deep-get($inputs-disabled, color, light);
+	cursor: map-get($inputs-disabled, cursor);
+}
+
+@mixin input-readonly() {
+	background: map-deep-get($inputs-readonly, background, base);
+	border-color: rgba(map-deep-get($inputs-readonly, border-color, light), .65);
+	color: map-deep-get($inputs-readonly, color, light);
+	cursor: map-get($inputs-readonly, cursor);
+}
+
+@mixin input-active() {
+	border-color: map-deep-get($inputs-active, border-color, light);
+}
+
+@mixin input-error() {
+	border-color: map-deep-get($inputs-error, border-color, base);
+	box-shadow: map-get($inputs-shadows, inset), map-get($inputs-shadows, error);
+}
+
+@mixin input-warning() {
+	border-color: map-deep-get($inputs-error, border-color, base)	;
+	box-shadow: map-get($inputs-shadows, inset), map-get($inputs-shadows, warning);
+}
+
+/* Labels */
+
+@mixin input-label() {
+	font-size: em(map-get($inputs-label, font-size));
+	display: map-get($inputs-label, display);
+	max-width: map-get($inputs-label, max-width);
+
+	&.input-label-md {
+		@include input-label-md();
+	}
+
+	&.input-label-lg {
+		@include input-label-lg();
+	}
+
+	&.input-label-xs {
+		@include input-label-xs();
+	}
+
+	&.error {
+		@include input-label-error();
+	}
+
+	&.input-label-block {
+		display: block;
+	}
+}
+
+@mixin input-label-error() {
+	color: map-deep-get($inputs-label-error, color, base);
+}
+
+@mixin input-label-md() {
+	font-size: em(map-get($inputs-label-md, font-size));
+}
+
+@mixin input-label-lg() {
+	font-size: em(map-get($inputs-label-lg, font-size));
+}
+
+@mixin input-label-xs() {
+	font-size: em(map-get($inputs-label-xs, font-size));
+}
+
+/* Radio Buttons */
+
+$radio-default-border: map-deep-get($inputs-radio, default-color, base);
+$radio-checked-border: map-deep-get($inputs-radio, checked-color, base);
+
+@mixin radio() {
+	opacity: 0;
+	position: absolute;
+
+	& + label {
+		display: inline-block;
+		vertical-align: middle;
+		margin: 5px;
+		cursor: pointer;
+		position: relative;
+	}
+
+	& + label:before {
+		content: "";
+		display: inline-block;
+		vertical-align: middle;
+		width: map-get($inputs-radio, width);
+		height: map-get($inputs-radio, height);
+		box-shadow: inset 0 0 0 1px $radio-default-border, inset 0 2px 2px 0 rgba(0,0,0,.10);
+		padding: 2px;
+		margin-right: 10px;
+		text-align: center;
+		transition: box-shadow .1s;
+		border-radius: 50%;
+	}
+
+	&:checked + label:before {
+		box-shadow: inset 0 0 0 7px $radio-checked-border;
+		transition: box-shadow .2s;
+	}
+}
+
+/* Checkboxes */
+
+$checkbox-default-border: map-deep-get($inputs-checkbox, default-color, base);
+$checkbox-checked-border: map-deep-get($inputs-checkbox, checked-color, base);
+
+@mixin checkbox() {
+	opacity: 0;
+	position: absolute;
+
+	& + label {
+		display: inline-block;
+		vertical-align: middle;
+		margin: 5px;
+		cursor: pointer;
+		position: relative;
+	}
+
+	& + label:before {
+		content: "";
+		display: inline-block;
+		vertical-align: middle;
+		width: map-get($inputs-checkbox, width);
+		height: map-get($inputs-checkbox, height);
+		box-shadow: inset 0 2px 2px 0 rgba(0,0,0,.10);
+		padding: 2px;
+		border: 1px solid $checkbox-default-border;
+		margin-right: 10px;
+		text-align: center;
+		border-radius: 2px;
+		transition: background-color .1s;
+	}
+
+	& + label:after {
+		content: "";
+		width: 12px;
+		height: 6px;
+		position: absolute;
+		top: 9px;
+		left: 6px;
+		border: 3px solid #fff;
+		border-top: none;
+		border-right: none;
+		background: transparent;
+		opacity: 0;
+		transform: rotate(-65deg);
+	}
+
+	&:checked + label:before {
+		background: $checkbox-checked-border;
+		border-color: $checkbox-checked-border;
+		transition: background-color .1s;
+	}
+
+	&:checked + label:after {
+		opacity: 1;
+		transform: rotate(-45deg);
+		transition: transform .1s;
+	}
+}

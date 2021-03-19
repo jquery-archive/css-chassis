@@ -1,0 +1,534 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>CSS Chassis - Inputs</title>
+		<meta name="description" content="Button skeleton for styling">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../dist/css/chassis.css">
+		<link rel="stylesheet" href="demos.css">
+	</head>
+	<body>
+
+		<h2>Chassis - Inputs</h2>
+
+		<h3>Checkboxes and Radios</h3>
+		<label class="input-label input-label-md input-label-block">Make multiple choices</label>
+		<!-- Custom check boxes -->
+
+		<input id="check1" type="checkbox" class="checkbox">
+		<label for="check1" class="input-label">Choose this</label>
+
+		<input id="check2" type="checkbox" class="checkbox">
+		<label for="check2" class="input-label">And this</label>
+
+		<input id="check3" type="checkbox" class="checkbox">
+		<label for="check3" class="input-label">And this too</label>
+
+		<br/>
+		<br/>
+		
+		<!-- Custom Radio button -->
+		<label class="input-label input-label-md input-label-block">Make a choice</label>
+		<input id="radio-1" class="radio" name="radio-group" type="radio" checked>
+		<label for="radio-1" class="input-label">Second Choice</label>
+
+		<input id="radio-2" class="radio" name="radio-group" type="radio" checked>
+		<label for="radio-2" class="input-label">Third Choice</label>
+
+		<input id="radio-3" class="radio" name="radio-group" type="radio" checked>
+		<label for="radio-3" class="input-label">Fourth Choice</label>
+
+		<input id="radio-4" class="radio" name="radio-group" type="radio" checked>
+		<label for="radio-4" class="input-label">Fifth Choice</label>
+
+		<br/>
+		<br/>
+
+		<label class="input-label input-label-md input-label-block">Make a choice</label>
+		<ul>
+			<li>
+				<input id="radio-2-1" class="radio" name="radio-group-2" type="radio" checked>
+				<label for="radio-2-1" class="input-label">Second Choice</label>
+			</li>
+
+			<li>
+				<input id="radio-2-2" class="radio" name="radio-group-2" type="radio" checked>
+				<label for="radio-2-2" class="input-label">Third Choice</label>
+			</li>
+
+			<li>
+				<input id="radio-2-3" class="radio" name="radio-group-2" type="radio" checked>
+				<label for="radio-2-3" class="input-label">Fourth Choice</label>
+			</li>
+
+			<li>
+				<input id="radio-2-4" class="radio" name="radio-group-2" type="radio" checked>
+				<label for="radio-2-4" class="input-label">Fifth Choice</label>
+			</li>
+
+		</ul>
+
+
+
+		<h3>Inputs - Inline</h3>
+
+		<div class="inputs-container">
+			<div class="inputs-row clearfix">
+				<div class="inputs-label">
+					<label class="input-label input-label-xs">Name </label>
+				</div>
+				<div class="inputs-input">
+					<input class="input input-xs" type="text" placeholder="Enter your Name"/>
+				</div>
+			</div>
+
+			<div class="inputs-row clearfix">
+				<div class="inputs-label">
+					<label class="input-label">Name </label>
+				</div>
+				<div class="inputs-input">
+					<input class="input" type="text" placeholder="Enter your Name"/>
+				</div>
+			</div>
+
+			<div class="inputs-row clearfix">
+				<div class="inputs-label">
+					<label class="input-label input-label-md">Name </label>
+				</div>
+				<div class="inputs-input">
+					<input class="input input-md" type="text" placeholder="Enter your Name"/>
+				</div>
+			</div>
+
+			<div class="inputs-row clearfix">
+				<div class="inputs-label">
+					<label class="input-label input-label-lg">Name </label>
+				</div>
+				<div class="inputs-input">
+					<input class="input input-lg" type="text" placeholder="Enter your Name"/>
+				</div>
+			</div>
+		</div>
+
+		<!-- Small(normal) sized inputs -->
+
+		<h3>Inputs</h3>
+
+		<label class="input-label">Name </label>
+		<input class="input" type="text" placeholder="Enter your Name"/>
+
+		<label class="input-label">Password </label>
+		<input class="input" type="password" placeholder="Choose a password"/>
+
+		<label class="input-label">Email </label>
+		<input class="input" type="email" placeholder="name@example.com"/>
+
+		<label class="input-label">Amount </label>
+		<input class="input" type="number" placeholder="XX"/>
+
+		<h3>Inputs (Disabled) </h3>
+
+		<label class="input-label">Name </label>
+		<input class="input disabled" type="text" placeholder="Enter your Name" disabled/>
+
+		<label class="input-label">Password </label>
+		<input class="input disabled" type="password" placeholder="Choose a password" disabled/>
+
+		<label class="input-label">Email </label>
+		<input class="input disabled" type="email" placeholder="name@example.com" disabled/>
+
+		<label class="input-label">Amount </label>
+		<input class="input disabled" type="number" placeholder="XX" disabled/>
+
+		<h3>Inputs (Readonly) </h3>
+
+		<label class="input-label">Name </label>
+		<input class="input readonly" type="text" placeholder="Enter your Name" value="John Doe" readonly/>
+
+		<label class="input-label">Password </label>
+		<input class="input readonly" type="password" placeholder="Choose a password" readonly/>
+
+		<label class="input-label">Email </label>
+		<input class="input readonly" type="email" placeholder="name@example.com" readonly/>
+
+		<label class="input-label">Amount </label>
+		<input class="input readonly" type="number" placeholder="XX" readonly/>
+
+		<h3>Inputs (Focus) </h3>
+
+		<label class="input-label">Name </label>
+		<input class="input focus" type="text" placeholder="Enter your Name"/>
+
+		<label class="input-label">Password </label>
+		<input class="input focus" type="password" placeholder="Choose a password"/>
+
+		<label class="input-label">Email </label>
+		<input class="input focus" type="email" placeholder="name@example.com"/>
+
+		<label class="input-label">Amount </label>
+		<input class="input focus" type="number" placeholder="XX"/>
+
+		<h3>Inputs (Active) </h3>
+
+		<label class="input-label">Name </label>
+		<input class="input active" type="text" placeholder="Enter your Name"/>
+
+		<label class="input-label">Password </label>
+		<input class="input active" type="password" placeholder="Choose a password"/>
+
+		<label class="input-label">Email </label>
+		<input class="input active" type="email" placeholder="name@example.com"/>
+
+		<label class="input-label">Amount </label>
+		<input class="input active" type="number" placeholder="XX"/>
+
+		<h3>Inputs (Warning) </h3>
+
+		<label class="input-label">Name </label>
+		<input class="input warning" type="text" placeholder="Enter your Name"/>
+
+		<label class="input-label">Password </label>
+		<input class="input warning" type="password" placeholder="Choose a password"/>
+
+		<label class="input-label">Email </label>
+		<input class="input warning" type="email" placeholder="name@example.com"/>
+
+		<label class="input-label">Amount </label>
+		<input class="input warning" type="number" placeholder="XX"/>
+
+		<h3>Inputs (Error) </h3>
+
+		<label class="input-label error">Name </label>
+		<input class="input error" type="text" placeholder="Enter your Name"/>
+		<label class="input-label input-label-xs input-label-block error">We were unable to process your input.</label>
+
+		<label class="input-label error">Password </label>
+		<input class="input error" type="password" placeholder="Choose a password"/>
+		<label class="input-label input-label-xs input-label-block error">We were unable to process your input.</label>
+
+		<label class="input-label error">Email </label>
+		<input class="input error" type="email" placeholder="name@example.com"/>
+		<label class="input-label input-label-xs input-label-block error">We were unable to process your input.</label>
+
+		<label class="input-label error">Amount </label>
+		<input class="input error" type="number" placeholder="XX"/>
+		<label class="input-label input-label-xs input-label-block error">We were unable to process your input.</label>
+
+		<!-- Medium sized inputs -->
+
+		<h2>Inputs - md</h2>
+
+		<label class="input-label input-label-md">Name </label>
+		<input class="input input-md" type="text" placeholder="Enter your Name"/>
+
+		<label class="input-label input-label-md">Password </label>
+		<input class="input input-md" type="password" placeholder="Choose a password"/>
+
+		<label class="input-label input-label-md">Email </label>
+		<input class="input input-md" type="email" placeholder="name@example.com"/>
+
+		<label class="input-label input-label-md">Amount </label>
+		<input class="input input-md" type="number" placeholder="XX"/>
+
+
+		<h3>Inputs (Disabled) </h3>
+
+		<label class="input-label input-label-md">Name </label>
+		<input class="input input-md disabled" type="text" placeholder="Enter your Name" disabled/>
+
+		<label class="input-label input-label-md">Password </label>
+		<input class="input input-md disabled" type="password" placeholder="Choose a password" disabled/>
+
+		<label class="input-label input-label-md">Email </label>
+		<input class="input input-md disabled" type="email" placeholder="name@example.com" disabled/>
+
+		<label class="input-label input-label-md">Amount </label>
+		<input class="input input-md disabled" type="number" placeholder="XX" disabled/>
+
+		<h3>Inputs (Readonly) </h3>
+
+		<label class="input-label input-label-md">Name </label>
+		<input class="input input-md readonly" type="text" placeholder="Enter your Name" value="John Doe" readonly/>
+
+		<label class="input-label input-label-md">Password </label>
+		<input class="input input-md readonly" type="password" placeholder="Choose a password" readonly/>
+
+		<label class="input-label input-label-md">Email </label>
+		<input class="input input-md readonly" type="email" placeholder="name@example.com" readonly/>
+
+		<label class="input-label input-label-md">Amount </label>
+		<input class="input input-md readonly" type="number" placeholder="XX" readonly/>
+
+		<h3>Inputs (Focus) </h3>
+
+		<label class="input-label input-label-md">Name </label>
+		<input class="input input-md focus" type="text" placeholder="Enter your Name"/>
+
+		<label class="input-label input-label-md">Password </label>
+		<input class="input input-md focus" type="password" placeholder="Choose a password"/>
+
+		<label class="input-label input-label-md">Email </label>
+		<input class="input input-md focus" type="email" placeholder="name@example.com"/>
+
+		<label class="input-label input-label-md">Amount </label>
+		<input class="input input-md focus" type="number" placeholder="XX"/>
+
+		<h3>Inputs (Active) </h3>
+
+		<label class="input-label input-label-md">Name </label>
+		<input class="input input-md active" type="text" placeholder="Enter your Name"/>
+
+		<label class="input-label input-label-md">Password </label>
+		<input class="input input-md active" type="password" placeholder="Choose a password"/>
+
+		<label class="input-label input-label-md">Email </label>
+		<input class="input input-md active" type="email" placeholder="name@example.com"/>
+
+		<label class="input-label input-label-md">Amount </label>
+		<input class="input input-md active" type="number" placeholder="XX"/>
+
+		<h3>Inputs (Warning) </h3>
+
+		<label class="input-label input-label-md">Name </label>
+		<input class="input input-md warning" type="text" placeholder="Enter your Name"/>
+
+		<label class="input-label input-label-md">Password </label>
+		<input class="input input-md warning" type="password" placeholder="Choose a password"/>
+
+		<label class="input-label input-label-md">Email </label>
+		<input class="input input-md warning" type="email" placeholder="name@example.com"/>
+
+		<label class="input-label input-label-md">Amount </label>
+		<input class="input input-md warning" type="number" placeholder="XX"/>
+
+		<h3>Inputs (Error) </h3>
+
+		<label class="input-label input-label-md error">Name </label>
+		<input class="input input-md error" type="text" placeholder="Enter your Name"/>
+		<label class="input-label input-label-block error">We were unable to process your input.</label>
+
+		<label class="input-label input-label-md error">Password </label>
+		<input class="input input-md error" type="password" placeholder="Choose a password"/>
+		<label class="input-label input-label-block error">We were unable to process your input.</label>
+
+		<label class="input-label input-label-md error">Email </label>
+		<input class="input input-md error" type="email" placeholder="name@example.com"/>
+		<label class="input-label input-label-block error">We were unable to process your input.</label>
+
+		<label class="input-label input-label-md error">Amount </label>
+		<input class="input input-md error" type="number" placeholder="XX"/>
+		<label class="input-label input-label-block error">We were unable to process your input.</label>
+
+		<!-- Large sized inputs -->
+
+		<h2>Inputs - lg</h2>
+
+		<label class="input-label input-label-lg">Name </label>
+		<input class="input input-lg" type="text" placeholder="Enter your Name"/>
+
+		<label class="input-label input-label-lg">Password </label>
+		<input class="input input-lg" type="password" placeholder="Choose a password"/>
+
+		<label class="input-label input-label-lg">Email </label>
+		<input class="input input-lg" type="email" placeholder="name@example.com"/>
+
+		<label class="input-label input-label-lg">Amount </label>
+		<input class="input input-lg" type="number" placeholder="XX"/>
+
+
+		<h3>Inputs (Disabled) </h3>
+
+		<label class="input-label input-label-lg">Name </label>
+		<input class="input input-lg disabled" type="text" placeholder="Enter your Name" disabled/>
+
+		<label class="input-label input-label-lg">Password </label>
+		<input class="input input-lg disabled" type="password" placeholder="Choose a password" disabled/>
+
+		<label class="input-label input-label-lg">Email </label>
+		<input class="input input-lg disabled" type="email" placeholder="name@example.com" disabled/>
+
+		<label class="input-label input-label-lg">Amount </label>
+		<input class="input input-lg disabled" type="number" placeholder="XX" disabled/>
+
+		<h3>Inputs (Readonly) </h3>
+
+		<label class="input-label input-label-lg">Name </label>
+		<input class="input input-lg readonly" type="text" placeholder="Enter your Name" value="John Doe" readonly/>
+
+		<label class="input-label input-label-lg">Password </label>
+		<input class="input input-lg readonly" type="password" placeholder="Choose a password" readonly/>
+
+		<label class="input-label input-label-lg">Email </label>
+		<input class="input input-lg readonly" type="email" placeholder="name@example.com" readonly/>
+
+		<label class="input-label input-label-lg">Amount </label>
+		<input class="input input-lg readonly" type="number" placeholder="XX" readonly/>
+
+		<h3>Inputs (Focus) </h3>
+
+		<label class="input-label input-label-lg">Name </label>
+		<input class="input input-lg focus" type="text" placeholder="Enter your Name"/>
+
+		<label class="input-label input-label-lg">Password </label>
+		<input class="input input-lg focus" type="password" placeholder="Choose a password"/>
+
+		<label class="input-label input-label-lg">Email </label>
+		<input class="input input-lg focus" type="email" placeholder="name@example.com"/>
+
+		<label class="input-label input-label-lg">Amount </label>
+		<input class="input input-lg focus" type="number" placeholder="XX"/>
+
+		<h3>Inputs (Active) </h3>
+
+		<label class="input-label input-label-lg">Name </label>
+		<input class="input input-lg active" type="text" placeholder="Enter your Name"/>
+
+		<label class="input-label input-label-lg">Password </label>
+		<input class="input input-lg active" type="password" placeholder="Choose a password"/>
+
+		<label class="input-label input-label-lg">Email </label>
+		<input class="input input-lg active" type="email" placeholder="name@example.com"/>
+
+		<label class="input-label input-label-lg">Amount </label>
+		<input class="input input-lg active" type="number" placeholder="XX"/>
+
+		<h3>Inputs (Warning) </h3>
+
+		<label class="input-label input-label-lg">Name </label>
+		<input class="input input-lg warning" type="text" placeholder="Enter your Name"/>
+
+		<label class="input-label input-label-lg">Password </label>
+		<input class="input input-lg warning" type="password" placeholder="Choose a password"/>
+
+		<label class="input-label input-label-lg">Email </label>
+		<input class="input input-lg warning" type="email" placeholder="name@example.com"/>
+
+		<label class="input-label input-label-lg">Amount </label>
+		<input class="input input-lg warning" type="number" placeholder="XX"/>
+
+		<h3>Inputs (Error) </h3>
+
+		<label class="input-label input-label-lg error">Name </label>
+		<input class="input input-lg error" type="text" placeholder="Enter your Name"/>
+		<label class="input-label input-label-block error">We were unable to process your input.</label>
+
+		<label class="input-label input-label-lg error">Password </label>
+		<input class="input input-lg error" type="password" placeholder="Choose a password"/>
+		<label class="input-label input-label-block error">We were unable to process your input.</label>
+
+		<label class="input-label input-label-lg error">Email </label>
+		<input class="input input-lg error" type="email" placeholder="name@example.com"/>
+		<label class="input-label input-label-block error">We were unable to process your input.</label>
+
+		<label class="input-label input-label-lg error">Amount </label>
+		<input class="input input-lg error" type="number" placeholder="XX"/>
+		<label class="input-label input-label-block error">We were unable to process your input.</label>
+
+		<!-- Extra small sized inputs -->
+
+		<h2>Inputs - xs</h2>
+
+		<label class="input-label input-label-xs">Name </label>
+		<input class="input input-xs" type="text" placeholder="Enter your Name"/>
+
+		<label class="input-label input-label-xs">Password </label>
+		<input class="input input-xs" type="password" placeholder="Choose a password"/>
+
+		<label class="input-label input-label-xs">Email </label>
+		<input class="input input-xs" type="email" placeholder="name@example.com"/>
+
+		<label class="input-label input-label-xs">Amount </label>
+		<input class="input input-xs" type="number" placeholder="XX"/>
+
+
+		<h3>Inputs (Disabled) </h3>
+
+		<label class="input-label input-label-xs">Name </label>
+		<input class="input input-xs disabled" type="text" placeholder="Enter your Name" disabled/>
+
+		<label class="input-label input-label-xs">Password </label>
+		<input class="input input-xs disabled" type="password" placeholder="Choose a password" disabled/>
+
+		<label class="input-label input-label-xs">Email </label>
+		<input class="input input-xs disabled" type="email" placeholder="name@example.com" disabled/>
+
+		<label class="input-label input-label-xs">Amount </label>
+		<input class="input input-xs disabled" type="number" placeholder="XX" disabled/>
+
+		<h3>Inputs (Readonly) </h3>
+
+		<label class="input-label input-label-xs">Name </label>
+		<input class="input input-xs readonly" type="text" placeholder="Enter your Name" value="John Doe" readonly/>
+
+		<label class="input-label input-label-xs">Password </label>
+		<input class="input input-xs readonly" type="password" placeholder="Choose a password" readonly/>
+
+		<label class="input-label input-label-xs">Email </label>
+		<input class="input input-xs readonly" type="email" placeholder="name@example.com" readonly/>
+
+		<label class="input-label input-label-xs">Amount </label>
+		<input class="input input-xs readonly" type="number" placeholder="XX" readonly/>
+
+		<h3>Inputs (Focus) </h3>
+
+		<label class="input-label input-label-xs">Name </label>
+		<input class="input input-xs focus" type="text" placeholder="Enter your Name"/>
+
+		<label class="input-label input-label-xs">Password </label>
+		<input class="input input-xs focus" type="password" placeholder="Choose a password"/>
+
+		<label class="input-label input-label-xs">Email </label>
+		<input class="input input-xs focus" type="email" placeholder="name@example.com"/>
+
+		<label class="input-label input-label-xs">Amount </label>
+		<input class="input input-xs focus" type="number" placeholder="XX"/>
+
+		<h3>Inputs (Active) </h3>
+
+		<label class="input-label input-label-xs">Name </label>
+		<input class="input input-xs active" type="text" placeholder="Enter your Name"/>
+
+		<label class="input-label input-label-xs">Password </label>
+		<input class="input input-xs active" type="password" placeholder="Choose a password"/>
+
+		<label class="input-label input-label-xs">Email </label>
+		<input class="input input-xs active" type="email" placeholder="name@example.com"/>
+
+		<label class="input-label input-label-xs">Amount </label>
+		<input class="input input-xs active" type="number" placeholder="XX"/>
+
+		<h3>Inputs (Warning) </h3>
+
+		<label class="input-label input-label-xs">Name </label>
+		<input class="input input-xs warning" type="text" placeholder="Enter your Name"/>
+
+		<label class="input-label input-label-xs">Password </label>
+		<input class="input input-xs warning" type="password" placeholder="Choose a password"/>
+
+		<label class="input-label input-label-xs">Email </label>
+		<input class="input input-xs warning" type="email" placeholder="name@example.com"/>
+
+		<label class="input-label input-label-xs">Amount </label>
+		<input class="input input-xs warning" type="number" placeholder="XX"/>
+
+		<h3>Inputs (Error) </h3>
+
+		<label class="input-label error">Name </label>
+		<input class="input input-xs error" type="text" placeholder="Enter your Name"/>
+		<label class="input-label input-label-xs input-label-block error">We were unable to process your input.</label>
+
+		<label class="input-label error">Password </label>
+		<input class="input input-xs error" type="password" placeholder="Choose a password"/>
+		<label class="input-label input-label-xs input-label-block error">We were unable to process your input.</label>
+
+		<label class="input-label error">Email </label>
+		<input class="input input-xs error" type="email" placeholder="name@example.com"/>
+		<label class="input-label input-label-xs input-label-block error">We were unable to process your input.</label>
+
+		<label class="input-label error">Amount </label>
+		<input class="input input-xs error" type="number" placeholder="XX"/>
+		<label class="input-label input-label-xs input-label-block error">We were unable to process your input.</label>
+
+	</body>
+</html>
